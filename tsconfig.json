@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
+    "module": "umd",
+    "target": "es6",
     "sourceMap": true,
-    "outDir": "build"
+    "outDir": "build",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node"
   },
   "exclude": [
     "node_modules"
+  ],
+  "lib": [
+    "es2016"
   ],
   "compileOnSave": true,
   "include": [
