@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@types/jasmine": "^3.4.3",
+    "@types/jasminewd2": "^2.0.8",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.7.12",
     "@types/protractor": "^4.0.0",
