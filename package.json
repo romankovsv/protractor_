@@ -18,6 +18,8 @@
     "@types/node": "^12.7.12",
     "@types/protractor": "^4.0.0",
     "jasmine": "^3.5.0",
+    "jasmine-protractor-matchers": "^2.0.1",
+    "jasmine2-reporter": "^1.0.1",
     "mocha": "^6.2.1",
     "ts-node": "^8.4.1",
     "typescript": "^3.6.4"

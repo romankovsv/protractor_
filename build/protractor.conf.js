@@ -13,15 +13,31 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "protractor"], factory);
+        define(["require", "exports", "protractor", "jasmine-protractor-matchers"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     const protractor_1 = require("protractor");
+    const matchers = require("jasmine-protractor-matchers");
     exports.config = {
         onPrepare: () => __awaiter(void 0, void 0, void 0, function* () {
             yield protractor_1.browser.waitForAngularEnabled(false);
+            const ConsoleReporter = require("jasmine2-reporter").Jasmine2Reporter;
+            const console_reporter_options = {
+                startingSpec: true
+            };
+            jasmine.getEnv().addReporter(new ConsoleReporter(console_reporter_options));
+            beforeEach(() => {
+                // Adding .toAppear() and .toDisappear() into available matchers.
+                // https://github.com/Xotabu4/jasmine-protractor-matchers
+                jasmine.addMatchers(matchers);
+            });
+            afterEach(() => __awaiter(void 0, void 0, void 0, function* () {
+                // Clearing browser data after each test
+                yield protractor_1.browser.manage().deleteAllCookies();
+                yield protractor_1.browser.executeScript("window.sessionStorage.clear(); window.localStorage.clear();");
+            }));
         }),
         framework: 'jasmine',
         capabilities: {
@@ -31,7 +47,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
             "first": "./FirstTestSpec.js",
             "second": "./SecondTestspec.js"
         },
-        specs: ['./test/FirstTestSpec.js'],
+        specs: ['./test/specs/*[sS]pec.js'],
         SELENIUM_PROMISE_MANAGER: false,
         seleniumAddress: 'http://localhost:7777/wd/hub',
         // You could set no globals to true to avoid jQuery '$' and protractor '$'

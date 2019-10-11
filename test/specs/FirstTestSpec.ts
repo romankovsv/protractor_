@@ -17,9 +17,9 @@ describe("Suite",  async ()=>{
 
 
         await b.sendKeys("My note is here");
-        await browser.actions().sendKeys(protractor.Key.ENTER).perform();
+       // await browser.actions().sendKeys(protractor.Key.ENTER).perform();
 
-       await browser.wait(isClickable, 5000);
+      // await browser.wait(isClickable, 5000);
         /* element(by.css(".js-app-search-suggest .search-form__submit")).getText().then(function (text) {
             console.log(text);
         })

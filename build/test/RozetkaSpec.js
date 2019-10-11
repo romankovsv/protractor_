@@ -20,18 +20,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     Object.defineProperty(exports, "__esModule", { value: true });
     const protractor_1 = require("protractor");
     describe("Suite", () => __awaiter(void 0, void 0, void 0, function* () {
-        it("First Test on protractor", () => __awaiter(void 0, void 0, void 0, function* () {
-            console.log("Test is started");
+        it("Test rozetka", () => __awaiter(void 0, void 0, void 0, function* () {
+            console.log("Test on rozetka has been started");
             var EC = protractor_1.protractor.ExpectedConditions;
-            var button = protractor_1.$('#xyz');
-            var isClickable = EC.elementToBeClickable(button);
-            yield protractor_1.browser.get("http://todomvc.com/examples/angular2/");
-            var b = yield protractor_1.$(".new-todo");
-            var clickable = yield EC.elementToBeClickable(b);
-            yield protractor_1.browser.wait(clickable, 5000);
-            yield b.sendKeys("My note is here");
-            // await browser.actions().sendKeys(protractor.Key.ENTER).perform();
-            // await browser.wait(isClickable, 5000);
+            var searchField = protractor_1.$("input[name='search']");
+            yield protractor_1.browser.get("https://rozetka.com.ua/");
+            var isClickable = yield EC.visibilityOf(searchField);
+            yield protractor_1.browser.wait(isClickable, 5000);
+            yield searchField.sendKeys("Something");
             /* element(by.css(".js-app-search-suggest .search-form__submit")).getText().then(function (text) {
                 console.log(text);
             })
@@ -46,14 +42,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                      return text === 'Third';
                  });
              }).first().click();
-     
+    
              await <WebElement> $$("a.menu-categories__link");
          /!*    .filter(function (element) {
                  return element.getAttribute("href").then(function (text) {
                      return text+"".includes("computers-notebooks");
                  });
              }).first().click();*!/
-     
+    
              $(".menu-toggler__text").click();
              headings.getText().then((text)=>{
                  console.log("Heading: " + text + "\\n");
@@ -62,4 +58,4 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
      */
     }));
 });
-//# sourceMappingURL=FirstTestSpec.js.map
+//# sourceMappingURL=RozetkaSpec.js.map
