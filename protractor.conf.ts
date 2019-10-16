@@ -1,6 +1,6 @@
 import {browser} from "protractor";
 import matchers = require('jasmine-protractor-matchers');
-/*var AllureReporter = require('jasmine-allure-reporter');*/
+var HtmlReporter = require('protractor-beautiful-reporter');
 
 exports.config = {
     onPrepare: async () => {
@@ -26,40 +26,18 @@ exports.config = {
             );
         });
 
+        // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
+        jasmine.getEnv().addReporter(new HtmlReporter({
+            baseDirectory: 'tmp/reports'
+            , screenshotsSubfolder: 'screenshots'
+            , takeScreenShotsOnlyForFailedSpecs: true
+            , docTitle: 'my reporter'
+            , clientDefaults:{
+                showTotalDurationIn: "header",
+                totalDurationFormat: "hms"
 
-
-
-       /* var originalAddExpectationResult = jasmine.Spec.prototype.addExpectationResult;
-        jasmine.Spec.prototype.addExpectationResult = function () {
-            if (!arguments[0]) {
-                browser.takeScreenshot().then(function (png) {
-                    allure.createAttachment('Screenshot', function () {
-                        return new Buffer(png, 'base64')
-                    }, 'image/png')();
-                })
             }
-            return originalAddExpectationResult.apply(this, arguments);
-        };*/
-
-
-        /*  jasmine.getEnv().addReporter(new AllureReporter({
-              resultsDir: 'allure-results'
-          }));*/
-
-
-        var AllureReporter = require('jasmine-allure-reporter');
-        var reporter = new AllureReporter({
-            allureReport : {
-                resultsDir : 'allure-results'
-            }
-        });
-   /*     jasmine.getEnv().afterEach(async function() {
-            const png = await browser.takeScreenshot()
-            await reporter.createAttachment('Screenshot', function () {
-                return new Buffer(png, 'base64')
-            }, 'image/png')();
-        });
-*/
+        }).getJasmine2Reporter());
 
     },
 
@@ -77,5 +55,5 @@ exports.config = {
     seleniumAddress: 'http://localhost:7777/wd/hub',
     // You could set no globals to true to avoid jQuery '$' and protractor '$'
     // collisions on the global namespace.
-    noGlobals: true
+    noGlobals: false
 };

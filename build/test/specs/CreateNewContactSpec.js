@@ -39,7 +39,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
             expect(yield newContact.getName()).toBe('Mr. Newton');
             expect(yield newContact.getEmail())
                 .toBe('mr.newton@example.com');
-            expect(yield newContact.getPhone()).toBe('');
+            //expect(await newContact.getPhone()).toBe('');
+            expect(yield newContact.getPhone()).toBe('1');
         }));
     });
 });

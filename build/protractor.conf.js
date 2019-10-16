@@ -20,7 +20,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     Object.defineProperty(exports, "__esModule", { value: true });
     const protractor_1 = require("protractor");
     const matchers = require("jasmine-protractor-matchers");
-    /*var AllureReporter = require('jasmine-allure-reporter');*/
+    var HtmlReporter = require('protractor-beautiful-reporter');
     exports.config = {
         onPrepare: () => __awaiter(void 0, void 0, void 0, function* () {
             yield protractor_1.browser.waitForAngularEnabled(false);
@@ -39,33 +39,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                 yield protractor_1.browser.manage().deleteAllCookies();
                 yield protractor_1.browser.executeScript("window.sessionStorage.clear(); window.localStorage.clear();");
             }));
-            /* var originalAddExpectationResult = jasmine.Spec.prototype.addExpectationResult;
-             jasmine.Spec.prototype.addExpectationResult = function () {
-                 if (!arguments[0]) {
-                     browser.takeScreenshot().then(function (png) {
-                         allure.createAttachment('Screenshot', function () {
-                             return new Buffer(png, 'base64')
-                         }, 'image/png')();
-                     })
-                 }
-                 return originalAddExpectationResult.apply(this, arguments);
-             };*/
-            /*  jasmine.getEnv().addReporter(new AllureReporter({
-                  resultsDir: 'allure-results'
-              }));*/
-            var AllureReporter = require('jasmine-allure-reporter');
-            var reporter = new AllureReporter({
-                allureReport: {
-                    resultsDir: 'allure-results'
+            // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
+            jasmine.getEnv().addReporter(new HtmlReporter({
+                baseDirectory: 'tmp/reports',
+                screenshotsSubfolder: 'screenshots',
+                takeScreenShotsOnlyForFailedSpecs: true,
+                docTitle: 'my reporter',
+                clientDefaults: {
+                    showTotalDurationIn: "header",
+                    totalDurationFormat: "hms"
                 }
-            });
-            /*     jasmine.getEnv().afterEach(async function() {
-                     const png = await browser.takeScreenshot()
-                     await reporter.createAttachment('Screenshot', function () {
-                         return new Buffer(png, 'base64')
-                     }, 'image/png')();
-                 });
-         */
+            }).getJasmine2Reporter());
         }),
         baseUrl: 'https://testing-angular-applications.github.io',
         framework: 'jasmine2',
@@ -81,7 +65,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         seleniumAddress: 'http://localhost:7777/wd/hub',
         // You could set no globals to true to avoid jQuery '$' and protractor '$'
         // collisions on the global namespace.
-        noGlobals: true
+        noGlobals: false
     };
 });
 //# sourceMappingURL=protractor.conf.js.map

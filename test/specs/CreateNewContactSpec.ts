@@ -27,7 +27,8 @@ describe('create new contact', () => {
         expect(await newContact.getName()).toBe('Mr. Newton');
         expect(await newContact.getEmail())
             .toBe('mr.newton@example.com');
-        expect(await newContact.getPhone()).toBe('');
+        //expect(await newContact.getPhone()).toBe('');
+        expect(await newContact.getPhone()).toBe('1');
     });
 
 
