@@ -1,7 +1,8 @@
 import {browser} from "protractor";
-import matchers = require('jasmine-protractor-matchers')
+import matchers = require('jasmine-protractor-matchers');
+/*var AllureReporter = require('jasmine-allure-reporter');*/
 
-exports.config =  {
+exports.config = {
     onPrepare: async () => {
         await browser.waitForAngularEnabled(false);
 
@@ -24,17 +25,54 @@ exports.config =  {
                 "window.sessionStorage.clear(); window.localStorage.clear();"
             );
         });
+
+
+
+
+       /* var originalAddExpectationResult = jasmine.Spec.prototype.addExpectationResult;
+        jasmine.Spec.prototype.addExpectationResult = function () {
+            if (!arguments[0]) {
+                browser.takeScreenshot().then(function (png) {
+                    allure.createAttachment('Screenshot', function () {
+                        return new Buffer(png, 'base64')
+                    }, 'image/png')();
+                })
+            }
+            return originalAddExpectationResult.apply(this, arguments);
+        };*/
+
+
+        /*  jasmine.getEnv().addReporter(new AllureReporter({
+              resultsDir: 'allure-results'
+          }));*/
+
+
+        var AllureReporter = require('jasmine-allure-reporter');
+        var reporter = new AllureReporter({
+            allureReport : {
+                resultsDir : 'allure-results'
+            }
+        });
+   /*     jasmine.getEnv().afterEach(async function() {
+            const png = await browser.takeScreenshot()
+            await reporter.createAttachment('Screenshot', function () {
+                return new Buffer(png, 'base64')
+            }, 'image/png')();
+        });
+*/
+
     },
 
-    framework: 'jasmine',
+    baseUrl: 'https://testing-angular-applications.github.io',
+    framework: 'jasmine2',
     capabilities: {
         browserName: 'chrome'
     },
     suites: {
-        "first" : "./FirstTestSpec.js",
-        "second" : "./SecondTestspec.js"
+        "first": "./FirstTestSpec.js",
+        "second": "./SecondTestspec.js"
     },
-    specs: [ './test/specs/*[sS]pec.js' ],
+    specs: ['./test/specs/*[sS]pec.js'],
     SELENIUM_PROMISE_MANAGER: false,
     seleniumAddress: 'http://localhost:7777/wd/hub',
     // You could set no globals to true to avoid jQuery '$' and protractor '$'

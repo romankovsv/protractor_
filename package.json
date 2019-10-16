@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jasmine-allure-reporter": "^1.0.2",
     "protractor": "^5.4.2"
   },
   "devDependencies": {

@@ -20,6 +20,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     Object.defineProperty(exports, "__esModule", { value: true });
     const protractor_1 = require("protractor");
     const matchers = require("jasmine-protractor-matchers");
+    /*var AllureReporter = require('jasmine-allure-reporter');*/
     exports.config = {
         onPrepare: () => __awaiter(void 0, void 0, void 0, function* () {
             yield protractor_1.browser.waitForAngularEnabled(false);
@@ -38,8 +39,36 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
                 yield protractor_1.browser.manage().deleteAllCookies();
                 yield protractor_1.browser.executeScript("window.sessionStorage.clear(); window.localStorage.clear();");
             }));
+            /* var originalAddExpectationResult = jasmine.Spec.prototype.addExpectationResult;
+             jasmine.Spec.prototype.addExpectationResult = function () {
+                 if (!arguments[0]) {
+                     browser.takeScreenshot().then(function (png) {
+                         allure.createAttachment('Screenshot', function () {
+                             return new Buffer(png, 'base64')
+                         }, 'image/png')();
+                     })
+                 }
+                 return originalAddExpectationResult.apply(this, arguments);
+             };*/
+            /*  jasmine.getEnv().addReporter(new AllureReporter({
+                  resultsDir: 'allure-results'
+              }));*/
+            var AllureReporter = require('jasmine-allure-reporter');
+            var reporter = new AllureReporter({
+                allureReport: {
+                    resultsDir: 'allure-results'
+                }
+            });
+            /*     jasmine.getEnv().afterEach(async function() {
+                     const png = await browser.takeScreenshot()
+                     await reporter.createAttachment('Screenshot', function () {
+                         return new Buffer(png, 'base64')
+                     }, 'image/png')();
+                 });
+         */
         }),
-        framework: 'jasmine',
+        baseUrl: 'https://testing-angular-applications.github.io',
+        framework: 'jasmine2',
         capabilities: {
             browserName: 'chrome'
         },

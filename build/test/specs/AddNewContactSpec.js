@@ -13,24 +13,23 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "../../src/pageobjects/HomePage", "../../src/pageobjects/ProductFragmentPage"], factory);
+        define(["require", "exports", "protractor"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    const HomePage_1 = require("../../src/pageobjects/HomePage");
-    const ProductFragmentPage_1 = require("../../src/pageobjects/ProductFragmentPage");
-    describe("Suite", () => __awaiter(void 0, void 0, void 0, function* () {
-        beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
-            yield new HomePage_1.HomePage().open();
+    const protractor_1 = require("protractor");
+    describe('adding a new contact with only a name', () => {
+        beforeEach(() => {
+            protractor_1.browser.get('/#/');
+        });
+        var EC = protractor_1.ExpectedConditions;
+        it('should find the add contact button', () => __awaiter(void 0, void 0, void 0, function* () {
+            yield protractor_1.browser.wait(EC.elementToBeClickable(protractor_1.element(protractor_1.by.id('add-contact'))));
+            yield protractor_1.element(protractor_1.by.id('add-contact')).click();
+            expect(protractor_1.browser.getCurrentUrl())
+                .toEqual(protractor_1.browser.baseUrl + '/#/add');
         }));
-        it("Test rozetka search", () => __awaiter(void 0, void 0, void 0, function* () {
-            console.log("Test on rozetka has been started");
-            let homePage = new HomePage_1.HomePage();
-            let productPage = new ProductFragmentPage_1.ProductFragmentPage();
-            // await homePage.closeAdvert();
-            yield homePage.search("Apple");
-        }));
-    }));
+    });
 });
-//# sourceMappingURL=RozetkaSpec.js.map
+//# sourceMappingURL=AddNewContactSpec.js.map

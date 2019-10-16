@@ -17,9 +17,6 @@ describe("Suite", async () => {
        // await homePage.closeAdvert();
         await homePage.search("Apple");
 
-        await productPage.getPriceForItem("\n" +
-            "                                Apple MacBook Pro 15\" Space Gray (Z0V100048) 2018                             ")
-
 
     });
 
