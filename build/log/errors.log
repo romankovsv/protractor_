@@ -14,3 +14,15 @@ Wait timed out after 5038ms
 Wait timed out after 5033ms
     at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-18T19:06:45.647] [ERROR] default - { TimeoutError: Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+Wait timed out after 5048ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-18T19:14:28.054] [ERROR] default - { TimeoutError: Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+Wait timed out after 10045ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-18T19:15:22.776] [ERROR] default - { TimeoutError: Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+Wait timed out after 5035ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }

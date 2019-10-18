@@ -2,8 +2,10 @@ import {Condition} from "../../helpers/Condition";
 import {Element} from "../../wrappers/Element";
 import {browser, By, element} from "protractor";
 import {Generator} from "../../helpers/Generator";
+import {User} from "../../models/User";
 
 export class SMSHomePage {
+
     private condition: Condition;
     private sideBar_Suppliers_Menu: Element;
     private sidebar_suppliers_users: Element;
@@ -30,18 +32,17 @@ export class SMSHomePage {
     }
 
     public async clickAddNewUser(): Promise<SMSHomePage> {
-
         await this.sideBar_Suppliers_Menu.customClick();
         await this.sidebar_suppliers_users.customClick();
         await this.addUserButton.customClick()
         return this;
     }
 
-    public async addNewUser(): Promise<SMSHomePage> {
-        await this.userTypeSelector.selectByValue("vendor");
-        await this.firstNameField.type(Generator.generateStringWithLenght(7))
-        await this.lastNameField.type(Generator.generateStringWithLenght(7));
-        await this.emailField.type(Generator.generateEmail());
+    public async addNewUser(user:User): Promise<SMSHomePage> {
+        await this.userTypeSelector.selectByValue(user.userType);
+        await this.firstNameField.type(user.firstName);
+        await this.lastNameField.type(user.lastName);
+        await this.emailField.type(user.email);
         await this.saveUserButton.customClick();
         await browser.sleep(10000)
 

@@ -4905,3 +4905,200 @@ Wait timed out after 5033ms
 [2019-10-18T15:57:56.830] [DEBUG] default - Inside customClick
 [2019-10-18T15:57:56.830] [INFO] default - Inside should be clickable
 [2019-10-18T15:57:56.966] [DEBUG] default - Element By(css selector, form[name='new_user'] .btn-success) is  clicked
+[2019-10-18T18:40:52.297] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T18:42:38.291] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T18:43:44.572] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T18:46:40.438] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T18:46:40.453] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T18:46:40.453] [INFO] default - Inside should be visable
+[2019-10-18T18:46:40.630] [DEBUG] default - Element By(css selector, *[id="emailInput"]) is successfully entered text:admin@sms.com
+[2019-10-18T18:46:40.630] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T18:46:40.631] [INFO] default - Inside should be visable
+[2019-10-18T18:46:40.769] [DEBUG] default - Element By(css selector, *[id="passInput"]) is successfully entered text:admin
+[2019-10-18T18:46:40.770] [DEBUG] default - Inside customClick
+[2019-10-18T18:46:40.770] [INFO] default - Inside should be clickable
+[2019-10-18T18:46:40.904] [DEBUG] default - Element By(css selector, *[id="submit_btn"]) is  clicked
+[2019-10-18T18:46:40.908] [INFO] default - Inside should be clickable
+[2019-10-18T18:46:40.909] [DEBUG] default - Inside customClick
+[2019-10-18T18:46:40.909] [INFO] default - Inside should be clickable
+[2019-10-18T18:46:51.701] [DEBUG] default - Element By(css selector, li[data-section-name='suppliers'] .menu-text) is  clicked
+[2019-10-18T18:46:51.702] [DEBUG] default - Inside customClick
+[2019-10-18T18:46:51.703] [INFO] default - Inside should be clickable
+[2019-10-18T18:46:52.335] [DEBUG] default - Element By(xpath, //a[@data-name='pages.users']) is  clicked
+[2019-10-18T18:46:52.336] [DEBUG] default - Inside customClick
+[2019-10-18T18:46:52.336] [INFO] default - Inside should be clickable
+[2019-10-18T18:46:52.508] [DEBUG] default - Element By(css selector, button[href='/profiles/add']) is  clicked
+[2019-10-18T18:46:52.509] [INFO] default - Inside should be visable
+[2019-10-18T18:46:52.769] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T18:46:52.769] [INFO] default - Inside should be visable
+[2019-10-18T18:46:52.974] [DEBUG] default - Element By(css selector, *[id="new_user_firstName"]) is successfully entered text:ldk5ad47
+[2019-10-18T18:46:52.975] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T18:46:52.975] [INFO] default - Inside should be visable
+[2019-10-18T18:46:53.129] [DEBUG] default - Element By(css selector, *[id="new_user_lastName"]) is successfully entered text:7rpgjpxx
+[2019-10-18T18:46:53.129] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T18:46:53.130] [INFO] default - Inside should be visable
+[2019-10-18T18:46:53.318] [DEBUG] default - Element By(css selector, *[id="new_user_email"]) is successfully entered text:ww2npyi@gmail.com
+[2019-10-18T18:46:53.318] [DEBUG] default - Inside customClick
+[2019-10-18T18:46:53.319] [INFO] default - Inside should be clickable
+[2019-10-18T18:46:53.439] [DEBUG] default - Element By(css selector, form[name='new_user'] .btn-success) is  clicked
+[2019-10-18T19:06:15.506] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T19:06:40.118] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T19:06:40.134] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:06:40.135] [INFO] default - Inside should be visable
+[2019-10-18T19:06:40.315] [DEBUG] default - Element By(css selector, *[id="emailInput"]) is successfully entered text:admin@sms.com
+[2019-10-18T19:06:40.315] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:06:40.316] [INFO] default - Inside should be visable
+[2019-10-18T19:06:40.460] [DEBUG] default - Element By(css selector, *[id="passInput"]) is successfully entered text:admin
+[2019-10-18T19:06:40.461] [DEBUG] default - Inside customClick
+[2019-10-18T19:06:40.462] [INFO] default - Inside should be clickable
+[2019-10-18T19:06:40.590] [DEBUG] default - Element By(css selector, *[id="submit_btn"]) is  clicked
+[2019-10-18T19:06:40.597] [INFO] default - Inside should be clickable
+[2019-10-18T19:06:40.598] [DEBUG] default - Inside customClick
+[2019-10-18T19:06:40.599] [INFO] default - Inside should be clickable
+[2019-10-18T19:06:45.647] [ERROR] default - { TimeoutError: Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+Wait timed out after 5048ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-18T19:06:51.453] [DEBUG] default - Element By(css selector, li[data-section-name='suppliers'] .menu-text) is  clicked
+[2019-10-18T19:06:51.454] [DEBUG] default - Inside customClick
+[2019-10-18T19:06:51.454] [INFO] default - Inside should be clickable
+[2019-10-18T19:06:52.076] [DEBUG] default - Element By(xpath, //a[@data-name='pages.users']) is  clicked
+[2019-10-18T19:06:52.076] [DEBUG] default - Inside customClick
+[2019-10-18T19:06:52.076] [INFO] default - Inside should be clickable
+[2019-10-18T19:06:52.262] [DEBUG] default - Element By(css selector, button[href='/profiles/add']) is  clicked
+[2019-10-18T19:06:52.263] [INFO] default - Inside should be visable
+[2019-10-18T19:06:52.571] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:06:52.572] [INFO] default - Inside should be visable
+[2019-10-18T19:06:52.784] [DEBUG] default - Element By(css selector, *[id="new_user_firstName"]) is successfully entered text:nn6lnx55
+[2019-10-18T19:06:52.784] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:06:52.784] [INFO] default - Inside should be visable
+[2019-10-18T19:06:52.940] [DEBUG] default - Element By(css selector, *[id="new_user_lastName"]) is successfully entered text:vy12xxn3
+[2019-10-18T19:06:52.940] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:06:52.941] [INFO] default - Inside should be visable
+[2019-10-18T19:06:53.144] [DEBUG] default - Element By(css selector, *[id="new_user_email"]) is successfully entered text:autotest.metro@gmail.com
+[2019-10-18T19:06:53.144] [DEBUG] default - Inside customClick
+[2019-10-18T19:06:53.145] [INFO] default - Inside should be clickable
+[2019-10-18T19:06:53.261] [DEBUG] default - Element By(css selector, form[name='new_user'] .btn-success) is  clicked
+[2019-10-18T19:09:55.587] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T19:09:55.706] [DEBUG] default - User {
+  firstName: 'q2ndxnaq',
+  lastName: '8spgz1ur',
+  email: 'autotest.metro@gmail.com',
+  userType: 'vendor' }
+[2019-10-18T19:09:55.709] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:09:55.710] [INFO] default - Inside should be visable
+[2019-10-18T19:09:55.892] [DEBUG] default - Element By(css selector, *[id="emailInput"]) is successfully entered text:admin@sms.com
+[2019-10-18T19:09:55.892] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:09:55.893] [INFO] default - Inside should be visable
+[2019-10-18T19:09:56.036] [DEBUG] default - Element By(css selector, *[id="passInput"]) is successfully entered text:admin
+[2019-10-18T19:09:56.037] [DEBUG] default - Inside customClick
+[2019-10-18T19:09:56.038] [INFO] default - Inside should be clickable
+[2019-10-18T19:09:56.172] [DEBUG] default - Element By(css selector, *[id="submit_btn"]) is  clicked
+[2019-10-18T19:09:56.178] [INFO] default - Inside should be clickable
+[2019-10-18T19:09:56.179] [DEBUG] default - Inside customClick
+[2019-10-18T19:09:56.180] [INFO] default - Inside should be clickable
+[2019-10-18T19:10:11.048] [DEBUG] default - Element By(css selector, li[data-section-name='suppliers'] .menu-text) is  clicked
+[2019-10-18T19:10:11.049] [DEBUG] default - Inside customClick
+[2019-10-18T19:10:11.049] [INFO] default - Inside should be clickable
+[2019-10-18T19:10:11.550] [DEBUG] default - Element By(xpath, //a[@data-name='pages.users']) is  clicked
+[2019-10-18T19:10:11.551] [DEBUG] default - Inside customClick
+[2019-10-18T19:10:11.551] [INFO] default - Inside should be clickable
+[2019-10-18T19:10:11.780] [DEBUG] default - Element By(css selector, button[href='/profiles/add']) is  clicked
+[2019-10-18T19:10:11.780] [INFO] default - Inside should be visable
+[2019-10-18T19:10:12.118] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:10:12.118] [INFO] default - Inside should be visable
+[2019-10-18T19:10:12.331] [DEBUG] default - Element By(css selector, *[id="new_user_firstName"]) is successfully entered text:q2ndxnaq
+[2019-10-18T19:10:12.331] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:10:12.331] [INFO] default - Inside should be visable
+[2019-10-18T19:10:12.489] [DEBUG] default - Element By(css selector, *[id="new_user_lastName"]) is successfully entered text:8spgz1ur
+[2019-10-18T19:10:12.490] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:10:12.491] [INFO] default - Inside should be visable
+[2019-10-18T19:10:12.688] [DEBUG] default - Element By(css selector, *[id="new_user_email"]) is successfully entered text:autotest.metro@gmail.com
+[2019-10-18T19:10:12.689] [DEBUG] default - Inside customClick
+[2019-10-18T19:10:12.690] [INFO] default - Inside should be clickable
+[2019-10-18T19:10:12.822] [DEBUG] default - Element By(css selector, form[name='new_user'] .btn-success) is  clicked
+[2019-10-18T19:14:17.359] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T19:14:17.475] [DEBUG] default - User {
+  firstName: '0yuxjdaj',
+  lastName: 'zh33grz2',
+  email: 'autotest.metro34737@gmail.com',
+  userType: 'vendor' }
+[2019-10-18T19:14:17.478] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:14:17.479] [INFO] default - Inside should be visable
+[2019-10-18T19:14:17.668] [DEBUG] default - Element By(css selector, *[id="emailInput"]) is successfully entered text:admin@sms.com
+[2019-10-18T19:14:17.669] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:14:17.669] [INFO] default - Inside should be visable
+[2019-10-18T19:14:17.824] [DEBUG] default - Element By(css selector, *[id="passInput"]) is successfully entered text:admin
+[2019-10-18T19:14:17.824] [DEBUG] default - Inside customClick
+[2019-10-18T19:14:17.824] [INFO] default - Inside should be clickable
+[2019-10-18T19:14:17.996] [DEBUG] default - Element By(css selector, *[id="submit_btn"]) is  clicked
+[2019-10-18T19:14:18.006] [INFO] default - Inside should be clickable
+[2019-10-18T19:14:18.007] [DEBUG] default - Inside customClick
+[2019-10-18T19:14:18.008] [INFO] default - Inside should be clickable
+[2019-10-18T19:14:28.054] [ERROR] default - { TimeoutError: Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+Wait timed out after 10045ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-18T19:14:30.338] [DEBUG] default - Element By(css selector, li[data-section-name='suppliers'] .menu-text) is  clicked
+[2019-10-18T19:14:30.339] [DEBUG] default - Inside customClick
+[2019-10-18T19:14:30.339] [INFO] default - Inside should be clickable
+[2019-10-18T19:14:31.105] [DEBUG] default - Element By(xpath, //a[@data-name='pages.users']) is  clicked
+[2019-10-18T19:14:31.105] [DEBUG] default - Inside customClick
+[2019-10-18T19:14:31.106] [INFO] default - Inside should be clickable
+[2019-10-18T19:14:31.343] [DEBUG] default - Element By(css selector, button[href='/profiles/add']) is  clicked
+[2019-10-18T19:14:31.343] [INFO] default - Inside should be visable
+[2019-10-18T19:14:31.640] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:14:31.641] [INFO] default - Inside should be visable
+[2019-10-18T19:14:31.828] [DEBUG] default - Element By(css selector, *[id="new_user_firstName"]) is successfully entered text:0yuxjdaj
+[2019-10-18T19:14:31.829] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:14:31.829] [INFO] default - Inside should be visable
+[2019-10-18T19:14:31.985] [DEBUG] default - Element By(css selector, *[id="new_user_lastName"]) is successfully entered text:zh33grz2
+[2019-10-18T19:14:31.986] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:14:31.986] [INFO] default - Inside should be visable
+[2019-10-18T19:14:32.179] [DEBUG] default - Element By(css selector, *[id="new_user_email"]) is successfully entered text:autotest.metro34737@gmail.com
+[2019-10-18T19:14:32.180] [DEBUG] default - Inside customClick
+[2019-10-18T19:14:32.180] [INFO] default - Inside should be clickable
+[2019-10-18T19:14:32.317] [DEBUG] default - Element By(css selector, form[name='new_user'] .btn-success) is  clicked
+[2019-10-18T19:15:17.280] [INFO] default - Inside url should contains:metro-vendorcentral.com
+[2019-10-18T19:15:17.292] [DEBUG] default - User {
+  firstName: 'glhq27jk',
+  lastName: 'v6zfoyx2',
+  email: 'autotest.metro+18092@gmail.com',
+  userType: 'vendor' }
+[2019-10-18T19:15:17.295] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:15:17.296] [INFO] default - Inside should be visable
+[2019-10-18T19:15:17.473] [DEBUG] default - Element By(css selector, *[id="emailInput"]) is successfully entered text:admin@sms.com
+[2019-10-18T19:15:17.474] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:15:17.474] [INFO] default - Inside should be visable
+[2019-10-18T19:15:17.614] [DEBUG] default - Element By(css selector, *[id="passInput"]) is successfully entered text:admin
+[2019-10-18T19:15:17.615] [DEBUG] default - Inside customClick
+[2019-10-18T19:15:17.615] [INFO] default - Inside should be clickable
+[2019-10-18T19:15:17.734] [DEBUG] default - Element By(css selector, *[id="submit_btn"]) is  clicked
+[2019-10-18T19:15:17.739] [INFO] default - Inside should be clickable
+[2019-10-18T19:15:17.739] [DEBUG] default - Inside customClick
+[2019-10-18T19:15:17.740] [INFO] default - Inside should be clickable
+[2019-10-18T19:15:22.776] [ERROR] default - { TimeoutError: Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+Wait timed out after 5035ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-18T19:15:29.143] [DEBUG] default - Element By(css selector, li[data-section-name='suppliers'] .menu-text) is  clicked
+[2019-10-18T19:15:29.144] [DEBUG] default - Inside customClick
+[2019-10-18T19:15:29.144] [INFO] default - Inside should be clickable
+[2019-10-18T19:15:29.761] [DEBUG] default - Element By(xpath, //a[@data-name='pages.users']) is  clicked
+[2019-10-18T19:15:29.761] [DEBUG] default - Inside customClick
+[2019-10-18T19:15:29.762] [INFO] default - Inside should be clickable
+[2019-10-18T19:15:30.009] [DEBUG] default - Element By(css selector, button[href='/profiles/add']) is  clicked
+[2019-10-18T19:15:30.010] [INFO] default - Inside should be visable
+[2019-10-18T19:15:30.250] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:15:30.250] [INFO] default - Inside should be visable
+[2019-10-18T19:15:30.466] [DEBUG] default - Element By(css selector, *[id="new_user_firstName"]) is successfully entered text:glhq27jk
+[2019-10-18T19:15:30.466] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:15:30.466] [INFO] default - Inside should be visable
+[2019-10-18T19:15:30.610] [DEBUG] default - Element By(css selector, *[id="new_user_lastName"]) is successfully entered text:v6zfoyx2
+[2019-10-18T19:15:30.611] [DEBUG] default - Inside custom sendKeys
+[2019-10-18T19:15:30.612] [INFO] default - Inside should be visable
+[2019-10-18T19:15:30.828] [DEBUG] default - Element By(css selector, *[id="new_user_email"]) is successfully entered text:autotest.metro+18092@gmail.com
+[2019-10-18T19:15:30.828] [DEBUG] default - Inside customClick
+[2019-10-18T19:15:30.828] [INFO] default - Inside should be clickable
+[2019-10-18T19:15:30.953] [DEBUG] default - Element By(css selector, form[name='new_user'] .btn-success) is  clicked
+[2019-10-18T22:57:06.952] [INFO] default - Inside url should contains:metro-vendorcentral.com

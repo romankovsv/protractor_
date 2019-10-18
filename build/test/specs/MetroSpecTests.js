@@ -10,6 +10,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const VendorCentralLoginPage_1 = require("../../src/pageobjects/metro/VendorCentralLoginPage");
+const UserBuilder_1 = require("../../src/models/UserBuilder");
+const Generator_1 = require("../../src/helpers/Generator");
+const Log_1 = require("../../src/helpers/Log");
 describe('registration', () => {
     let loginPage;
     beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
@@ -17,10 +20,15 @@ describe('registration', () => {
         yield loginPage.navigateTo();
     }));
     it('user can register', () => __awaiter(void 0, void 0, void 0, function* () {
-        //TODO generate user object and fill with data
+        let user = new UserBuilder_1.UserBuilder(Generator_1.Generator.generateStringWithLenght(8))
+            .setLastName(Generator_1.Generator.generateStringWithLenght(8))
+            .setEmail('autotest.metro+' + Generator_1.Generator.generateNumber() + '@gmail.com')
+            .setUserType('vendor')
+            .build();
+        Log_1.Log.log().debug(user);
         let homePage = yield loginPage.login();
         yield homePage.clickAddNewUser();
-        yield homePage.addNewUser();
+        yield homePage.addNewUser(user);
     }));
 });
 //# sourceMappingURL=MetroSpecTests.js.map

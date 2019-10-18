@@ -12,7 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const Condition_1 = require("../../helpers/Condition");
 const Element_1 = require("../../wrappers/Element");
 const protractor_1 = require("protractor");
-const Generator_1 = require("../../helpers/Generator");
 class SMSHomePage {
     constructor() {
         this.condition = new Condition_1.Condition();
@@ -34,12 +33,12 @@ class SMSHomePage {
             return this;
         });
     }
-    addNewUser() {
+    addNewUser(user) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.userTypeSelector.selectByValue("vendor");
-            yield this.firstNameField.type(Generator_1.Generator.generateStringWithLenght(7));
-            yield this.lastNameField.type(Generator_1.Generator.generateStringWithLenght(7));
-            yield this.emailField.type(Generator_1.Generator.generateEmail());
+            yield this.userTypeSelector.selectByValue(user.userType);
+            yield this.firstNameField.type(user.firstName);
+            yield this.lastNameField.type(user.lastName);
+            yield this.emailField.type(user.email);
             yield this.saveUserButton.customClick();
             yield protractor_1.browser.sleep(10000);
             return this;

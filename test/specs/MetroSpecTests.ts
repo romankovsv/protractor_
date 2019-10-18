@@ -1,9 +1,9 @@
-import {browser} from 'protractor';
-import {Log} from "../../src/helpers/Log";
-import {ContactListPageObject} from "../../src/pageobjects/ContactListPageObject";
-import {NewContactPageObject} from "../../src/pageobjects/NewContactPageObject";
 import {VendorCentralLoginPage} from "../../src/pageobjects/metro/VendorCentralLoginPage";
 import {SMSHomePage} from "../../src/pageobjects/metro/SMSHomePage";
+import {User} from "../../src/models/User";
+import {UserBuilder} from "../../src/models/UserBuilder";
+import {Generator} from "../../src/helpers/Generator";
+import {Log} from "../../src/helpers/Log";
 
 
 describe('registration', () => {
@@ -17,11 +17,17 @@ describe('registration', () => {
 
     it('user can register', async () => {
 
-        //TODO generate user object and fill with data
+        let user: User = new UserBuilder(Generator.generateStringWithLenght(8))
+            .setLastName(Generator.generateStringWithLenght(8))
+            .setEmail('autotest.metro+'+Generator.generateNumber()+'@gmail.com')
+            .setUserType('vendor')
+            .build();
 
-        let homePage: SMSHomePage  = await loginPage.login();
+        Log.log().debug(user);
+
+        let homePage: SMSHomePage = await loginPage.login();
         await homePage.clickAddNewUser();
-        await homePage.addNewUser();
+        await homePage.addNewUser(user);
 
     });
 

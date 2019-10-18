@@ -1373,6 +1373,263 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "browserLogs": [],
         "timestamp": 1571403463090,
         "duration": 23919
+    },
+    {
+        "description": "user can register|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "430da12fa999b4c5df62c46966fa726a",
+        "instanceId": 10460,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Failed: UserType is not defined"
+        ],
+        "trace": [
+            "ReferenceError: UserType is not defined\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:26:26\n    at Generator.next (<anonymous>)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:4:12)\n    at UserContext.it (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:21:40)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:112:25\n    at new Promise (<anonymous>)\n    at SimpleScheduler.promise (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\promise.js:2242:12)\n    at schedulerExecute (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:95:18)\nFrom asynchronous test: \nError\n    at Suite.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:21:5)\n    at addSpecsToSuite (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:12:1)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\005800f1-0020-005b-008b-004700840036.png",
+        "timestamp": 1571413251248,
+        "duration": 1183
+    },
+    {
+        "description": "user can register|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "de617dafe74c52ef198edb9ec8302c0c",
+        "instanceId": 19748,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Failed: UserType is not defined"
+        ],
+        "trace": [
+            "ReferenceError: UserType is not defined\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:26:26\n    at Generator.next (<anonymous>)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:4:12)\n    at UserContext.it (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:21:40)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:112:25\n    at new Promise (<anonymous>)\n    at SimpleScheduler.promise (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\promise.js:2242:12)\n    at schedulerExecute (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:95:18)\nFrom asynchronous test: \nError\n    at Suite.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:21:5)\n    at addSpecsToSuite (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:12:1)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\006000ef-00f6-0026-00b8-00fe00e200d1.png",
+        "timestamp": 1571413357448,
+        "duration": 981
+    },
+    {
+        "description": "user can register|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "fbb7080813d14e00e5d4e505fe8bd0a5",
+        "instanceId": 20160,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Failed: UserType is not defined"
+        ],
+        "trace": [
+            "ReferenceError: UserType is not defined\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:26:26\n    at Generator.next (<anonymous>)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:4:12)\n    at UserContext.it (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:21:40)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:112:25\n    at new Promise (<anonymous>)\n    at SimpleScheduler.promise (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\promise.js:2242:12)\n    at schedulerExecute (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:95:18)\nFrom asynchronous test: \nError\n    at Suite.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:21:5)\n    at addSpecsToSuite (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:12:1)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\00ee0056-0077-00d0-0000-0000000500b7.png",
+        "timestamp": 1571413423670,
+        "duration": 1041
+    },
+    {
+        "description": "user can register|registration",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "3eed9a3cd03ba5c32df2e3b7b7447027",
+        "instanceId": 26456,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571413599443,
+        "duration": 24040
+    },
+    {
+        "description": "encountered a declaration exception|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "eb7ef128f5a25f0034e80ebf4ae3051a",
+        "instanceId": 13572,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Error: ENOENT: no such file or directory, open '../../src/resources/properties'",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+            "Failed: <unknown>: Failed to read the 'sessionStorage' property from 'Window': Storage is disabled inside 'data:' URLs.\n  (Session info: chrome=77.0.3865.120)"
+        ],
+        "trace": [
+            "Error: ENOENT: no such file or directory, open '../../src/resources/properties'\n    at Object.openSync (fs.js:443:3)\n    at Object.readFileSync (fs.js:343:35)\n    at PropertiesReader.append (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\properties-reader\\src\\PropertiesReader.js:47:20)\n    at new PropertiesReader (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\properties-reader\\src\\PropertiesReader.js:14:9)\n    at PropertiesReader.builder (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\properties-reader\\src\\PropertiesReader.js:332:11)\n    at Suite.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:11:22)\n    at addSpecsToSuite (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:9:1)",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)",
+            "WebDriverError: <unknown>: Failed to read the 'sessionStorage' property from 'Window': Storage is disabled inside 'data:' URLs.\n  (Session info: chrome=77.0.3865.120)\n    at Object.throwDecodedError (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\error.js:514:15)\n    at parseHttpResponse (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:519:13)\n    at doSend.then.response (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom asynchronous test: \nError\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\protractor.conf.ts:23:9\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\protractor.conf.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\000d000e-0056-004c-007f-0046002b0068.png",
+        "timestamp": 1571414366920,
+        "duration": 30033
+    },
+    {
+        "description": "encountered a declaration exception|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "93993b6653a72e2d854448ad932c252c",
+        "instanceId": 13372,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "TypeError: properties_reader_1.PropertiesReader is not a function",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+            "Failed: <unknown>: Failed to read the 'sessionStorage' property from 'Window': Storage is disabled inside 'data:' URLs.\n  (Session info: chrome=77.0.3865.120)"
+        ],
+        "trace": [
+            "TypeError: properties_reader_1.PropertiesReader is not a function\n    at Suite.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:11:22)\n    at addSpecsToSuite (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:9:1)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)",
+            "WebDriverError: <unknown>: Failed to read the 'sessionStorage' property from 'Window': Storage is disabled inside 'data:' URLs.\n  (Session info: chrome=77.0.3865.120)\n    at Object.throwDecodedError (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\error.js:514:15)\n    at parseHttpResponse (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:519:13)\n    at doSend.then.response (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom asynchronous test: \nError\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\protractor.conf.ts:23:9\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\protractor.conf.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\007b009a-0058-002a-00c9-006000d80030.png",
+        "timestamp": 1571414531651,
+        "duration": 30034
+    },
+    {
+        "description": "encountered a declaration exception|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "fe108f7223e1d8dbc54880cfe44ab57c",
+        "instanceId": 15680,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "TypeError: properties_reader_1.PropertiesReader is not a function",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+            "Failed: <unknown>: Failed to read the 'sessionStorage' property from 'Window': Storage is disabled inside 'data:' URLs.\n  (Session info: chrome=77.0.3865.120)"
+        ],
+        "trace": [
+            "TypeError: properties_reader_1.PropertiesReader is not a function\n    at Suite.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:11:22)\n    at addSpecsToSuite (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:9:1)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:585:3)",
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)",
+            "WebDriverError: <unknown>: Failed to read the 'sessionStorage' property from 'Window': Storage is disabled inside 'data:' URLs.\n  (Session info: chrome=77.0.3865.120)\n    at Object.throwDecodedError (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\error.js:514:15)\n    at parseHttpResponse (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:519:13)\n    at doSend.then.response (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom asynchronous test: \nError\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\protractor.conf.ts:23:9\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\protractor.conf.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\00b100cd-0007-00c9-0019-00b000f500a8.png",
+        "timestamp": 1571414632137,
+        "duration": 30034
+    },
+    {
+        "description": "user can register|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dff01093846fda647bac70b133a568b3",
+        "instanceId": 17348,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Failed: properties is not defined"
+        ],
+        "trace": [
+            "ReferenceError: properties is not defined\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:22:23\n    at Generator.next (<anonymous>)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\MetroSpecTests.js:4:12)\n    at UserContext.it (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:17:40)\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:112:25\n    at new Promise (<anonymous>)\n    at SimpleScheduler.promise (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\promise.js:2242:12)\n    at schedulerExecute (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\jasminewd2\\index.js:95:18)\nFrom asynchronous test: \nError\n    at Suite.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:17:5)\n    at addSpecsToSuite (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\MetroSpecTests.ts:8:1)\n    at Module._compile (internal/modules/cjs/loader.js:778:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)\n    at Module.load (internal/modules/cjs/loader.js:653:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\005700ea-00e9-00d2-0038-00270002004f.png",
+        "timestamp": 1571414774033,
+        "duration": 1506
+    },
+    {
+        "description": "user can register|registration",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "01830e59848fa29f376133122feb7ce1",
+        "instanceId": 14920,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571414799144,
+        "duration": 24159
+    },
+    {
+        "description": "user can register|registration",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "48a8d68160ebddc5e98ad6c840d716a1",
+        "instanceId": 17896,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571414991482,
+        "duration": 31381
+    },
+    {
+        "description": "user can register|registration",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "649293ad5755e59bd33b59ac54e10c3f",
+        "instanceId": 26020,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Expected '' to contain '0yuxjdaj'.",
+            "Failed: chrome not reachable\n  (Session info: chrome=77.0.3865.120)"
+        ],
+        "trace": [
+            "Error: Failed expectation\n    at Element.<anonymous> (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\src\\wrappers\\Element.ts:42:60)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\src\\wrappers\\Element.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+            "WebDriverError: chrome not reachable\n  (Session info: chrome=77.0.3865.120)\n    at Object.throwDecodedError (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\error.js:514:15)\n    at parseHttpResponse (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:519:13)\n    at doSend.then.response (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom asynchronous test: \nError\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\protractor.conf.ts:23:9\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\protractor.conf.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+        ],
+        "browserLogs": [],
+        "timestamp": 1571415256199,
+        "duration": 32138
+    },
+    {
+        "description": "user can register|registration",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "f385f5eb2eba0e601d8e745d2dcc5f98",
+        "instanceId": 12232,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571415313619,
+        "duration": 27379
     }
 ];
 

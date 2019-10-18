@@ -10,6 +10,15 @@ class Generator {
         }
         return value;
     }
+    static generateNumber() {
+        let x = '0123456789';
+        let value = '';
+        for (let i = 1; i <= 5; i++) {
+            let c = Math.floor((Math.random() * x.length) + 0);
+            value += x.charAt(c);
+        }
+        return value;
+    }
     static generateEmail() {
         let x = '0123456789qweryuiopasdfghjklzxcvbnm';
         let value = '';
