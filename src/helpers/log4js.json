@@ -1,0 +1,52 @@
+{
+  "appenders": {
+
+    "out": {
+      "type": "stdout",
+      "layout": {
+        "type": "pattern",
+        "pattern": " %p %c %f:%l %m%n"
+      }
+    },
+    "access": {
+      "type": "dateFile",
+      "filename": "log/access.log",
+      "pattern": "-yyyy-MM-dd",
+      "category": "http"
+    },
+    "app": {
+      "type": "file",
+      "filename": "log/app.log",
+      "maxLogSize": 10485760,
+      "alwaysIncludePattern": true,
+      "keepFileExt": true,
+      "level": "DEBUG"
+    },
+    "errorFile": {
+      "type": "file",
+      "filename": "log/errors.log"
+    },
+    "errors": {
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": "errorFile"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "app",
+        "errors",
+        "out"
+      ],
+      "level": "DEBUG",
+      "enableCallStack": true
+    },
+    "http": {
+      "appenders": [
+        "access"
+      ],
+      "level": "DEBUG"
+    }
+  }
+}

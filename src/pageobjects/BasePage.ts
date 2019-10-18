@@ -7,6 +7,6 @@ export abstract class BasePage{
     static EC = protractor.ExpectedConditions;
 
     async open(){
-        return await browser.get(this.url);
+        return browser.driver.get(this.url);
     }
 }

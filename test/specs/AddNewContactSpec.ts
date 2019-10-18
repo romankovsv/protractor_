@@ -3,8 +3,8 @@ import {ContactListPageObject} from "../../src/pageobjects/ContactListPageObject
 
 describe('adding a new contact with only a name', () => {
 
-    beforeEach(() => {
-        browser.get('/#/');
+    beforeEach(async () => {
+       await browser.get('/#/');
     });
 
 
@@ -12,7 +12,7 @@ describe('adding a new contact with only a name', () => {
     it('should find the add contact button',  async () => {
         await browser.wait( EC.elementToBeClickable(element(by.id('add-contact'))));
         await element(by.id('add-contact')).click();
-        expect(browser.getCurrentUrl())
+        expect(await browser.getCurrentUrl())
             .toEqual(browser.baseUrl + '/#/add');
     });
 

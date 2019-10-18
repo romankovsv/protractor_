@@ -1,0 +1,15 @@
+[2019-10-18T14:01:06.884] [DEBUG] default - In Test
+[2019-10-18T14:01:06.887] [DEBUG] default - In method click plus button
+[2019-10-18T14:01:06.888] [INFO] default - Inside should be cliackable
+[2019-10-18T14:01:07.522] [DEBUG] default - Inside customClick
+[2019-10-18T14:01:07.522] [INFO] default - Inside should be cliackable
+[2019-10-18T14:01:07.817] [DEBUG] default - Element By(css selector, *[id="add-contact"]) is  clicked
+[2019-10-18T14:01:09.278] [DEBUG] default - In method click plus button
+[2019-10-18T14:01:09.279] [INFO] default - Inside should be cliackable
+[2019-10-18T14:01:09.908] [DEBUG] default - Inside customClick
+[2019-10-18T14:01:09.909] [INFO] default - Inside should be cliackable
+[2019-10-18T14:01:10.181] [DEBUG] default - Element By(css selector, *[id="add-contact"]) is  clicked
+[2019-10-18T14:01:14.848] [DEBUG] default - Inside customClick
+[2019-10-18T14:01:14.848] [INFO] default - Inside should be cliackable
+[2019-10-18T14:01:15.662] [DEBUG] default - Element By(css selector, *[id="add-contact"]) is  clicked
+[2019-10-18T14:01:16.467] [INFO] default - Inside should be cliackable

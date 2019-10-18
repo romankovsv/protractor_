@@ -278,199 +278,624 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1571263915718,
-        "duration": 2163
+        "timestamp": 1571396367791,
+        "duration": 2864
     },
     {
         "description": "should type in an email address|adding a new contact with name, email,and phone number",
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1571263919204,
-        "duration": 128
+        "timestamp": 1571396370743,
+        "duration": 2835
     },
     {
         "description": "should type in a phone number|adding a new contact with name, email,and phone number",
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1571263919351,
-        "duration": 135
-    },
-    {
-        "description": "should click the create button|adding a new contact with name, email,and phone number",
-        "passed": true,
-        "pending": false,
-        "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
-        "browser": {
-            "name": "chrome",
-            "version": "77.0.3865.90"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "timestamp": 1571263919500,
-        "duration": 105
+        "timestamp": 1571396373593,
+        "duration": 3021
     },
     {
         "description": "should load a page and verify the url|your first protractor test",
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1571263919620,
-        "duration": 59
+        "timestamp": 1571396376633,
+        "duration": 1573
     },
     {
         "description": "should click the + button|create new contact",
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1571263919698,
-        "duration": 650
+        "timestamp": 1571396378223,
+        "duration": 2464
     },
     {
         "description": "should fill out form for a new contact|create new contact",
         "passed": false,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": [
             "Expected '' to be '1'."
         ],
         "trace": [
-            "Error: Failed expectation\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\CreateNewContactSpec.ts:31:45\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\CreateNewContactSpec.js:4:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            "Error: Failed expectation\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\CreateNewContactSpec.ts:32:45\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\CreateNewContactSpec.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
         ],
         "browserLogs": [],
-        "screenShotFile": "screenshots\\007100ef-0014-00d9-00ab-005700080083.png",
-        "timestamp": 1571263920363,
-        "duration": 1515
+        "screenShotFile": "screenshots\\00e600c4-0068-0042-0055-007300e9009c.png",
+        "timestamp": 1571396380699,
+        "duration": 2768
     },
     {
         "description": "First Test on protractor|Suite",
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed",
         "browserLogs": [
             {
                 "level": "SEVERE",
                 "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
-                "timestamp": 1571263924137,
+                "timestamp": 1571396386043,
                 "type": ""
             }
         ],
-        "timestamp": 1571263922161,
-        "duration": 2545
+        "timestamp": 1571396383832,
+        "duration": 3170
     },
     {
         "description": "shouldn’t create a new contact with baduser.com|adding a new contact with an invalid email",
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1571263924721,
-        "duration": 2464
+        "timestamp": 1571396387017,
+        "duration": 2679
     },
     {
-        "description": "Test rozetka search|Suite",
+        "description": "Test rozetka search|Rozetka Suite",
         "passed": true,
         "pending": false,
         "os": "windows nt",
-        "sessionId": "d664e4ed3f8dcd6560b1d80efb10d6b5",
-        "instanceId": 16944,
+        "sessionId": "79fc0ac1ce4e7a1b3d577ba7e860c0f0",
+        "instanceId": 760,
         "browser": {
             "name": "chrome",
-            "version": "77.0.3865.90"
+            "version": "77.0.3865.120"
         },
         "message": "Passed",
         "browserLogs": [
             {
                 "level": "WARNING",
-                "message": "https://static.rozetka.com.ua/main.bbc11c4088e77b97cc0b.js 0 Unrecognized feature: 'encallowfullscreenrypted-media'.",
-                "timestamp": 1571263928079,
+                "message": "https://static.rozetka.com.ua/main.518da7047865711da615.js 0 Unrecognized feature: 'encallowfullscreenrypted-media'.",
+                "timestamp": 1571396395680,
                 "type": ""
             },
             {
                 "level": "WARNING",
-                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5215 \"[Facebook Pixel] - Duplicate Pixel ID: 480863978968397.\"",
-                "timestamp": 1571263931876,
+                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5220 \"[Facebook Pixel] - Duplicate Pixel ID: 480863978968397.\"",
+                "timestamp": 1571396396612,
                 "type": ""
             },
             {
                 "level": "WARNING",
-                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5215 \"[Facebook Pixel] - Duplicate Pixel ID: 122789221703310.\"",
-                "timestamp": 1571263931876,
+                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5220 \"[Facebook Pixel] - Duplicate Pixel ID: 122789221703310.\"",
+                "timestamp": 1571396396613,
                 "type": ""
             }
         ],
-        "timestamp": 1571263927276,
-        "duration": 7120
+        "timestamp": 1571396389715,
+        "duration": 8496
+    },
+    {
+        "description": "should find the add contact button|adding a new contact with only a name",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396409449,
+        "duration": 2909
+    },
+    {
+        "description": "should type in an email address|adding a new contact with name, email,and phone number",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396412442,
+        "duration": 2634
+    },
+    {
+        "description": "should type in a phone number|adding a new contact with name, email,and phone number",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396415092,
+        "duration": 2487
+    },
+    {
+        "description": "should load a page and verify the url|your first protractor test",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396417594,
+        "duration": 1410
+    },
+    {
+        "description": "should click the + button|create new contact",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396419020,
+        "duration": 2340
+    },
+    {
+        "description": "should fill out form for a new contact|create new contact",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Expected '' to be '1'."
+        ],
+        "trace": [
+            "Error: Failed expectation\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\CreateNewContactSpec.ts:32:45\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\CreateNewContactSpec.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\00cc00a4-0004-0054-0002-00aa00ed00a2.png",
+        "timestamp": 1571396421374,
+        "duration": 2807
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571396425958,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571396424572,
+        "duration": 2416
+    },
+    {
+        "description": "shouldn’t create a new contact with baduser.com|adding a new contact with an invalid email",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396427003,
+        "duration": 2638
+    },
+    {
+        "description": "Test rozetka search|Rozetka Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "dc4ab84b72ba32ae50bcee90903e9b02",
+        "instanceId": 8080,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "WARNING",
+                "message": "https://static.rozetka.com.ua/main.518da7047865711da615.js 0 Unrecognized feature: 'encallowfullscreenrypted-media'.",
+                "timestamp": 1571396435642,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5220 \"[Facebook Pixel] - Duplicate Pixel ID: 480863978968397.\"",
+                "timestamp": 1571396436537,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5220 \"[Facebook Pixel] - Duplicate Pixel ID: 122789221703310.\"",
+                "timestamp": 1571396436537,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571396429720,
+        "duration": 8541
+    },
+    {
+        "description": "should find the add contact button|adding a new contact with only a name",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396456467,
+        "duration": 2919
+    },
+    {
+        "description": "should type in an email address|adding a new contact with name, email,and phone number",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396459480,
+        "duration": 2580
+    },
+    {
+        "description": "should type in a phone number|adding a new contact with name, email,and phone number",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396462075,
+        "duration": 2455
+    },
+    {
+        "description": "should load a page and verify the url|your first protractor test",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396464545,
+        "duration": 1408
+    },
+    {
+        "description": "should click the + button|create new contact",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396465974,
+        "duration": 2395
+    },
+    {
+        "description": "should fill out form for a new contact|create new contact",
+        "passed": false,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": [
+            "Expected '' to be '1'."
+        ],
+        "trace": [
+            "Error: Failed expectation\n    at C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\test\\specs\\CreateNewContactSpec.ts:32:45\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\sromankov\\WebstormProjects\\TypeScriptBasics\\build\\test\\specs\\CreateNewContactSpec.js:5:58)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "screenshots\\00bb0067-0042-0086-008e-00b8002400ae.png",
+        "timestamp": 1571396468383,
+        "duration": 2794
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571396473013,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571396471538,
+        "duration": 2439
+    },
+    {
+        "description": "shouldn’t create a new contact with baduser.com|adding a new contact with an invalid email",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1571396473993,
+        "duration": 2585
+    },
+    {
+        "description": "Test rozetka search|Rozetka Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a7040b03ca672727c2bb3aba6df15808",
+        "instanceId": 14228,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "WARNING",
+                "message": "https://static.rozetka.com.ua/main.518da7047865711da615.js 0 Unrecognized feature: 'encallowfullscreenrypted-media'.",
+                "timestamp": 1571396477541,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5220 \"[Facebook Pixel] - Duplicate Pixel ID: 480863978968397.\"",
+                "timestamp": 1571396478753,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://connect.facebook.net/en_US/fbevents.js 23:5220 \"[Facebook Pixel] - Duplicate Pixel ID: 122789221703310.\"",
+                "timestamp": 1571396478754,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://api-analytics.rozetka.com.ua/js/exponea.min.js 29:258 \"Exponea [Fri, 18 Oct 2019 11:01:20 GMT] Missing Google Analytics SDK (window.ga is not defined). Either integrate Google Analytics with your website or disable Google Analytics integration in the SDK config:\\nhttps://docs.exponea.com/docs/config-object\"",
+                "timestamp": 1571396480229,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 928 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i2.rozetka.ua/pages/136/136461.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480368,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 928 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i1.rozetka.ua/pages/136/136928.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480369,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 928 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i1.rozetka.ua/pages/146/146693.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480369,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 928 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i1.rozetka.ua/pages/137/137033.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480369,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 928 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i2.rozetka.ua/pages/137/137012.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480370,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 1098 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i2.rozetka.ua/publications_articles/138/138289.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480376,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 1098 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i1.rozetka.ua/publications_articles/138/138282.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480376,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 1098 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i2.rozetka.ua/publications_articles/138/138275.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480376,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 1098 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i1.rozetka.ua/publications_news/83/83711.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480376,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 1098 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i2.rozetka.ua/publications_news/74/74952.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480376,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple 1098 Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i1.rozetka.ua/publications_news/74/74572.jpg'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480377,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://rozetka.com.ua/apple/c4627486/#search_text=Apple - Mixed Content: The page at 'https://rozetka.com.ua/apple/c4627486/#search_text=Apple' was loaded over HTTPS, but requested an insecure image 'http://i1.rozetka.ua/pages/136/136482.png'. This content should also be served over HTTPS.",
+                "timestamp": 1571396480403,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571396476594,
+        "duration": 5319
     }
 ];
 

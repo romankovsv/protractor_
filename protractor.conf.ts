@@ -1,10 +1,14 @@
 import {browser} from "protractor";
 import matchers = require('jasmine-protractor-matchers');
-var HtmlReporter = require('protractor-beautiful-reporter');
-
+let HtmlReporter = require('protractor-beautiful-reporter');
+'use strict';
+let log4js = require('log4js')
 exports.config = {
+
     onPrepare: async () => {
-        await browser.waitForAngularEnabled(false);
+        await browser.waitForAngularEnabled(true);
+        browser.manage().window().maximize();
+        browser.manage().timeouts().implicitlyWait(5000);
 
         const ConsoleReporter = require("jasmine2-reporter").Jasmine2Reporter;
         const console_reporter_options = {
@@ -13,8 +17,6 @@ exports.config = {
         jasmine.getEnv().addReporter(new ConsoleReporter(console_reporter_options));
 
         beforeEach(() => {
-            // Adding .toAppear() and .toDisappear() into available matchers.
-            // https://github.com/Xotabu4/jasmine-protractor-matchers
             jasmine.addMatchers(matchers)
         });
 
@@ -26,7 +28,7 @@ exports.config = {
             );
         });
 
-        // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
+
         jasmine.getEnv().addReporter(new HtmlReporter({
             baseDirectory: 'tmp/reports'
             , screenshotsSubfolder: 'screenshots'
@@ -41,6 +43,7 @@ exports.config = {
 
     },
 
+
     baseUrl: 'https://testing-angular-applications.github.io',
     framework: 'jasmine2',
     capabilities: {
@@ -53,7 +56,5 @@ exports.config = {
     specs: ['./test/specs/*[sS]pec.js'],
     SELENIUM_PROMISE_MANAGER: false,
     seleniumAddress: 'http://localhost:7777/wd/hub',
-    // You could set no globals to true to avoid jQuery '$' and protractor '$'
-    // collisions on the global namespace.
     noGlobals: false
 };

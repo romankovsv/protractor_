@@ -3,18 +3,15 @@ import matchers = require('jasmine-protractor-matchers')
 import {HomePage} from "../../src/pageobjects/HomePage";
 import {ProductFragmentPage} from "../../src/pageobjects/ProductFragmentPage";
 
-describe("Suite", async () => {
 
-    beforeEach(async () => {
-        await new HomePage().open();
-    });
+describe("Rozetka Suite", async () => {
 
 
     it("Test rozetka search", async () => {
         console.log("Test on rozetka has been started");
-        let homePage = new HomePage();
-        let productPage = new ProductFragmentPage();
-       // await homePage.closeAdvert();
+        let homePage =  await new HomePage();
+        await homePage.open();
+        let productPage = await new ProductFragmentPage();
         await homePage.search("Apple");
 
 

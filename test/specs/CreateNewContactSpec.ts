@@ -1,6 +1,7 @@
 import {ContactListPageObject} from "../../src/pageobjects/ContactListPageObject";
 import {NewContactPageObject} from "../../src/pageobjects/NewContactPageObject";
 import {browser} from 'protractor';
+import {Log} from "../../src/helpers/Log";
 
 
 describe('create new contact', () => {
@@ -8,11 +9,12 @@ describe('create new contact', () => {
 
 
     beforeEach(async () => {
-        contactList = new ContactListPageObject();
+        contactList = await new ContactListPageObject();
         await contactList.navigateTo();
     });
 
     it('should click the + button', async () => {
+        Log.log().debug("In Test")
         let newContact: NewContactPageObject;
         newContact = await contactList.clickPlusButton();
         expect(await browser.getCurrentUrl())
@@ -27,7 +29,6 @@ describe('create new contact', () => {
         expect(await newContact.getName()).toBe('Mr. Newton');
         expect(await newContact.getEmail())
             .toBe('mr.newton@example.com');
-        //expect(await newContact.getPhone()).toBe('');
         expect(await newContact.getPhone()).toBe('1');
     });
 

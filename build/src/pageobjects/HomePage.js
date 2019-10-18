@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -7,42 +8,37 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-(function (factory) {
-    if (typeof module === "object" && typeof module.exports === "object") {
-        var v = factory(require, exports);
-        if (v !== undefined) module.exports = v;
+Object.defineProperty(exports, "__esModule", { value: true });
+const BasePage_1 = require("./BasePage");
+const protractor_1 = require("protractor");
+const selenium_webdriver_1 = require("selenium-webdriver");
+class HomePage extends BasePage_1.BasePage {
+    constructor() {
+        super();
+        // protected searchField = $("input[name='search']");
+        this.searchField = protractor_1.browser.driver.findElement(selenium_webdriver_1.By.css("input[name='search']"))
+            .then((elem) => {
+            return elem;
+        });
+        this.closeAdvertButton = protractor_1.$("span.exponea-close");
+        /* this.searchButton = $(".search-form .search-form__submit");
+         let isClickable = HomePage.EC.elementToBeClickable(this.searchButton);
+         browser.wait(isClickable, 5000);*/
     }
-    else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "./BasePage", "protractor"], factory);
+    search(item) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.browser.driver.findElement(selenium_webdriver_1.By.css("input[name='search']")).sendKeys(item);
+            yield protractor_1.browser.driver.findElement(selenium_webdriver_1.By.css(".search-form .search-form__submit")).click();
+            //await this.searchButton.click();
+        });
     }
-})(function (require, exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    const BasePage_1 = require("./BasePage");
-    const protractor_1 = require("protractor");
-    class HomePage extends BasePage_1.BasePage {
-        constructor() {
-            super();
-            this.searchField = protractor_1.$("input[name='search']");
-            this.closeAdvertButton = protractor_1.$("span.exponea-close");
-            this.searchButton = protractor_1.$(".search-form .search-form__submit");
-            let isClickable = HomePage.EC.elementToBeClickable(this.searchButton);
-            protractor_1.browser.wait(isClickable, 5000);
-        }
-        search(item) {
-            return __awaiter(this, void 0, void 0, function* () {
-                yield this.searchField.sendKeys(item);
-                yield this.searchButton.click();
-            });
-        }
-        closeAdvert() {
-            return __awaiter(this, void 0, void 0, function* () {
-                let isClickableSPan = yield HomePage.EC.elementToBeClickable(this.closeAdvertButton);
-                yield protractor_1.browser.wait(isClickableSPan, 5000);
-                yield this.closeAdvertButton.click();
-            });
-        }
+    closeAdvert() {
+        return __awaiter(this, void 0, void 0, function* () {
+            let isClickableSPan = yield HomePage.EC.elementToBeClickable(this.closeAdvertButton);
+            yield protractor_1.browser.wait(isClickableSPan, 5000);
+            yield this.closeAdvertButton.click();
+        });
     }
-    exports.HomePage = HomePage;
-});
+}
+exports.HomePage = HomePage;
 //# sourceMappingURL=HomePage.js.map
