@@ -22,12 +22,12 @@ export class NewContactPageObject {
     async setContactInfo(name: string, email: string, phoneNumber: string) {
 
         await this.condition.shouldBeVisible(this.inputName, 10);
-        await this.inputName.sendKeys(name);
+        await this.inputName.type(name);
         if (email) {
-            await this.inputEmail.sendKeys(email);
+            await this.inputEmail.type(email);
         }
         if (phoneNumber) {
-            await this.inputPhone.sendKeys(phoneNumber);
+            await this.inputPhone.type(phoneNumber);
         }
     }
 

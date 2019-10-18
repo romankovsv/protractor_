@@ -24,12 +24,12 @@ class NewContactPageObject {
     setContactInfo(name, email, phoneNumber) {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.condition.shouldBeVisible(this.inputName, 10);
-            yield this.inputName.sendKeys(name);
+            yield this.inputName.type(name);
             if (email) {
-                yield this.inputEmail.sendKeys(email);
+                yield this.inputEmail.type(email);
             }
             if (phoneNumber) {
-                yield this.inputPhone.sendKeys(phoneNumber);
+                yield this.inputPhone.type(phoneNumber);
             }
         });
     }

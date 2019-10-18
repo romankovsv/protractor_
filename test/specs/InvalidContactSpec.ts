@@ -19,7 +19,7 @@ describe('adding a new contact with an invalid email', () => {
         await addContactButton.customClick();
 
         let contactNameField: Element = await new Element(element(by.css('#contact-name')));
-        await contactNameField.sendKeys('Bad Email');
+        await contactNameField.type('Bad Email');
     });
 
     it('shouldn’t create a new contact with baduser.com', async () => {

@@ -21,37 +21,58 @@ class Element extends protractor_element_extend_1.BaseFragment {
     customClick() {
         return __awaiter(this, void 0, void 0, function* () {
             yield Log_1.Log.log().debug("Inside customClick");
-            yield this.condition.shouldBeClickable(this, 5);
-            yield protractor_1.browser.wait(protractor_1.ExpectedConditions.elementToBeClickable(this), 5000, `Element ${this.locator()} is not clickable`)
-                .catch((error) => __awaiter(this, void 0, void 0, function* () {
-                yield Log_1.Log.log().debug(`Element ${this.locator()} is not clickable`);
+            yield this.condition.shouldBeClickable(this, 5).catch(() => __awaiter(this, void 0, void 0, function* () {
+                yield Log_1.Log.log().debug(`Element ${this.locator()} is not visble`);
             }));
+            /*  await browser.wait(EC.elementToBeClickable(this), 5000, `Element ${this.locator()} is not clickable`)
+                  .catch(async (error) => {
+                      await Log.log().debug(`Element ${this.locator()} is not clickable`)
+                  })*/
             yield this.click().then(() => __awaiter(this, void 0, void 0, function* () {
                 yield Log_1.Log.log().debug(`Element ${this.locator()} is  clicked`);
             }));
         });
     }
-    sendKeys(text) {
+    type(text) {
         return __awaiter(this, void 0, void 0, function* () {
             Log_1.Log.log().debug("Inside custom sendKeys");
-            protractor_1.browser.logger.debug("Some text");
-            yield Log_1.Log.log().debug("Some Message!!! on click()");
-            yield this.condition.shouldBeVisible(this, 5);
-            yield protractor_1.browser.wait(protractor_1.ExpectedConditions.visibilityOf(this), 5000, `Element ${this.locator()} is not visible`)
-                .catch((error) => __awaiter(this, void 0, void 0, function* () {
-                yield Log_1.Log.log().debug(`Element ${this.locator()} is not clickable`);
+            yield this.condition.shouldBeVisible(this, 5)
+                .catch(() => __awaiter(this, void 0, void 0, function* () {
+                yield Log_1.Log.log().debug(`Element ${this.locator()} is not visible`);
             }));
+            /*  await browser.wait(EC.visibilityOf(this), 5000, `Element ${this.locator()} is not visible`)
+                  .catch(async (error) => {
+                      await Log.log().debug(`Element ${this.locator()} is not clickable`)
+                  })*/
             yield this.sendKeys(text).then(() => __awaiter(this, void 0, void 0, function* () {
                 yield expect(yield this.getAttribute('value')).toContain(text);
                 yield Log_1.Log.log().debug(`Element ${this.locator()} is successfully entered text:${text}`);
             }));
         });
     }
-    select() {
+    selectByValue(value) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.condition.shouldBeVisible(this, 10);
+            this.element(protractor_1.By.css('option[value="' + value + '"]')).click();
+        });
+    }
+    selectByText(value) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.condition.shouldBeVisible(this, 10);
+            return this.element(protractor_1.By.xpath('option[.="' + value + '"]')).click();
+        });
+    }
+    selectByPartialText(value) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.condition.shouldBeVisible(this, 10);
+            return this.element(protractor_1.By.cssContainingText('option', value)).click();
+        });
+    }
+    check() {
         return __awaiter(this, void 0, void 0, function* () {
             this.isSelected().then((selected) => __awaiter(this, void 0, void 0, function* () {
                 if (!selected) {
-                    yield this.customClick();
+                    yield this.click();
                     yield protractor_1.browser.wait(protractor_1.ExpectedConditions.elementToBeSelected(this), 5000, `Checkbox ${this.locator()} must became selected after click, but it wasn't`);
                 }
                 else {
@@ -60,11 +81,11 @@ class Element extends protractor_element_extend_1.BaseFragment {
             }));
         });
     }
-    unselect() {
+    uncheck() {
         return __awaiter(this, void 0, void 0, function* () {
             this.isSelected().then((selected) => __awaiter(this, void 0, void 0, function* () {
                 if (selected) {
-                    yield this.customClick();
+                    yield this.click();
                     yield protractor_1.browser.wait(protractor_1.ExpectedConditions.not(protractor_1.ExpectedConditions.elementToBeSelected(this)), 5000, `Checkbox ${this.locator()} must became unselected after click, but it wasn't`);
                 }
                 else {

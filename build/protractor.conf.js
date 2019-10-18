@@ -52,7 +52,8 @@ exports.config = {
         "first": "./FirstTestSpec.js",
         "second": "./SecondTestspec.js"
     },
-    specs: ['./test/specs/*[sS]pec.js'],
+    // specs: ['./test/specs/*[sS]pec.js'],
+    specs: ['./test/specs/*[tT]ests.js'],
     SELENIUM_PROMISE_MANAGER: false,
     seleniumAddress: 'http://localhost:7777/wd/hub',
     noGlobals: false

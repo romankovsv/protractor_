@@ -23,7 +23,7 @@ describe('adding a new contact with an invalid email', () => {
         let addContactButton = yield new Element_1.Element(protractor_1.element(protractor_1.by.id('add-contact')));
         yield addContactButton.customClick();
         let contactNameField = yield new Element_1.Element(protractor_1.element(protractor_1.by.css('#contact-name')));
-        yield contactNameField.sendKeys('Bad Email');
+        yield contactNameField.type('Bad Email');
     }));
     it('shouldn’t create a new contact with baduser.com', () => __awaiter(void 0, void 0, void 0, function* () {
         let email = protractor_1.element(protractor_1.by.id('contact-email'));
