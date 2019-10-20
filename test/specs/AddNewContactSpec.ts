@@ -1,15 +1,15 @@
 import { browser, by, element, ExpectedConditions } from 'protractor';
 import {ContactListPageObject} from "../../src/pageobjects/ContactListPageObject";
 
-describe('adding a new contact with only a name', () => {
+describe('adding a new contact with only a name', function()  {
 
-    beforeEach(async () => {
+    beforeEach(async function() {
        await browser.get('/#/');
     });
 
 
-    var EC = ExpectedConditions;
-    it('should find the add contact button',  async () => {
+    let EC = ExpectedConditions;
+    it('should find the add contact button',  async function() {
         await browser.wait( EC.elementToBeClickable(element(by.id('add-contact'))));
         await element(by.id('add-contact')).click();
         expect(await browser.getCurrentUrl())

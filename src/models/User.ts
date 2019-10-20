@@ -4,6 +4,7 @@ export class User {
     lastName:string;
     email:string;
     userType:string;
+    password:string
 
     constructor(firstName:string){
         this.firstName = firstName;

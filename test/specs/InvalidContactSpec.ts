@@ -1,12 +1,12 @@
 import {browser, by, element, ElementFinder, protractor} from 'protractor';
 import {Condition} from "../../src/helpers/Condition";
-import {Element} from "../../src/wrappers/Element";
+import {WebElement} from "../../src/wrappers/WebElement";
 
-describe('adding a new contact with an invalid email', () => {
+describe('adding a new contact with an invalid email',function ()  {
 
     let condition: Condition = new Condition();
 
-    beforeEach(async () => {
+    beforeEach(async function() {
         await browser.get('/#/');
         let EC = protractor.ExpectedConditions;
 
@@ -15,14 +15,14 @@ describe('adding a new contact with an invalid email', () => {
             .toEqual(browser.baseUrl + '/#/');
 
 
-        let addContactButton: Element = await new Element(element(by.id('add-contact')));
+        let addContactButton: WebElement = await new WebElement(element(by.id('add-contact')));
         await addContactButton.customClick();
 
-        let contactNameField: Element = await new Element(element(by.css('#contact-name')));
+        let contactNameField: WebElement = await new WebElement(element(by.css('#contact-name')));
         await contactNameField.type('Bad Email');
     });
 
-    it('shouldn’t create a new contact with baduser.com', async () => {
+    it('shouldn’t create a new contact with baduser.com', async function() {
 
         let email = element(by.id('contact-email'));
         await condition.shouldBeVisible(<ElementFinder>email, 10);

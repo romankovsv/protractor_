@@ -1,0 +1,1 @@
+{"description":"shouldn’t create a new contact with baduser.com|adding a new contact with an invalid email","passed":true,"pending":false,"os":"windows nt","sessionId":"fa7f7cc55f89f68040f0e10ccd32e400","instanceId":11588,"browser":{"name":"chrome","version":"77.0.3865.120"},"message":"Passed.","trace":"","browserLogs":[],"timestamp":1571508005906,"duration":2623}

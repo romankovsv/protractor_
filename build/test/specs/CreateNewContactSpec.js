@@ -12,27 +12,33 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const ContactListPageObject_1 = require("../../src/pageobjects/ContactListPageObject");
 const protractor_1 = require("protractor");
 const Log_1 = require("../../src/helpers/Log");
-describe('create new contact', () => {
+describe('create new contact', function () {
     let contactList;
-    beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
-        contactList = yield new ContactListPageObject_1.ContactListPageObject();
-        yield contactList.navigateTo();
-    }));
-    it('should click the + button', () => __awaiter(void 0, void 0, void 0, function* () {
-        Log_1.Log.log().debug("In Test");
-        let newContact;
-        newContact = yield contactList.clickPlusButton();
-        expect(yield protractor_1.browser.getCurrentUrl())
-            .toBe(protractor_1.browser.baseUrl + '/#/add');
-    }));
-    it('should fill out form for a new contact', () => __awaiter(void 0, void 0, void 0, function* () {
-        let newContact;
-        newContact = yield contactList.clickPlusButton();
-        yield newContact.setContactInfo('Mr. Newton', 'mr.newton@example.com', null);
-        expect(yield newContact.getName()).toBe('Mr. Newton');
-        expect(yield newContact.getEmail())
-            .toBe('mr.newton@example.com');
-        expect(yield newContact.getPhone()).toBe('1');
-    }));
+    beforeEach(function () {
+        return __awaiter(this, void 0, void 0, function* () {
+            contactList = yield new ContactListPageObject_1.ContactListPageObject();
+            yield contactList.navigateTo();
+        });
+    });
+    it('should click the + button', function () {
+        return __awaiter(this, void 0, void 0, function* () {
+            Log_1.Log.log().debug("In Test");
+            let newContact;
+            newContact = yield contactList.clickPlusButton();
+            expect(yield protractor_1.browser.getCurrentUrl())
+                .toBe(protractor_1.browser.baseUrl + '/#/add');
+        });
+    });
+    it('should fill out form for a new contact', function () {
+        return __awaiter(this, void 0, void 0, function* () {
+            let newContact;
+            newContact = yield contactList.clickPlusButton();
+            yield newContact.setContactInfo('Mr. Newton', 'mr.newton@example.com', null);
+            expect(yield newContact.getName()).toBe('Mr. Newton');
+            expect(yield newContact.getEmail())
+                .toBe('mr.newton@example.com');
+            expect(yield newContact.getPhone()).toBe('1', "Phone field should be empty");
+        });
+    });
 });
 //# sourceMappingURL=CreateNewContactSpec.js.map

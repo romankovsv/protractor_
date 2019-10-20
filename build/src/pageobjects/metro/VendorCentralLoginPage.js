@@ -10,27 +10,23 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-const Condition_1 = require("../../helpers/Condition");
-const Element_1 = require("../../wrappers/Element");
+const WebElement_1 = require("../../wrappers/WebElement");
+const Log_1 = require("../../helpers/Log");
 const SMSHomePage_1 = require("./SMSHomePage");
-class VendorCentralLoginPage {
+const Properties_1 = require("../../properties/Properties");
+const BasePage_1 = require("./BasePage");
+class VendorCentralLoginPage extends BasePage_1.BasePage {
     constructor() {
-        this.condition = new Condition_1.Condition();
-        this.emailField = new Element_1.Element(protractor_1.element(protractor_1.by.id('emailInput')));
-        this.passwordField = new Element_1.Element(protractor_1.element(protractor_1.by.id('passInput')));
-        this.loginButton = new Element_1.Element(protractor_1.element(protractor_1.by.id('submit_btn')));
-    }
-    navigateTo() {
-        return __awaiter(this, void 0, void 0, function* () {
-            protractor_1.browser.waitForAngularEnabled(false);
-            yield protractor_1.browser.get('https://sms:GHnRgg4G3qf43gvdsgds@www.qa.metro-vendorcentral.com');
-            yield this.condition.urlShouldContain('metro-vendorcentral.com', 10);
-        });
+        super();
+        this.emailField = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.id('emailInput')));
+        this.passwordField = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.id('passInput')));
+        this.loginButton = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.id('submit_btn')));
     }
     login() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield this.emailField.type('admin@sms.com');
-            yield this.passwordField.type('admin');
+            Log_1.Log.log().debug(`Login with email:${Properties_1.Properties.VendorCentralEmail} and password: ${Properties_1.Properties.VendorCentralPassword}`);
+            yield this.emailField.type(Properties_1.Properties.VendorCentralEmail);
+            yield this.passwordField.type(Properties_1.Properties.VendorCentralPassword);
             yield this.loginButton.customClick();
             return new SMSHomePage_1.SMSHomePage();
         });

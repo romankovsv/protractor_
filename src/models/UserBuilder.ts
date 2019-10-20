@@ -8,6 +8,11 @@ export class UserBuilder{
         this.user = new User(firstName);
     }
 
+    public setPassword(password:string){
+        this.user.password = password;
+        return this;
+    }
+
     public setLastName(lastName:string){
         this.user.lastName = lastName;
         return this;

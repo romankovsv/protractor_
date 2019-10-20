@@ -1,0 +1,4 @@
+[2019-10-19T10:44:38.730] [ERROR] default - { TimeoutError: Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+Wait timed out after 5088ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }

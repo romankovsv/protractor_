@@ -4,16 +4,16 @@ import {browser} from 'protractor';
 import {Log} from "../../src/helpers/Log";
 
 
-describe('create new contact', () => {
+describe('create new contact', function()  {
     let contactList: ContactListPageObject;
 
 
-    beforeEach(async () => {
+    beforeEach(async function()  {
         contactList = await new ContactListPageObject();
         await contactList.navigateTo();
     });
 
-    it('should click the + button', async () => {
+    it('should click the + button', async function()  {
         Log.log().debug("In Test")
         let newContact: NewContactPageObject;
         newContact = await contactList.clickPlusButton();
@@ -21,7 +21,7 @@ describe('create new contact', () => {
             .toBe(browser.baseUrl + '/#/add');
     });
 
-    it('should fill out form for a new contact', async () => {
+    it('should fill out form for a new contact', async function() {
         let newContact: NewContactPageObject;
         newContact = await contactList.clickPlusButton();
         await newContact.setContactInfo(
@@ -29,7 +29,7 @@ describe('create new contact', () => {
         expect(await newContact.getName()).toBe('Mr. Newton');
         expect(await newContact.getEmail())
             .toBe('mr.newton@example.com');
-        expect(await newContact.getPhone()).toBe('1');
+        expect(await newContact.getPhone()).toBe('1',"Phone field should be empty");
     });
 
 

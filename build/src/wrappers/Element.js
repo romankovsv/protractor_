@@ -24,10 +24,6 @@ class Element extends protractor_element_extend_1.BaseFragment {
             yield this.condition.shouldBeClickable(this, 5).catch(() => __awaiter(this, void 0, void 0, function* () {
                 yield Log_1.Log.log().debug(`Element ${this.locator()} is not visble`);
             }));
-            /*  await browser.wait(EC.elementToBeClickable(this), 5000, `Element ${this.locator()} is not clickable`)
-                  .catch(async (error) => {
-                      await Log.log().debug(`Element ${this.locator()} is not clickable`)
-                  })*/
             yield this.click().then(() => __awaiter(this, void 0, void 0, function* () {
                 yield Log_1.Log.log().debug(`Element ${this.locator()} is  clicked`);
             }));
@@ -40,10 +36,6 @@ class Element extends protractor_element_extend_1.BaseFragment {
                 .catch(() => __awaiter(this, void 0, void 0, function* () {
                 yield Log_1.Log.log().debug(`Element ${this.locator()} is not visible`);
             }));
-            /*  await browser.wait(EC.visibilityOf(this), 5000, `Element ${this.locator()} is not visible`)
-                  .catch(async (error) => {
-                      await Log.log().debug(`Element ${this.locator()} is not clickable`)
-                  })*/
             yield this.sendKeys(text).then(() => __awaiter(this, void 0, void 0, function* () {
                 yield expect(yield this.getAttribute('value')).toContain(text);
                 yield Log_1.Log.log().debug(`Element ${this.locator()} is successfully entered text:${text}`);

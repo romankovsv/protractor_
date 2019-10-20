@@ -3,7 +3,7 @@ import {browser, ExpectedConditions as EC, By} from 'protractor'
 import {Condition} from "../../src/helpers/Condition";
 import {Log} from "../../src/helpers/Log";
 
-export class Element extends BaseFragment {
+export class WebElement extends BaseFragment {
 
     private condition: Condition;
 
@@ -15,13 +15,9 @@ export class Element extends BaseFragment {
     public async customClick() {
        await Log.log().debug("Inside customClick")
 
-        await this.condition.shouldBeClickable(this, 5).catch(async ()=>{
-            await Log.log().debug(`Element ${this.locator()} is not visble`)
+        await this.condition.shouldBeClickable(this, 60).catch(async ()=>{
+            await Log.log().debug(`Element ${this.locator()} is not clickable`)
         });
-      /*  await browser.wait(EC.elementToBeClickable(this), 5000, `Element ${this.locator()} is not clickable`)
-            .catch(async (error) => {
-                await Log.log().debug(`Element ${this.locator()} is not clickable`)
-            })*/
         await this.click().then(async () => {
             await Log.log().debug(`Element ${this.locator()} is  clicked`)
         });
@@ -29,21 +25,14 @@ export class Element extends BaseFragment {
 
     public async type(text: string) {
         Log.log().debug("Inside custom sendKeys");
-
-        await this.condition.shouldBeVisible(this, 5)
+        await this.condition.shouldBeVisible(this, 25)
             .catch(async ()=>{
             await Log.log().debug(`Element ${this.locator()} is not visible`)
         });
-      /*  await browser.wait(EC.visibilityOf(this), 5000, `Element ${this.locator()} is not visible`)
-            .catch(async (error) => {
-                await Log.log().debug(`Element ${this.locator()} is not clickable`)
-            })*/
-        await this.sendKeys(text).then(async () => {
-            await expect(await this.getAttribute('value')).toContain(text);
 
+        await this.sendKeys(text).then(async () => {
             await Log.log().debug(`Element ${this.locator()} is successfully entered text:${text}`);
         });
-
     }
 
     public async selectByValue(value:string){
@@ -82,6 +71,4 @@ export class Element extends BaseFragment {
             }
         })
     }
-
-
 }

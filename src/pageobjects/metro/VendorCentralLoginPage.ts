@@ -1,33 +1,32 @@
 import {browser, by, element, ElementFinder} from 'protractor';
 import {NewContactPageObject} from "../NewContactPageObject";
 import {Condition} from "../../helpers/Condition";
-import {Element} from "../../wrappers/Element";
+import {WebElement} from "../../wrappers/WebElement";
 import {Log} from "../../helpers/Log";
 import {Generator} from "../../helpers/Generator";
 import {SMSHomePage} from "./SMSHomePage";
+import {WebBrowser} from "../../wrappers/WebBrowser";
+import {Properties} from "../../properties/Properties";
+import {BasePage} from "./BasePage";
 
-export class VendorCentralLoginPage{
-    private condition: Condition;
-    private emailField: Element ;
-    private passwordField: Element ;
-    private loginButton: Element ;
+export class VendorCentralLoginPage extends BasePage{
+    private emailField: WebElement ;
+    private passwordField: WebElement ;
+    private loginButton: WebElement ;
 
     constructor(){
-        this.condition = new Condition();
-        this.emailField =  new Element(element(by.id('emailInput')));
-        this.passwordField =  new Element(element(by.id('passInput')));
-        this.loginButton =  new Element(element(by.id('submit_btn')));
+        super()
+        this.emailField =  new WebElement(element(by.id('emailInput')));
+        this.passwordField =  new WebElement(element(by.id('passInput')));
+        this.loginButton =  new WebElement(element(by.id('submit_btn')));
     }
 
-    async navigateTo() {
-        browser.waitForAngularEnabled(false);
-        await browser.get('https://sms:GHnRgg4G3qf43gvdsgds@www.qa.metro-vendorcentral.com');
-        await this.condition.urlShouldContain('metro-vendorcentral.com', 10)
-    }
+
 
     async login():Promise<SMSHomePage>{
-        await this.emailField.type('admin@sms.com');
-        await this.passwordField.type('admin');
+        Log.log().debug(`Login with email:${Properties.VendorCentralEmail} and password: ${Properties.VendorCentralPassword}`)
+        await this.emailField.type(Properties.VendorCentralEmail);
+        await this.passwordField.type(Properties.VendorCentralPassword);
         await this.loginButton.customClick();
         return new SMSHomePage();
     }

@@ -1,22 +1,22 @@
 import {by, element} from 'protractor';
 import {ContactListPageObject} from "./ContactListPageObject";
 import {Condition} from "../helpers/Condition";
-import {Element} from "../wrappers/Element";
+import {WebElement} from "../wrappers/WebElement";
 
 export class NewContactPageObject {
 
     condition: Condition;
-    inputEmail: Element;
-    inputName: Element;
-    inputPhone: Element;
-    createButton: Element;
+    inputEmail: WebElement;
+    inputName: WebElement;
+    inputPhone: WebElement;
+    createButton: WebElement;
 
     constructor() {
         this.condition = new Condition();
-        this.inputName = new Element(element(by.css('#contact-name')));
-        this.inputEmail = new Element(element(by.css('#contact-email')));
-        this.inputPhone = new Element(element(by.css('input[type="tel"]')));
-        this.createButton = new Element(element(by.css('.create-button')));
+        this.inputName = new WebElement(element(by.css('#contact-name')));
+        this.inputEmail = new WebElement(element(by.css('#contact-email')));
+        this.inputPhone = new WebElement(element(by.css('input[type="tel"]')));
+        this.createButton = new WebElement(element(by.css('.create-button')));
     }
 
     async setContactInfo(name: string, email: string, phoneNumber: string) {

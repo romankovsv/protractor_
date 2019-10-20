@@ -13,7 +13,7 @@ const TOKEN_PATH = 'token.json';
 fs.readFile('credentials.json', (err, content) => {
     if (err) return console.log('Error loading client secret file:', err);
     // Authorize a client with credentials, then call the Gmail API.
-    authorize(JSON.parse(content), listLabels);
+    //authorize(JSON.parse(content), listLabels);
     authorize(JSON.parse(content), listMessages);
 });
 
@@ -96,41 +96,62 @@ function listMessages(auth) {
     const gmail = google.gmail({version: 'v1', auth});
 
     gmail.users.messages.list({
-        labelIds: ['INBOX','UNREAD','CATEGORY_PERSONAL'],
-        maxResults: 3,
+        labelIds: ['INBOX', 'UNREAD', 'CATEGORY_PERSONAL'],
+        maxResults: 1,
         userId: 'me',
-        format: 'full',
+        q: 'from:academy@blazemeter.com'
     }, (err, res) => {
         if (err) return console.log('The API returned an error: ' + err);
         console.log(res.data)
         const messages = res.data.messages;
-        if (messages.length) {
-            console.log('Message:');
-            console.log(messages[0].id);
-            /*
-            List of messages. Note that each message resource contains only an id and a threadId.
-             Additional message details can be fetched using the messages.get method.
-             */
-            for (let i = 0; i < messages.length; i++) {
-                getMessage(messages[i].id,'me',auth)
-            }
-
+        if (messages === undefined) {
+            throw new Error("Request returns no messages")
         } else {
-            console.log('No labels found.');
+            if (messages.length) {
+                console.log('Message:');
+                console.log(messages[0].id);
+                /*
+                List of messages. Note that each message resource contains only an id and a threadId.
+                 Additional message details can be fetched using the messages.get method.
+                 */
+                messages.forEach((mess) => {
+                    getMessage(mess.id, 'me', auth);
+                })
+            } else {
+                console.log('No labels found.');
+            }
         }
     });
-
-
 }
 
-function getMessage( messageId,userId, auth) {
+function getMessage(messageId, userId, auth) {
     const gmail = google.gmail({version: 'v1', auth});
     gmail.users.messages.get({
         'userId': userId,
-        'id': messageId
+        'id': messageId,
+        'format': 'raw',
     }, (err, res) => {
         if (err) return console.log('The API returned an error: ' + err);
-        console.log(res)
+
+        let Base64 = require('js-base64').Base64;
+        let messageValue = Base64.decode(res.data.raw)
+        urlify(messageValue)
+    ;
     });
+}
+
+function urlify(text) {
+    let urlRegex = /(https?:\/\/[^\s]+)/g;
+
+    let urls = text.match(urlRegex)
+    console.log(urls)
+
+   urls.forEach((e) => {
+        if (e.includes('continuous-testing/')) {
+           console.log("Finally found: " + e)
+        }
+    })
 
 }
+
+

@@ -17,7 +17,7 @@ export class Condition {
         let EC = protractor.ExpectedConditions;
         await browser.wait(EC.elementToBeClickable(el), timeout * 1000,`Element ${el.locator()} is not clickable`)
             .catch((error) => {
-                Log.log().error(error);
+                Log.log().error(`Element ${el.locator()} is not clickable\n`+ error);
             });
     }
 

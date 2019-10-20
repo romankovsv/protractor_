@@ -5,6 +5,10 @@ class UserBuilder {
     constructor(firstName) {
         this.user = new User_1.User(firstName);
     }
+    setPassword(password) {
+        this.user.password = password;
+        return this;
+    }
     setLastName(lastName) {
         this.user.lastName = lastName;
         return this;

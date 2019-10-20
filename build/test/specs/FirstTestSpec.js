@@ -10,17 +10,21 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-describe("Suite", () => __awaiter(void 0, void 0, void 0, function* () {
-    it("First Test on protractor", () => __awaiter(void 0, void 0, void 0, function* () {
-        console.log("Test is started");
-        let EC = protractor_1.protractor.ExpectedConditions;
-        let button = protractor_1.$('#xyz');
-        let isClickable = EC.elementToBeClickable(button);
-        yield protractor_1.browser.get("http://todomvc.com/examples/angular2/");
-        let b = yield protractor_1.$(".new-todo");
-        let clickable = yield EC.elementToBeClickable(b);
-        yield protractor_1.browser.wait(clickable, 5000);
-        yield b.sendKeys("My note is here");
-    }));
-}));
+describe("Suite", function () {
+    return __awaiter(this, void 0, void 0, function* () {
+        it("First Test on protractor", function () {
+            return __awaiter(this, void 0, void 0, function* () {
+                console.log("Test is started");
+                let EC = protractor_1.protractor.ExpectedConditions;
+                let button = protractor_1.$('#xyz');
+                let isClickable = EC.elementToBeClickable(button);
+                yield protractor_1.browser.get("http://todomvc.com/examples/angular2/");
+                let b = yield protractor_1.$(".new-todo");
+                let clickable = yield EC.elementToBeClickable(b);
+                yield protractor_1.browser.wait(clickable, 5000);
+                yield b.sendKeys("My note is here");
+            });
+        });
+    });
+});
 //# sourceMappingURL=FirstTestSpec.js.map

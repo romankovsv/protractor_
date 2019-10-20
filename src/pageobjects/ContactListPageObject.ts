@@ -1,18 +1,18 @@
 import {browser, by, element, ElementFinder} from 'protractor';
 import {NewContactPageObject} from "./NewContactPageObject";
 import {Condition} from "../helpers/Condition";
-import {Element} from "../wrappers/Element";
+import {WebElement} from "../wrappers/WebElement";
 import {Log} from "../helpers/Log";
 
 export class ContactListPageObject {
 
 
     condition: Condition;
-    plusButton: Element ;
+    plusButton: WebElement ;
 
     constructor(){
         this.condition = new Condition();
-        this.plusButton =  new Element(element(by.id('add-contact')));
+        this.plusButton =  new WebElement(element(by.id('add-contact')));
     }
 
     async clickPlusButton() {

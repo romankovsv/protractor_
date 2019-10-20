@@ -12,12 +12,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const NewContactPageObject_1 = require("./NewContactPageObject");
 const Condition_1 = require("../helpers/Condition");
-const Element_1 = require("../wrappers/Element");
+const WebElement_1 = require("../wrappers/WebElement");
 const Log_1 = require("../helpers/Log");
 class ContactListPageObject {
     constructor() {
         this.condition = new Condition_1.Condition();
-        this.plusButton = new Element_1.Element(protractor_1.element(protractor_1.by.id('add-contact')));
+        this.plusButton = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.id('add-contact')));
     }
     clickPlusButton() {
         return __awaiter(this, void 0, void 0, function* () {

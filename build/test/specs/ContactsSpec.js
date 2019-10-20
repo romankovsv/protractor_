@@ -11,13 +11,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const log4js = require('log4js');
-describe('your first protractor test', () => {
-    it('should load a page and verify the url', () => __awaiter(void 0, void 0, void 0, function* () {
-        yield protractor_1.browser.get('/#/');
-        let EC = protractor_1.protractor.ExpectedConditions;
-        yield protractor_1.browser.wait(EC.urlContains(protractor_1.browser.baseUrl));
-        expect(protractor_1.browser.getCurrentUrl())
-            .toEqual(protractor_1.browser.baseUrl + '/#/');
-    }));
+describe('your first protractor test', function () {
+    it('should load a page and verify the url', function () {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.browser.get('/#/');
+            let EC = protractor_1.protractor.ExpectedConditions;
+            yield protractor_1.browser.wait(EC.urlContains(protractor_1.browser.baseUrl));
+            expect(protractor_1.browser.getCurrentUrl())
+                .toEqual(protractor_1.browser.baseUrl + '/#/');
+        });
+    });
 });
 //# sourceMappingURL=ContactsSpec.js.map

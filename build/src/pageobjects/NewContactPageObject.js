@@ -12,14 +12,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const ContactListPageObject_1 = require("./ContactListPageObject");
 const Condition_1 = require("../helpers/Condition");
-const Element_1 = require("../wrappers/Element");
+const WebElement_1 = require("../wrappers/WebElement");
 class NewContactPageObject {
     constructor() {
         this.condition = new Condition_1.Condition();
-        this.inputName = new Element_1.Element(protractor_1.element(protractor_1.by.css('#contact-name')));
-        this.inputEmail = new Element_1.Element(protractor_1.element(protractor_1.by.css('#contact-email')));
-        this.inputPhone = new Element_1.Element(protractor_1.element(protractor_1.by.css('input[type="tel"]')));
-        this.createButton = new Element_1.Element(protractor_1.element(protractor_1.by.css('.create-button')));
+        this.inputName = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.css('#contact-name')));
+        this.inputEmail = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.css('#contact-email')));
+        this.inputPhone = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.css('input[type="tel"]')));
+        this.createButton = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.css('.create-button')));
     }
     setContactInfo(name, email, phoneNumber) {
         return __awaiter(this, void 0, void 0, function* () {
