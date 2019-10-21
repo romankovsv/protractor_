@@ -2,7 +2,7 @@ import {browser, by, element, ElementFinder} from 'protractor';
 import {NewContactPageObject} from "../NewContactPageObject";
 import {Condition} from "../../helpers/Condition";
 import {WebElement} from "../../wrappers/WebElement";
-import {Log} from "../../helpers/Log";
+import {Logger} from "../../helpers/Logger";
 import {Generator} from "../../helpers/Generator";
 import {SMSHomePage} from "./SMSHomePage";
 import {WebBrowser} from "../../wrappers/WebBrowser";
@@ -24,7 +24,7 @@ export class VendorCentralLoginPage extends BasePage{
 
 
     async login():Promise<SMSHomePage>{
-        Log.log().debug(`Login with email:${Properties.VendorCentralEmail} and password: ${Properties.VendorCentralPassword}`)
+        Logger.log().debug(`Login with email:${Properties.VendorCentralEmail} and password: ${Properties.VendorCentralPassword}`)
         await this.emailField.type(Properties.VendorCentralEmail);
         await this.passwordField.type(Properties.VendorCentralPassword);
         await this.loginButton.customClick();

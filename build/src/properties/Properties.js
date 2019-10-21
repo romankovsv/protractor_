@@ -11,4 +11,5 @@ Properties.Gmail_email = "autotest.metro@gmail.com";
 Properties.Gmail_password = "Metro!@#123";
 Properties.VendorCentralEmail = "admin@sms.com";
 Properties.VendorCentralPassword = "admin";
+Properties.Creds = "sms:GHnRgg4G3qf43gvdsgds@";
 //# sourceMappingURL=Properties.js.map

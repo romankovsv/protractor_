@@ -12,27 +12,33 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const BasePage_1 = require("./BasePage");
 const WebElement_1 = require("../../wrappers/WebElement");
 const protractor_1 = require("protractor");
-const Log_1 = require("../../helpers/Log");
+const Logger_1 = require("../../helpers/Logger");
 const VendorPortalCompanyFields_1 = require("./VendorPortalCompanyFields");
 class VendorContractConfirmPage extends BasePage_1.BasePage {
     //private uploadProductData  = new WebElement(By.css(".button.button__upload"));
-    // private nextButton = new WebElement(By.css(".vendor-contract--footer button[kind='primaryRaised']"));
+    //private nextButton = new WebElement(By.css(".vendor-contract--footer button[kind='primaryRaised']"));
     constructor() {
         super();
         this.checboxTermsOfUse = new WebElement_1.WebElement(protractor_1.element(protractor_1.By.css(".modal-dialog .m-checkbox-inputIcon")));
-        this.buttonProceed = new WebElement_1.WebElement(protractor_1.element(protractor_1.By.css(".send-email-modal--footer button")));
+        // this.buttonProceed = new WebElement(element(By.css(".send-email-modal--footer button")))
         // this.nextButton = new WebElement(By.css(".vendor-contract--footer button[kind='primaryRaised']"))
         //this.uploadProductData = new WebElement(By.css(".button.button__upload"))
     }
     acceptTerms() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Log_1.Log.log().debug("Accept terms");
-            protractor_1.browser.wait(protractor_1.ExpectedConditions.elementToBeClickable(protractor_1.element(protractor_1.By.css(".send-email-modal--content .m-checkbox svg"))), 30000);
-            yield new WebElement_1.WebElement(protractor_1.element(protractor_1.By.css(".send-email-modal--content .m-checkbox svg"))).customClick();
-            yield this.buttonProceed.customClick();
-            yield new WebElement_1.WebElement(protractor_1.element(protractor_1.By.css(".m-checkbox .m-checkbox-inputIcon svg"))).customClick();
-            // await this.nextButton.customClick()
-            protractor_1.element(protractor_1.By.css(".vendor-contract--footer button[kind='primaryRaised']")).click();
+            yield Logger_1.Logger.logs("Accept terms");
+            yield protractor_1.browser.wait(protractor_1.ExpectedConditions.elementToBeClickable(protractor_1.element(protractor_1.By.css(".m-checkbox svg"))), 30000);
+            yield protractor_1.browser.wait(protractor_1.ExpectedConditions.visibilityOf(protractor_1.element(protractor_1.By.css(".m-checkbox svg"))), 30000);
+            yield new WebElement_1.WebElement(protractor_1.element(protractor_1.By.css(".m-checkbox svg"))).customClick();
+            yield this.condition.shouldBeClickable(protractor_1.element(protractor_1.By.css(".vendor-contract--footer button[kind='primaryRaised']")), 10);
+            yield this.condition.shouldBeVisible(protractor_1.element(protractor_1.By.css(".vendor-contract--footer button[kind='primaryRaised']")), 10);
+            let scrolldown = yield protractor_1.$$(".vendor-contract--footer button[kind='primaryRaised']").get(0);
+            yield protractor_1.browser.controlFlow().execute(function () {
+                return __awaiter(this, void 0, void 0, function* () {
+                    yield protractor_1.browser.executeScript('arguments[0].scrollIntoView(true)', scrolldown.getWebElement());
+                });
+            });
+            yield protractor_1.element(protractor_1.By.css(".vendor-contract--footer button[kind='primaryRaised']")).click();
             return new VendorPortalCompanyFields_1.VendorPortalCompanyFields();
         });
     }

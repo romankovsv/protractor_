@@ -13,7 +13,7 @@ const protractor_1 = require("protractor");
 const NewContactPageObject_1 = require("./NewContactPageObject");
 const Condition_1 = require("../helpers/Condition");
 const WebElement_1 = require("../wrappers/WebElement");
-const Log_1 = require("../helpers/Log");
+const Logger_1 = require("../helpers/Logger");
 class ContactListPageObject {
     constructor() {
         this.condition = new Condition_1.Condition();
@@ -21,7 +21,7 @@ class ContactListPageObject {
     }
     clickPlusButton() {
         return __awaiter(this, void 0, void 0, function* () {
-            Log_1.Log.log().debug("In method click plus button");
+            Logger_1.Logger.log().debug("In method click plus button");
             yield this.condition.shouldBeClickable(this.plusButton, 10);
             yield this.plusButton.customClick();
             return new NewContactPageObject_1.NewContactPageObject();

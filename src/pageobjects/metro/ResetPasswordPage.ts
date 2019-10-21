@@ -1,7 +1,7 @@
 import {BasePage} from "./BasePage";
 import {WebElement} from "../../wrappers/WebElement";
 import {By, element, browser, ExpectedConditions as EC} from "protractor";
-import {Log} from "../../helpers/Log";
+import {Logger} from "../../helpers/Logger";
 import {VendorContractConfirmPage} from "./VendorContractConfirmPage";
 import {Properties} from "../../properties/Properties";
 import Expected = jasmine.Expected;
@@ -21,24 +21,23 @@ export class ResetPasswordPage extends BasePage {
     }
 
     public async enterPassword(password:string): Promise<VendorContractConfirmPage> {
-        await Log.log().debug("Enter passwrd: Auto1" + password);
+        await Logger.log().debug("Enter passwrd: Auto1" + password);
 
         await browser.wait(EC.visibilityOf(this.resetPasswordField),10000)
         await this.navigateToWithDisabledAngularWait(Properties.VendroQAEnv)
-        await browser.manage().getCookies().then(function(cookies) {
+       /* await browser.manage().getCookies().then(function(cookies) {
             console.log("Cookies Before")
             console.dir(cookies);
-        });
+        });*/
 
         await browser.navigate().back();
-        console.log(`${LocalStorage.getValue("sessionCookie")}`)
-        await (browser.manage() as any).addCookie({ name: 'PHPSESSID',
-            value: `'${LocalStorage.getValue("sessionCookie")}'`,httpOnly:true, domain: 'www.qa.metro-vendorcentral.com' });
+        /*await (browser.manage() as any).addCookie({ name: 'PHPSESSID',
+            value: `${await LocalStorage.getValue("sessionCookie")}`,httpOnly:true, domain: 'www.qa.metro-vendorcentral.com' });
         await browser.manage().getCookies().then(function(cookies) {
             console.log("Cookies After")
             console.dir(cookies);
-        });
-       // await browser.navigate().back();
+        });*/
+        await browser.navigate().back();
         await this.resetPasswordField.type("Auto1"+password);
         await this.passordConfirmField.type("Auto1"+password);
         await this.createPasswordButton.customClick();

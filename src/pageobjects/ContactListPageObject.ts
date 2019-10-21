@@ -2,7 +2,7 @@ import {browser, by, element, ElementFinder} from 'protractor';
 import {NewContactPageObject} from "./NewContactPageObject";
 import {Condition} from "../helpers/Condition";
 import {WebElement} from "../wrappers/WebElement";
-import {Log} from "../helpers/Log";
+import {Logger} from "../helpers/Logger";
 
 export class ContactListPageObject {
 
@@ -16,7 +16,7 @@ export class ContactListPageObject {
     }
 
     async clickPlusButton() {
-        Log.log().debug("In method click plus button")
+        Logger.log().debug("In method click plus button")
         await this.condition.shouldBeClickable(this.plusButton, 10)
         await this.plusButton.customClick();
         return new NewContactPageObject();

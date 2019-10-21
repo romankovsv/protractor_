@@ -2,7 +2,7 @@ import {browser, By, element} from "protractor";
 import {Condition} from "../../helpers/Condition";
 import {WebElement} from "../../wrappers/WebElement";
 import {GmailMainPage} from "./GmailMainPage";
-import {Log} from "../../helpers/Log";
+import {Logger} from "../../helpers/Logger";
 import {Properties} from "../../properties/Properties";
 import {BasePage} from "./BasePage";
 export class GmailSignInPage extends BasePage{
@@ -23,7 +23,7 @@ export class GmailSignInPage extends BasePage{
     }
 
     public async loginToGmail():Promise<GmailMainPage>{
-        await Log.log().debug(`Login to gmail with : ${Properties.Gmail_email}`);
+        await Logger.log().debug(`Login to gmail with : ${Properties.Gmail_email}`);
         await this.navigateToWithDisabledAngularWait("http://www.gmail.com");
         await this.emailField.type(Properties.Gmail_email);
         await this.nextButton.customClick();

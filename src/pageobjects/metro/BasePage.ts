@@ -1,7 +1,7 @@
-import {browser} from "protractor";
 import {Properties} from "../../properties/Properties";
 import {Condition} from "../../helpers/Condition";
-import {Log} from "../../helpers/Log";
+import {element,By, browser} from "protractor";
+import {Logger} from "../../helpers/Logger";
 
 export class BasePage {
     protected condition: Condition;
@@ -14,17 +14,17 @@ export class BasePage {
         this.condition = new Condition()
     }
     async navigateTo(url:string) {
-        await Log.log().debug("\nNavigate to Url: " + url);
+        await Logger.log().debug("\nNavigate to Url: " + url);
         await browser.waitForAngularEnabled(true);
         await browser.get(url);
-        await this.condition.urlShouldContain(url, 15)
+       // await this.condition.urlShouldContain(url, 30)
     }
 
     async navigateToWithDisabledAngularWait(url:string){
-        await Log.log().debug("\nNavigate to Url: " + url);
+        await Logger.log().debug("\nNavigate to Url: " + url);
         await browser.waitForAngularEnabled(false);
         await browser.sleep(1000)
-        await browser.navigate().to(url);
-        await this.condition.urlShouldContain(url, 15)
+        await browser.get(url);
+       // await this.condition.urlShouldContain(url, 30)
     }
 }

@@ -1,7 +1,7 @@
 import {ContactListPageObject} from "../../src/pageobjects/ContactListPageObject";
 import {NewContactPageObject} from "../../src/pageobjects/NewContactPageObject";
 import {browser} from 'protractor';
-import {Log} from "../../src/helpers/Log";
+import {Logger} from "../../src/helpers/Logger";
 
 
 describe('create new contact', function()  {
@@ -14,7 +14,7 @@ describe('create new contact', function()  {
     });
 
     it('should click the + button', async function()  {
-        Log.log().debug("In Test")
+        Logger.log().debug("In Test")
         let newContact: NewContactPageObject;
         newContact = await contactList.clickPlusButton();
         expect(await browser.getCurrentUrl())

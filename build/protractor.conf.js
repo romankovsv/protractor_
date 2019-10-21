@@ -15,20 +15,40 @@ let HtmlReporter = require('protractor-beautiful-reporter');
 'use strict';
 let log4js = require('log4js');
 exports.config = {
+    baseUrl: 'https://testing-angular-applications.github.io',
+    framework: 'jasmine2',
+    capabilities: {
+        browserName: 'chrome'
+    },
+    suites: {
+        "first": "./FirstTestSpec.js",
+        "second": "./SecondTestspec.js"
+    },
+    //specs: ['./test/specs/*[sS]pec.js'],
+    specs: ['./test/specs/*[tT]ests.js'],
+    SELENIUM_PROMISE_MANAGER: false,
+    seleniumAddress: 'http://localhost:7777/wd/hub',
+    noGlobals: false,
+    jasmineNodeOpts: {
+        showColors: true,
+        silent: true,
+        defaultTimeoutInterval: 60000,
+        isVerbose: true,
+    },
     onPrepare: () => __awaiter(void 0, void 0, void 0, function* () {
         yield protractor_1.browser.waitForAngularEnabled(true);
         protractor_1.browser.manage().window().maximize();
         protractor_1.browser.manage().timeouts().implicitlyWait(5000);
         const ConsoleReporter = require("jasmine2-reporter").Jasmine2Reporter;
         const console_reporter_options = {
-            startingSpec: true
+            startingSpec: true,
+            displayStackTrace: true
         };
         jasmine.getEnv().addReporter(new ConsoleReporter(console_reporter_options));
         beforeEach(() => {
             jasmine.addMatchers(matchers);
         });
         afterEach(() => __awaiter(void 0, void 0, void 0, function* () {
-            // Clearing browser data after each test
             yield protractor_1.browser.manage().deleteAllCookies();
             yield protractor_1.browser.executeScript("window.sessionStorage.clear(); window.localStorage.clear();");
         }));
@@ -43,19 +63,5 @@ exports.config = {
             }
         }).getJasmine2Reporter());
     }),
-    baseUrl: 'https://testing-angular-applications.github.io',
-    framework: 'jasmine2',
-    capabilities: {
-        browserName: 'chrome'
-    },
-    suites: {
-        "first": "./FirstTestSpec.js",
-        "second": "./SecondTestspec.js"
-    },
-    //specs: ['./test/specs/*[sS]pec.js'],
-    specs: ['./test/specs/*[tT]ests.js'],
-    SELENIUM_PROMISE_MANAGER: false,
-    seleniumAddress: 'http://localhost:7777/wd/hub',
-    noGlobals: false
 };
 //# sourceMappingURL=protractor.conf.js.map

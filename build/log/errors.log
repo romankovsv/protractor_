@@ -353,3 +353,142 @@ Wait timed out after 25162ms
 [2019-10-20T23:04:25.621] [ERROR] default - { TimeoutError: Wait timed out after 15007ms
     at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T08:10:37.968] [ERROR] default - { TimeoutError: Wait timed out after 15003ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T08:12:26.301] [ERROR] default - { TimeoutError: Wait timed out after 15000ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T08:16:51.388] [ERROR] default - { TimeoutError: Wait timed out after 15003ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T08:43:37.898] [ERROR] default - { TimeoutError: Wait timed out after 15005ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T08:47:32.070] [ERROR] default - { TimeoutError: Wait timed out after 15004ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T08:54:59.402] [ERROR] default - { TimeoutError: Wait timed out after 15000ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:01:32.764] [ERROR] default - { TimeoutError: Wait timed out after 15005ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:03:46.390] [ERROR] default - { TimeoutError: Wait timed out after 15004ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:05:38.622] [ERROR] default - { TimeoutError: Wait timed out after 15003ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:06:16.472] [ERROR] default - { TimeoutError: Element By(css selector, #reset_password_newPassword_first) is not visible
+Wait timed out after 25200ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:09:18.051] [ERROR] default - { TimeoutError: Wait timed out after 15001ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:09:43.180] [ERROR] default - { TimeoutError: Element By(css selector, *[id="identifierId"]) is not visible
+Wait timed out after 25127ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:11:06.021] [ERROR] default - { TimeoutError: Wait timed out after 15002ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:14:14.873] [ERROR] default - { TimeoutError: Wait timed out after 15007ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:16:28.245] [ERROR] default - { TimeoutError: Wait timed out after 15001ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:38:26.096] [ERROR] default - { TimeoutError: Wait timed out after 15003ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:38:53.251] [ERROR] default - { TimeoutError: Wait timed out after 15003ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:39:02.852] [ERROR] default - Element By(css selector, .send-email-modal--content .m-checkbox svg) is not clickable
+WebDriverError: chrome not reachable
+  (Session info: chrome=77.0.3865.120)
+[2019-10-21T09:41:48.565] [ERROR] default - { TimeoutError: Wait timed out after 15005ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:44:13.286] [ERROR] default - { TimeoutError: Wait timed out after 15005ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:46:57.167] [ERROR] default - { TimeoutError: Wait timed out after 15002ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:49:24.450] [ERROR] default - { TimeoutError: Wait timed out after 15000ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:50:35.421] [ERROR] default - { TimeoutError: Wait timed out after 15006ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:51:15.373] [ERROR] default - { TimeoutError: Element By(css selector, #reset_password_newPassword_first) is not visible
+Wait timed out after 25135ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:56:06.126] [ERROR] default - { TimeoutError: Wait timed out after 15004ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T09:57:29.911] [ERROR] default - { TimeoutError: Wait timed out after 15005ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T10:00:53.726] [ERROR] default - { TimeoutError: Wait timed out after 15002ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T10:04:34.597] [ERROR] default - { TimeoutError: Wait timed out after 15002ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T10:07:20.147] [ERROR] default - { TimeoutError: Wait timed out after 15004ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T10:09:21.404] [ERROR] default - TypeError: Cannot read property 'indexOf' of null
+    at browser.driver.getCurrentUrl.then (C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\protractor\built\expectedConditions.js:299:34)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-10-21T10:09:21.421] [ERROR] default - { NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=77.0.3865.120)
+    at Object.throwDecodedError (C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\error.js:514:15)
+    at parseHttpResponse (C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\http.js:519:13)
+    at doSend.then.response (C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\http.js:441:30)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  name: 'NoSuchWindowError',
+  remoteStacktrace:
+   'Backtrace:\n\tOrdinal0 [0x00D8EB13+1501971]\n\tOrdinal0 [0x00D0F6D1+980689]\n\tOrdinal0 [0x00C9765F+489055]\n\tOrdinal0 [0x00C89D57+433495]\n\tOrdinal0 [0x00C48231+164401]\n\tOrdinal0 [0x00C4F509+193801]\n\tOrdinal0 [0x00C478EB+162027]\n\tOrdinal0 [0x00C30AC7+68295]\n\tOrdinal0 [0x00C31B40+72512]\n\tOrdinal0 [0x00C31AD9+72409]\n\tOrdinal0 [0x00D28F37+1085239]\n\tGetHandleVerifier [0x00E2D7ED+503293]\n\tGetHandleVerifier [0x00E2D580+502672]\n\tGetHandleVerifier [0x00E346AC+531644]\n\tGetHandleVerifier [0x00E2DFFA+505354]\n\tOrdinal0 [0x00D20606+1050118]\n\tOrdinal0 [0x00D2047F+1049727]\n\tOrdinal0 [0x00D2AF9B+1093531]\n\tOrdinal0 [0x00D2B103+1093891]\n\tOrdinal0 [0x00D2A095+1089685]\n\tBaseThreadInitThunk [0x76568744+36]\n\tRtlGetAppContainerNamedObjectPath [0x77DB582D+253]\n\tRtlGetAppContainerNamedObjectPath [0x77DB57FD+205]\n' }
+[2019-10-21T10:30:01.700] [ERROR] default - Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=77.0.3865.120)
+[2019-10-21T10:30:01.720] [ERROR] default - Element By(css selector, li[data-section-name='suppliers'] .menu-text) is not clickable
+NoSuchWindowError: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=77.0.3865.120)
+[2019-10-21T10:44:20.976] [ERROR] default - { TimeoutError: Wait timed out after 15009ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T10:58:19.020] [ERROR] default - { TimeoutError: Wait timed out after 15004ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T11:03:55.460] [ERROR] default - { TimeoutError: Wait timed out after 15008ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T11:23:22.842] [ERROR] default - { TimeoutError: Wait timed out after 15002ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T11:24:28.203] [ERROR] default - { TimeoutError: Wait timed out after 15005ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T11:25:12.946] [ERROR] default - { TimeoutError: Wait timed out after 15006ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T11:26:41.915] [ERROR] default - { TimeoutError: Wait timed out after 30004ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T12:38:30.141] [ERROR] default - Element By(css selector, .vendor-contract--footer button[kind='primaryRaised']) is not clickable
+TimeoutError: Element By(css selector, .vendor-contract--footer button[kind='primaryRaised']) is not clickable
+Wait timed out after 5001ms
+[2019-10-21T14:23:04.152] [ERROR] default - { TimeoutError: Element By(css selector, .vendor-contract--footer button[kind='primaryRaised']) is not visible
+Wait timed out after 10015ms
+    at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }

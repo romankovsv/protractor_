@@ -8,6 +8,9 @@ class Log {
     static log() {
         return logger;
     }
+    static log(text) {
+        logger.debug("\n" + text);
+    }
 }
 exports.Log = Log;
 //# sourceMappingURL=Log.js.map

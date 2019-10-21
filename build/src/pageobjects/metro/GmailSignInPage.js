@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const WebElement_1 = require("../../wrappers/WebElement");
 const GmailMainPage_1 = require("./GmailMainPage");
-const Log_1 = require("../../helpers/Log");
+const Logger_1 = require("../../helpers/Logger");
 const Properties_1 = require("../../properties/Properties");
 const BasePage_1 = require("./BasePage");
 class GmailSignInPage extends BasePage_1.BasePage {
@@ -26,7 +26,7 @@ class GmailSignInPage extends BasePage_1.BasePage {
     }
     loginToGmail() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Log_1.Log.log().debug(`Login to gmail with : ${Properties_1.Properties.Gmail_email}`);
+            yield Logger_1.Logger.log().debug(`Login to gmail with : ${Properties_1.Properties.Gmail_email}`);
             yield this.navigateToWithDisabledAngularWait("http://www.gmail.com");
             yield this.emailField.type(Properties_1.Properties.Gmail_email);
             yield this.nextButton.customClick();

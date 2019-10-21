@@ -1,7 +1,7 @@
 import {BaseFragment} from 'protractor-element-extend'
-import {browser, ExpectedConditions as EC, By} from 'protractor'
+import {browser, By, ExpectedConditions as EC} from 'protractor'
 import {Condition} from "../../src/helpers/Condition";
-import {Log} from "../../src/helpers/Log";
+import {Logger} from "../helpers/Logger";
 
 export class WebElement extends BaseFragment {
 
@@ -13,41 +13,59 @@ export class WebElement extends BaseFragment {
     }
 
     public async customClick() {
-       await Log.log().debug("Inside customClick")
+        await Logger.logs("Inside customClick")
 
-        await this.condition.shouldBeClickable(this, 60).catch(async ()=>{
-            await Log.log().debug(`Element ${this.locator()} is not clickable`)
+        await this.condition.shouldBeClickable(this, 60).catch(async (error) => {
+            await Logger.logs(`Element ${this.locator()} is not clickable`)
+            error.message = `Element ${this.locator()} is not clickable`
+            throw error;
         });
+
+
         await this.click().then(async () => {
-            await Log.log().debug(`Element ${this.locator()} is  clicked`)
-        });
+            await Logger.logs(`Element ${this.locator()} is  clicked`)
+        })
+            .catch((error) => {
+                error.message = `Element ${this.locator()} is not clickable`
+                throw error;
+            });
     }
 
     public async type(text: string) {
-        Log.log().debug("Inside custom sendKeys");
+        Logger.logs("Inside custom sendKeys");
         await this.condition.shouldBeVisible(this, 25)
-            .catch(async ()=>{
-            await Log.log().debug(`Element ${this.locator()} is not visible`)
-        });
+            .catch(async (err) => {
+                await Logger.logs(`Element ${this.locator()} is not visible`)
+                throw err;
+            });
+
+        await this.clear();
 
         await this.sendKeys(text).then(async () => {
-            await Log.log().debug(`Element ${this.locator()} is successfully entered text:${text}`);
+            await Logger.logs(`Element ${this.locator()} is  entered text:${text}`);
         });
+        await browser.wait(EC.textToBePresentInElementValue(this, text), 5000)
+            .then(null, async (err) => {
+                const value = await this.getAttribute('value');
+                err.message = `Timeout error waiting for input value contains: ${value}`;
+                Logger.logs('text in method:' + value)
+                throw err;
+            });
     }
 
-    public async selectByValue(value:string){
+    public async selectByValue(value: string) {
         await this.condition.shouldBeVisible(this, 10)
-        this.element(By.css('option[value="' + value + '"]')).click()
+        await this.element(By.css('option[value="' + value + '"]')).click()
     }
 
-    public async selectByText(value:string){
+    public async selectByText(value: string) {
         await this.condition.shouldBeVisible(this, 10)
-        return this.element(By.xpath('option[.="' + value + '"]')).click();
+        return await this.element(By.xpath('option[.="' + value + '"]')).click();
     }
 
-    public async selectByPartialText(value:string){
+    public async selectByPartialText(value: string) {
         await this.condition.shouldBeVisible(this, 10)
-        return this.element(By.cssContainingText('option', value)).click();
+        return await this.element(By.cssContainingText('option', value)).click();
     }
 
     public async check() {

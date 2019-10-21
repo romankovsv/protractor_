@@ -12,10 +12,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const VendorCentralLoginPage_1 = require("../../src/pageobjects/metro/VendorCentralLoginPage");
 const UserBuilder_1 = require("../../src/models/UserBuilder");
 const Generator_1 = require("../../src/helpers/Generator");
-const Log_1 = require("../../src/helpers/Log");
+const Logger_1 = require("../../src/helpers/Logger");
 const Properties_1 = require("../../src/properties/Properties");
 const GmailSignInPage_1 = require("../../src/pageobjects/metro/GmailSignInPage");
-const protractor_1 = require("protractor");
 describe('registration', function () {
     let loginPage;
     beforeEach(function () {
@@ -33,22 +32,16 @@ describe('registration', function () {
                 .setPassword(Generator_1.Generator.generateStringWithLenght(10))
                 .setUserType('vendor')
                 .build();
-            Log_1.Log.log().debug(user);
+            Logger_1.Logger.logs(user.toString());
             const sessionCookie = null;
             let homePage = yield loginPage.login();
             yield homePage.clickAddNewUser();
-            yield homePage.addNewUser(user, sessionCookie);
-            console.dir("sessionCookie: " + sessionCookie);
+            yield homePage.addNewUser(user);
             let gmail = yield new GmailSignInPage_1.GmailSignInPage()
                 .loginToGmail();
             let resetPage = yield gmail.activateAccount();
             let confirmPage = yield resetPage.enterPassword(user.password);
             yield confirmPage.acceptTerms();
-        });
-    });
-    afterEach(function () {
-        return __awaiter(this, void 0, void 0, function* () {
-            yield protractor_1.browser.quit();
         });
     });
 });

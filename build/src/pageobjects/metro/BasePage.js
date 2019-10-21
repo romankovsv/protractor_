@@ -9,9 +9,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const protractor_1 = require("protractor");
 const Condition_1 = require("../../helpers/Condition");
-const Log_1 = require("../../helpers/Log");
+const protractor_1 = require("protractor");
+const Logger_1 = require("../../helpers/Logger");
 class BasePage {
     constructor() {
         this.condition = new Condition_1.Condition();
@@ -23,19 +23,19 @@ class BasePage {
     }
     navigateTo(url) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Log_1.Log.log().debug("\nNavigate to Url: " + url);
+            yield Logger_1.Logger.log().debug("\nNavigate to Url: " + url);
             yield protractor_1.browser.waitForAngularEnabled(true);
             yield protractor_1.browser.get(url);
-            yield this.condition.urlShouldContain(url, 15);
+            // await this.condition.urlShouldContain(url, 30)
         });
     }
     navigateToWithDisabledAngularWait(url) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Log_1.Log.log().debug("\nNavigate to Url: " + url);
+            yield Logger_1.Logger.log().debug("\nNavigate to Url: " + url);
             yield protractor_1.browser.waitForAngularEnabled(false);
             yield protractor_1.browser.sleep(1000);
-            yield protractor_1.browser.navigate().to(url);
-            yield this.condition.urlShouldContain(url, 15);
+            yield protractor_1.browser.get(url);
+            // await this.condition.urlShouldContain(url, 30)
         });
     }
 }

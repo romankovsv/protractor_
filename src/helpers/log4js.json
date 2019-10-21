@@ -5,7 +5,7 @@
       "type": "stdout",
       "layout": {
         "type": "pattern",
-        "pattern": " %p %c %f:%l %m%n"
+        "pattern": " %p %c %f:%l %m%n\n"
       }
     },
     "access": {

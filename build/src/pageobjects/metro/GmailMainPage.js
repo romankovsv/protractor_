@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const WebElement_1 = require("../../wrappers/WebElement");
-const Log_1 = require("../../helpers/Log");
+const Logger_1 = require("../../helpers/Logger");
 const protractor_1 = require("protractor");
 const ResetPasswordPage_1 = require("./ResetPasswordPage");
 class GmailMainPage {
@@ -21,7 +21,7 @@ class GmailMainPage {
     }
     activateAccount() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Log_1.Log.log().debug("Activate account");
+            yield Logger_1.Logger.log().debug("Activate account");
             yield protractor_1.browser.wait(protractor_1.ExpectedConditions.elementToBeClickable(protractor_1.element(protractor_1.By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]"))));
             yield protractor_1.element(protractor_1.By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]")).click();
             // await this.firstEmail.click();

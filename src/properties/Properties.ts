@@ -9,4 +9,5 @@ export class Properties{
     static Gmail_password:string = "Metro!@#123";
     static VendorCentralEmail:string = "admin@sms.com";
     static VendorCentralPassword:string = "admin";
+    static Creds:string = "sms:GHnRgg4G3qf43gvdsgds@";
 }

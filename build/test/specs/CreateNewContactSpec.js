@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const ContactListPageObject_1 = require("../../src/pageobjects/ContactListPageObject");
 const protractor_1 = require("protractor");
-const Log_1 = require("../../src/helpers/Log");
+const Logger_1 = require("../../src/helpers/Logger");
 describe('create new contact', function () {
     let contactList;
     beforeEach(function () {
@@ -22,7 +22,7 @@ describe('create new contact', function () {
     });
     it('should click the + button', function () {
         return __awaiter(this, void 0, void 0, function* () {
-            Log_1.Log.log().debug("In Test");
+            Logger_1.Logger.log().debug("In Test");
             let newContact;
             newContact = yield contactList.clickPlusButton();
             expect(yield protractor_1.browser.getCurrentUrl())

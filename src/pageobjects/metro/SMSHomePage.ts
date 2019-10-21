@@ -4,7 +4,7 @@ import {browser, By, element} from "protractor";
 import {Generator} from "../../helpers/Generator";
 import {User} from "../../models/User";
 import {BasePage} from "./BasePage";
-import {Log} from "../../helpers/Log";
+import {Logger} from "../../helpers/Logger";
 import {LocalStorage} from "../../helpers/LocalStorage";
 
 export class SMSHomePage extends BasePage{
@@ -36,26 +36,23 @@ export class SMSHomePage extends BasePage{
     }
 
     public async clickAddNewUser(): Promise<SMSHomePage> {
-
         await this.sideBar_Suppliers_Menu.customClick();
         await this.sidebar_suppliers_users.customClick();
         await this.addUserButton.customClick()
         return this;
     }
 
-    public async addNewUser(user:User, sessionCookie:string): Promise<SMSHomePage> {
-        await Log.log().debug("Add new user: " + user)
+    public async addNewUser(user:User): Promise<SMSHomePage> {
+        await Logger.logs("Add new user: " + user)
         await this.userTypeSelector.selectByValue(user.userType);
         await this.firstNameField.type(user.firstName);
         await this.lastNameField.type(user.lastName);
         await this.emailField.type(user.email);
         await this.saveUserButton.customClick();
+
         await browser.manage().getCookie("PHPSESSID").then(function(cookie) {
-            console.log("Cookies")
-            console.log(cookie)
             console.dir(cookie);
-            sessionCookie = cookie.value;
-            console.dir("sessionCookie: "+sessionCookie);
+            let sessionCookie = cookie.value;
             LocalStorage.setKeyValue("sessionCookie",sessionCookie)
         });
         return this;

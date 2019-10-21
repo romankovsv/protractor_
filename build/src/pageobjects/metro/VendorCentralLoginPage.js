@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const WebElement_1 = require("../../wrappers/WebElement");
-const Log_1 = require("../../helpers/Log");
+const Logger_1 = require("../../helpers/Logger");
 const SMSHomePage_1 = require("./SMSHomePage");
 const Properties_1 = require("../../properties/Properties");
 const BasePage_1 = require("./BasePage");
@@ -24,7 +24,7 @@ class VendorCentralLoginPage extends BasePage_1.BasePage {
     }
     login() {
         return __awaiter(this, void 0, void 0, function* () {
-            Log_1.Log.log().debug(`Login with email:${Properties_1.Properties.VendorCentralEmail} and password: ${Properties_1.Properties.VendorCentralPassword}`);
+            Logger_1.Logger.log().debug(`Login with email:${Properties_1.Properties.VendorCentralEmail} and password: ${Properties_1.Properties.VendorCentralPassword}`);
             yield this.emailField.type(Properties_1.Properties.VendorCentralEmail);
             yield this.passwordField.type(Properties_1.Properties.VendorCentralPassword);
             yield this.loginButton.customClick();

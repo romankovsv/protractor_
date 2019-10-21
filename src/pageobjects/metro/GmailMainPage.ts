@@ -1,5 +1,5 @@
 import {WebElement} from "../../wrappers/WebElement";
-import {Log} from "../../helpers/Log";
+import {Logger} from "../../helpers/Logger";
 import {browser, By, element, ExpectedConditions} from "protractor";
 import {ResetPasswordPage} from "./ResetPasswordPage";
 
@@ -17,7 +17,7 @@ export class GmailMainPage {
     }
 
     public async activateAccount(): Promise<ResetPasswordPage> {
-        await Log.log().debug("Activate account")
+        await Logger.log().debug("Activate account")
 
         await browser.wait(ExpectedConditions.elementToBeClickable(element(By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]"))))
         await element(By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]")).click()

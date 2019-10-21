@@ -1,9 +1,12 @@
 import {browser} from "protractor";
 export class LocalStorage {
 
-    static getValue(key:string):any{
-        return browser.executeScript("return window.localStorage.getItem('" + key + "');")
-            .then((value)=> value);
+    static async getValue(key:string):Promise<any>{
+        return  await browser.executeScript("return window.localStorage.getItem('" + key + "');")
+            .then(value =>  {
+                console.dir("ConsoleDir:"+value)
+                return value;
+            });
     }
 
     static setKeyValue(key:string, value:string){

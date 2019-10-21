@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const WebElement_1 = require("../../wrappers/WebElement");
 const protractor_1 = require("protractor");
 const BasePage_1 = require("./BasePage");
-const Log_1 = require("../../helpers/Log");
+const Logger_1 = require("../../helpers/Logger");
 const LocalStorage_1 = require("../../helpers/LocalStorage");
 class SMSHomePage extends BasePage_1.BasePage {
     constructor() {
@@ -36,20 +36,17 @@ class SMSHomePage extends BasePage_1.BasePage {
             return this;
         });
     }
-    addNewUser(user, sessionCookie) {
+    addNewUser(user) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Log_1.Log.log().debug("Add new user: " + user);
+            yield Logger_1.Logger.logs("Add new user: " + user);
             yield this.userTypeSelector.selectByValue(user.userType);
             yield this.firstNameField.type(user.firstName);
             yield this.lastNameField.type(user.lastName);
             yield this.emailField.type(user.email);
             yield this.saveUserButton.customClick();
             yield protractor_1.browser.manage().getCookie("PHPSESSID").then(function (cookie) {
-                console.log("Cookies");
-                console.log(cookie);
                 console.dir(cookie);
-                sessionCookie = cookie.value;
-                console.dir("sessionCookie: " + sessionCookie);
+                let sessionCookie = cookie.value;
                 LocalStorage_1.LocalStorage.setKeyValue("sessionCookie", sessionCookie);
             });
             return this;

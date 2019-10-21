@@ -12,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_element_extend_1 = require("protractor-element-extend");
 const protractor_1 = require("protractor");
 const Condition_1 = require("../../src/helpers/Condition");
-const Log_1 = require("../../src/helpers/Log");
+const Logger_1 = require("../helpers/Logger");
 class WebElement extends protractor_element_extend_1.BaseFragment {
     constructor(element) {
         super(element);
@@ -20,43 +20,58 @@ class WebElement extends protractor_element_extend_1.BaseFragment {
     }
     customClick() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Log_1.Log.log().debug("Inside customClick");
-            yield this.condition.shouldBeClickable(this, 60).catch(() => __awaiter(this, void 0, void 0, function* () {
-                yield Log_1.Log.log().debug(`Element ${this.locator()} is not clickable`);
+            yield Logger_1.Logger.logs("Inside customClick");
+            yield this.condition.shouldBeClickable(this, 60).catch((error) => __awaiter(this, void 0, void 0, function* () {
+                yield Logger_1.Logger.logs(`Element ${this.locator()} is not clickable`);
+                error.message = `Element ${this.locator()} is not clickable`;
+                throw error;
             }));
             yield this.click().then(() => __awaiter(this, void 0, void 0, function* () {
-                yield Log_1.Log.log().debug(`Element ${this.locator()} is  clicked`);
-            }));
+                yield Logger_1.Logger.logs(`Element ${this.locator()} is  clicked`);
+            }))
+                .catch((error) => {
+                error.message = `Element ${this.locator()} is not clickable`;
+                throw error;
+            });
         });
     }
     type(text) {
         return __awaiter(this, void 0, void 0, function* () {
-            Log_1.Log.log().debug("Inside custom sendKeys");
+            Logger_1.Logger.logs("Inside custom sendKeys");
             yield this.condition.shouldBeVisible(this, 25)
-                .catch(() => __awaiter(this, void 0, void 0, function* () {
-                yield Log_1.Log.log().debug(`Element ${this.locator()} is not visible`);
+                .catch((err) => __awaiter(this, void 0, void 0, function* () {
+                yield Logger_1.Logger.logs(`Element ${this.locator()} is not visible`);
+                throw err;
             }));
+            yield this.clear();
             yield this.sendKeys(text).then(() => __awaiter(this, void 0, void 0, function* () {
-                yield Log_1.Log.log().debug(`Element ${this.locator()} is successfully entered text:${text}`);
+                yield Logger_1.Logger.logs(`Element ${this.locator()} is  entered text:${text}`);
+            }));
+            yield protractor_1.browser.wait(protractor_1.ExpectedConditions.textToBePresentInElementValue(this, text), 5000)
+                .then(null, (err) => __awaiter(this, void 0, void 0, function* () {
+                const value = yield this.getAttribute('value');
+                err.message = `Timeout error waiting for input value contains: ${value}`;
+                Logger_1.Logger.logs('text in method:' + value);
+                throw err;
             }));
         });
     }
     selectByValue(value) {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.condition.shouldBeVisible(this, 10);
-            this.element(protractor_1.By.css('option[value="' + value + '"]')).click();
+            yield this.element(protractor_1.By.css('option[value="' + value + '"]')).click();
         });
     }
     selectByText(value) {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.condition.shouldBeVisible(this, 10);
-            return this.element(protractor_1.By.xpath('option[.="' + value + '"]')).click();
+            return yield this.element(protractor_1.By.xpath('option[.="' + value + '"]')).click();
         });
     }
     selectByPartialText(value) {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.condition.shouldBeVisible(this, 10);
-            return this.element(protractor_1.By.cssContainingText('option', value)).click();
+            return yield this.element(protractor_1.By.cssContainingText('option', value)).click();
         });
     }
     check() {

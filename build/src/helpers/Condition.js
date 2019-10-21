@@ -10,35 +10,50 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-const Log_1 = require("./Log");
+const Logger_1 = require("./Logger");
 class Condition {
     shouldBeVisible(el, timeout) {
         return __awaiter(this, void 0, void 0, function* () {
-            Log_1.Log.log().info("Inside should be visable");
+            Logger_1.Logger.logs("Inside should be visable");
             let EC = protractor_1.protractor.ExpectedConditions;
             yield protractor_1.browser.wait(EC.visibilityOf(el), timeout * 1000, `Element ${el.locator()} is not visible`)
                 .catch((error) => {
-                Log_1.Log.log().error(error);
+                Logger_1.Logger.log().error(error);
+                throw error;
+            });
+        });
+    }
+    shouldBeNotVisible(el, timeout) {
+        return __awaiter(this, void 0, void 0, function* () {
+            Logger_1.Logger.logs("Inside should be visable");
+            let EC = protractor_1.protractor.ExpectedConditions;
+            yield protractor_1.browser.wait(EC.not(EC.visibilityOf(el)), timeout * 1000, `Element ${el.locator()} is visible, but shouldnt be`)
+                .catch((error) => {
+                Logger_1.Logger.log().error(error);
+                throw error;
             });
         });
     }
     shouldBeClickable(el, timeout) {
         return __awaiter(this, void 0, void 0, function* () {
-            Log_1.Log.log().info("Inside should be clickable");
+            Logger_1.Logger.logs("Inside should be clickable");
             let EC = protractor_1.protractor.ExpectedConditions;
             yield protractor_1.browser.wait(EC.elementToBeClickable(el), timeout * 1000, `Element ${el.locator()} is not clickable`)
                 .catch((error) => {
-                Log_1.Log.log().error(`Element ${el.locator()} is not clickable\n` + error);
+                Logger_1.Logger.log().error(`Element ${el.locator()} is not clickable\n` + error);
+                error.message = `Element ${el.locator()} is not clickable`;
+                throw error;
             });
         });
     }
     urlShouldContain(urlPart, timeout) {
         return __awaiter(this, void 0, void 0, function* () {
-            Log_1.Log.log().info("Inside url should contains:" + urlPart);
+            Logger_1.Logger.logs("Inside url should contains:" + urlPart);
             let EC = protractor_1.protractor.ExpectedConditions;
             yield protractor_1.browser.wait(EC.urlContains(urlPart), timeout * 1000)
                 .catch((error) => {
-                Log_1.Log.log().error(error);
+                Logger_1.Logger.log().error(error);
+                throw error;
             });
         });
     }
