@@ -6,17 +6,18 @@ const readline = require('readline');
 
 
 describe("Suite", async function () {
-
-    beforeAll(async function () {
-        let content =  fs.readFileSync('credentials.json' );
+    beforeAll( function (done) {
+        this.value = null
+        let content = fs.readFileSync('credentials.json');
         console.log("Method readFile has been called")
-        let value = null;
         authorize(JSON.parse(content), (auth) => {
-            return  listMessages(auth,  async (res) => {
-                res.forEach( (e) => {
+            return listMessages(auth, async (res) => {
+                res.forEach((e) => {
                     e.forEach((e) => {
                         console.log("Results: " + e)
-                        value = e;
+                        this.value = e;
+                        console.log("In Before"+this.value)
+                        done();
                     })
 
                 })
@@ -24,30 +25,31 @@ describe("Suite", async function () {
 
             })
         });
+
     })
 
 
-    it("First Test on protractor",  async function () {
+    it("First Test on protractor", async function () {
         console.log("Test is started");
         let arrayOfArray = [];
 
-   /*    let content =  fs.readFileSync('credentials.json' );
-            console.log("Method readFile has been called")
+        /*    let content =  fs.readFileSync('credentials.json' );
+                 console.log("Method readFile has been called")
 
-            authorize(JSON.parse(content), (auth) => {
-                return  listMessages(auth,  async (res) => {
-                    res.forEach( (e) => {
-                        e.forEach((e) => {
-                            console.log("Results: " + e)
-                        })
+                 authorize(JSON.parse(content), (auth) => {
+                     return  listMessages(auth,  async (res) => {
+                         res.forEach( (e) => {
+                             e.forEach((e) => {
+                                 console.log("Results: " + e)
+                             })
 
-                    })
-                    console.log(res[0])
+                         })
+                         console.log(res[0])
 
-                })
-            });*/
+                     })
+                 });*/
 
-        console.log("In test:"+ value)
+        console.log("In test:" + this.value)
         let EC = protractor.ExpectedConditions;
         let button = $('#xyz');
         let isClickable = EC.elementToBeClickable(button);
@@ -56,7 +58,6 @@ describe("Suite", async function () {
         let clickable = await EC.elementToBeClickable(b);
         await browser.wait(clickable, 5000);
         await b.sendKeys("My note is here");
-
 
 
     });

@@ -2309,6 +2309,259 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         ],
         "timestamp": 1571676768478,
         "duration": 2643
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "004daad8c46f5f260ce48448d718e678",
+        "instanceId": 26340,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680278872,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680277162,
+        "duration": 2745
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "ecdcf37a10b0e36c1d3e5147006e83a3",
+        "instanceId": 23232,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680306767,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680305037,
+        "duration": 2727
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a34a41dcd7d587f3f9ac4fc50d17e722",
+        "instanceId": 24516,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680335329,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680333675,
+        "duration": 2664
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "c84bfd704bbfc6476135193c72b89e87",
+        "instanceId": 24968,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680344954,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680343351,
+        "duration": 2588
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "557bb7ea61521ddbe1c14f160e14d4ff",
+        "instanceId": 6404,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680370766,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680369205,
+        "duration": 2642
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "5de1bee74bf38c0258270cbc4e198771",
+        "instanceId": 13604,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680409469,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680407826,
+        "duration": 2626
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "a9416cbdf68dfb7150920ef019502757",
+        "instanceId": 15880,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680509634,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680507704,
+        "duration": 2941
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "c705219cc12495b21b6ee9e6142bd819",
+        "instanceId": 1964,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680613796,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680565062,
+        "duration": 59060
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "f381d2fa23cc82afaa1dfc780a39afe5",
+        "instanceId": 14092,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571680759620,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571680757816,
+        "duration": 2880
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "ab77b4ec1ae2740b7db579bbafcb0303",
+        "instanceId": 20868,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571681017001,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571681015363,
+        "duration": 2595
+    },
+    {
+        "description": "First Test on protractor|Suite",
+        "passed": true,
+        "pending": false,
+        "os": "windows nt",
+        "sessionId": "10f420837e3427859d32f89135843ea8",
+        "instanceId": 17964,
+        "browser": {
+            "name": "chrome",
+            "version": "77.0.3865.120"
+        },
+        "message": "Passed",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "http://todomvc.com/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+                "timestamp": 1571681121508,
+                "type": ""
+            }
+        ],
+        "timestamp": 1571681120121,
+        "duration": 2447
     }
 ];
 
