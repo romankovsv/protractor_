@@ -1,11 +1,11 @@
 import {BankData} from "./BankData";
 
 export class BankDataBuilder {
-    
+
     data:BankData;
 
     constructor(data:string){
-        this.data.bank = data
+        this.data = new BankData(data);
     }
 
     public setIban(iban:string){

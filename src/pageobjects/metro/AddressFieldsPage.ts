@@ -3,6 +3,7 @@ import {WebElement} from "../../wrappers/WebElement";
 import {Logger} from "../../helpers/Logger";
 import {element, By} from "protractor";
 import {AddressData} from "../../models/AddressData";
+import {BankFieldsPage} from "./BankFieldsPage";
 
 export class AddressFieldsPage extends BasePage{
 

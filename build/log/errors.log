@@ -492,3 +492,6 @@ Wait timed out after 5001ms
 Wait timed out after 10015ms
     at C:\Users\sromankov\WebstormProjects\TypeScriptBasics\node_modules\selenium-webdriver\lib\promise.js:2201:17
     at process._tickCallback (internal/process/next_tick.js:68:7) name: 'TimeoutError', remoteStacktrace: '' }
+[2019-10-21T16:52:10.224] [ERROR] default - Element By(css selector, .vendor-contract--footer button[kind='primaryRaised']) is not clickable
+TimeoutError: Element By(css selector, .vendor-contract--footer button[kind='primaryRaised']) is not clickable
+Wait timed out after 10013ms

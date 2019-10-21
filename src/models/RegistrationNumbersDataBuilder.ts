@@ -1,8 +1,6 @@
 import {RegistrationNumbersData} from "./RegistrationNumbersData";
-import {Company} from "./Company";
 
 export class RegistrationNumbersDataBuilder {
-    company:Company;
 
     data:RegistrationNumbersData;
 

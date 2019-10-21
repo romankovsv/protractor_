@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const BankData_1 = require("./BankData");
 class BankDataBuilder {
     constructor(data) {
-        this.data.bank = data;
+        this.data = new BankData_1.BankData(data);
     }
     setIban(iban) {
         this.data.iban = iban;

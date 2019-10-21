@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const AddressData_1 = require("./AddressData");
 class AddressDataBuilder {
     constructor(country) {
-        this.addressData.country = country;
+        this.addressData = new AddressData_1.AddressData(country);
     }
     setPostalCode(postalCode) {
         this.addressData.postalCode = postalCode;
@@ -10,6 +11,7 @@ class AddressDataBuilder {
     }
     setCity(city) {
         this.addressData.city = city;
+        return this;
     }
     setAddressLine1(addressLine1) {
         this.addressData.addressLine1 = addressLine1;

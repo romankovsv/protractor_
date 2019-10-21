@@ -5,7 +5,7 @@ export class AddressDataBuilder {
     addressData:AddressData;
 
     constructor(country:string){
-        this.addressData.country = country;
+        this.addressData = new AddressData(country);
     }
 
     public setPostalCode(postalCode:string){
@@ -15,6 +15,7 @@ export class AddressDataBuilder {
 
     public setCity(city:string){
         this.addressData.city = city;
+        return this;
     }
 
     public setAddressLine1(addressLine1:string){

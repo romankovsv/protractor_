@@ -13,6 +13,7 @@ const BasePage_1 = require("../BasePage");
 const WebElement_1 = require("../../wrappers/WebElement");
 const Logger_1 = require("../../helpers/Logger");
 const protractor_1 = require("protractor");
+const BankFieldsPage_1 = require("./BankFieldsPage");
 class AddressFieldsPage extends BasePage_1.BasePage {
     constructor() {
         super();
@@ -38,7 +39,7 @@ class AddressFieldsPage extends BasePage_1.BasePage {
             yield this.phoneField.type(data.phone);
             yield this.faxField.type(data.fax);
             yield this.nextButton.customClick();
-            return new BankFieldsPage();
+            return new BankFieldsPage_1.BankFieldsPage();
         });
     }
 }

@@ -13,6 +13,7 @@ const BasePage_1 = require("./BasePage");
 const WebElement_1 = require("../../wrappers/WebElement");
 const protractor_1 = require("protractor");
 const Logger_1 = require("../../helpers/Logger");
+const VendorPortalHomePage_1 = require("./VendorPortalHomePage");
 class BankFieldsPage extends BasePage_1.BasePage {
     constructor() {
         super();
@@ -30,7 +31,7 @@ class BankFieldsPage extends BasePage_1.BasePage {
             yield this.bicField.type(data.bic);
             yield this.accountHolderField.type(data.accountHolder);
             yield this.submitButton.customClick();
-            return VendorPortalHomePage();
+            return new VendorPortalHomePage_1.VendorPortalHomePage();
         });
     }
 }

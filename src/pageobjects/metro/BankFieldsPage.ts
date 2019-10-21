@@ -3,6 +3,7 @@ import {WebElement} from "../../wrappers/WebElement";
 import {element, By, browser} from "protractor";
 import {Logger} from "../../helpers/Logger";
 import {BankData} from "../../models/BankData";
+import {VendorPortalHomePage} from "./VendorPortalHomePage";
 
 export class BankFieldsPage extends BasePage{
 
@@ -29,7 +30,7 @@ export class BankFieldsPage extends BasePage{
         await this.bicField.type(data.bic);
         await this.accountHolderField.type(data.accountHolder);
         await this.submitButton.customClick();
-        return VendorPortalHomePage();
+        return new VendorPortalHomePage();
     }
 
 }

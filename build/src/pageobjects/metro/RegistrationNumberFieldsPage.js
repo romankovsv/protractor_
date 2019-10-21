@@ -14,6 +14,7 @@ const WebElement_1 = require("../../wrappers/WebElement");
 const protractor_1 = require("protractor");
 const Logger_1 = require("../../helpers/Logger");
 const AddressFieldsPage_1 = require("./AddressFieldsPage");
+let path = require('path');
 class RegistrationNumberFieldsPage extends BasePage_1.BasePage {
     constructor() {
         super();
@@ -28,8 +29,12 @@ class RegistrationNumberFieldsPage extends BasePage_1.BasePage {
             Logger_1.Logger.logs("In fillRegistrationNumbers");
             yield this.competentCommercialRegistryField.type(data.competentCommercialRegistry);
             yield this.commercialRegistrationNumberField.type(data.commercialRegistrationNumber);
-            yield this.commercialRegisterExcertpt.type(data.commercialRegisterExcertpt);
-            yield this.powerOfAttorney.type(data.powerOfAttorney);
+            let fileToUploadExcerpt = "./resources/contract.pdf";
+            let fileToUploadPowerToAttoreney = "./resources/someinfo.pdf";
+            let absolutePathExcerpt = yield path.resolve("../", fileToUploadExcerpt);
+            let absolutePathPowerToAttoreney = yield path.resolve("../", fileToUploadPowerToAttoreney);
+            yield this.commercialRegisterExcertpt.sendKeys(absolutePathExcerpt);
+            yield this.powerOfAttorney.sendKeys(absolutePathPowerToAttoreney);
             yield this.nextButton.customClick();
             return new AddressFieldsPage_1.AddressFieldsPage();
         });
