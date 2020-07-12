@@ -19,7 +19,7 @@ const protractor_1 = require("protractor");
 const CompanyBuilder_1 = require("../../src/models/CompanyBuilder");
 const RegistrationNumbersDataBuilder_1 = require("../../src/models/RegistrationNumbersDataBuilder");
 const AddressDataBuilder_1 = require("../../src/models/AddressDataBuilder");
-const BankDataBuilder_1 = require("../../src/models/BankDataBuilder");
+const BDataBuilder_1 = require("../../src/models/BDataBuilder");
 describe('registration', function () {
     let loginPage;
     beforeEach(function () {
@@ -58,7 +58,7 @@ describe('registration', function () {
                 .setPostalCode(Generator_1.Generator.generateStringWithLenght(8))
                 .setPhone(Generator_1.Generator.generateStringWithLenght(8))
                 .build();
-            let bankData = new BankDataBuilder_1.BankDataBuilder(Generator_1.Generator.generateStringWithLenght(10))
+            let bankData = new BDataBuilder_1.BDataBuilder(Generator_1.Generator.generateStringWithLenght(10))
                 .setIban(Generator_1.Generator.generateStringWithLenght(7))
                 .setBic(Generator_1.Generator.generateStringWithLenght(7))
                 .setAccountHolder(Generator_1.Generator.generateStringWithLenght(7))

@@ -24,14 +24,14 @@ class BasePage {
     }
     navigateTo(url) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Logger_1.Logger.log().debug("\nNavigate to Url: " + url);
+            yield Logger_1.Logger.logs("\nNavigate to Url: " + url);
             yield protractor_1.browser.waitForAngularEnabled(true);
             yield protractor_1.browser.get(url);
         });
     }
     navigateToWithDisabledAngularWait(url) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Logger_1.Logger.log().debug("\nNavigate to Url: " + url);
+            yield Logger_1.Logger.logs("\nNavigate to Url: " + url);
             yield protractor_1.browser.waitForAngularEnabled(false);
             yield protractor_1.browser.sleep(1000);
             yield protractor_1.browser.get(url);

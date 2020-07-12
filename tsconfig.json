@@ -4,14 +4,15 @@
     "target": "es6",
     "sourceMap": true,
     "outDir": "build",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
     /*"noImplicitAny": true,
     "strictNullChecks": true,*/
    /* "moduleResolution": "node"*/
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "allowJs": true
   },
-  "exclude": [
-    "node_modules"
-  ],
+  "exclude": ["node_modules"],
   "lib": [
     "es2016"
   ],

@@ -21,7 +21,7 @@ export class ResetPasswordPage extends BasePage {
     }
 
     public async enterPassword(password:string): Promise<VendorContractConfirmPage> {
-        await Logger.log().debug("Enter passwrd: Auto1" + password);
+        await Logger.logs("Enter passwrd: Auto1" + password);
 
         await browser.wait(EC.visibilityOf(this.resetPasswordField),10000)
         await this.navigateToWithDisabledAngularWait(Properties.VendroQAEnv)
@@ -32,7 +32,7 @@ export class ResetPasswordPage extends BasePage {
 
         await browser.navigate().back();
         /*await (browser.manage() as any).addCookie({ name: 'PHPSESSID',
-            value: `${await LocalStorage.getValue("sessionCookie")}`,httpOnly:true, domain: 'www.qa.metro-vendorcentral.com' });
+            value: `${await LocalStorage.getValue("sessionCookie")}`,httpOnly:true, domain: 'www.qa.vendor-vendorcentral.com' });
         await browser.manage().getCookies().then(function(cookies) {
             console.log("Cookies After")
             console.dir(cookies);

@@ -19,10 +19,8 @@ describe("Suite", async function () {
                         console.log("In Before"+this.value)
                         done();
                     })
-
                 })
                 console.log(res[0])
-
             })
         });
 

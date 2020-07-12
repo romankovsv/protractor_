@@ -8,7 +8,7 @@ export class Condition {
         let EC = protractor.ExpectedConditions;
         await browser.wait(EC.visibilityOf(el), timeout * 1000,`Element ${el.locator()} is not visible`)
             .catch((error) => {
-                Logger.log().error(error);
+                Logger.logs(error);
                 throw error;
             });
     }
@@ -18,7 +18,7 @@ export class Condition {
         let EC = protractor.ExpectedConditions;
         await browser.wait(EC.not(EC.visibilityOf(el)), timeout * 1000,`Element ${el.locator()} is visible, but shouldnt be`)
             .catch((error) => {
-                Logger.log().error(error);
+                Logger.logs(error);
                 throw error;
             });
     }
@@ -28,7 +28,7 @@ export class Condition {
         let EC = protractor.ExpectedConditions;
         await browser.wait(EC.elementToBeClickable(el), timeout * 1000,`Element ${el.locator()} is not clickable`)
             .catch((error) => {
-                Logger.log().error(`Element ${el.locator()} is not clickable\n`+ error);
+                Logger.logs(`Element ${el.locator()} is not clickable\n`+ error);
                 error.message = `Element ${el.locator()} is not clickable`;
                 throw error;
             });
@@ -39,7 +39,7 @@ export class Condition {
         let EC = protractor.ExpectedConditions;
         await browser.wait(EC.urlContains(urlPart), timeout * 1000)
             .catch((error) => {
-                Logger.log().error(error);
+                Logger.logs(error);
                 throw error;
             });
     }

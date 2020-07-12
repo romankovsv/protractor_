@@ -173,6 +173,7 @@ function urlify(text): any {
     urls.forEach((e) => {
         if (e.includes('continuous-testing/')) {
             console.log("Finally found: " + e)
+            // @ts-ignore
             res.push(e)
 
         }

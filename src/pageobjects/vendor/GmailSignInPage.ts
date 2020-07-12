@@ -23,7 +23,7 @@ export class GmailSignInPage extends BasePage{
     }
 
     public async loginToGmail():Promise<GmailMainPage>{
-        await Logger.log().debug(`Login to gmail with : ${Properties.Gmail_email}`);
+        await Logger.logs(`Login to gmail with : ${Properties.Gmail_email}`);
         await this.navigateToWithDisabledAngularWait("http://www.gmail.com");
         await this.emailField.type(Properties.Gmail_email);
         await this.nextButton.customClick();

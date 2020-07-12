@@ -5,13 +5,13 @@
     "name" : "Rozetka Suite",
     "children" : [ {
       "name" : "Test rozetka search",
-      "uid" : "90d06ddac80c8ae1",
+      "uid" : "42cd5404c074a572",
       "parentUid" : "dc5cb8622291eb8b854e7325f638c4e2",
       "status" : "failed",
       "time" : {
-        "start" : 1594470596868,
-        "stop" : 1594470606906,
-        "duration" : 10038
+        "start" : 1594570563250,
+        "stop" : 1594570569772,
+        "duration" : 6522
       },
       "flaky" : false,
       "newFailed" : false,

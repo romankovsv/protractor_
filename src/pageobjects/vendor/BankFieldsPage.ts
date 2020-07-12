@@ -2,7 +2,7 @@ import {BasePage} from "./BasePage";
 import {WebElement} from "../../wrappers/WebElement";
 import {element, By, browser} from "protractor";
 import {Logger} from "../../helpers/Logger";
-import {BankData} from "../../models/BankData";
+import {BData} from "../../models/BData";
 import {VendorPortalHomePage} from "./VendorPortalHomePage";
 
 export class BankFieldsPage extends BasePage{
@@ -23,7 +23,7 @@ export class BankFieldsPage extends BasePage{
         this.accountHolderField = new WebElement(element(By.name("accountHolder")))
     }
 
-    public async populateBankFields(data:BankData):Promise<VendorPortalHomePage>{
+    public async populateBankFields(data:BData):Promise<VendorPortalHomePage>{
         Logger.logs("In populateBankFields with data: " + data.toString());
         await this.bankField.type(data.bank);
         await this.ibanField.type(data.iban);

@@ -1,6 +1,6 @@
 import {BasePage} from "./BasePage";
 import {WebElement} from "../../wrappers/WebElement";
-import {browser, By, element, $$, ExpectedConditions} from "protractor";
+import {browser, By, element, $$,$, ExpectedConditions} from "protractor";
 import {Logger} from "../../helpers/Logger";
 import {RegistrationNumbersData} from "../../models/RegistrationNumbersData";
 import {AddressFieldsPage} from "./AddressFieldsPage";
@@ -36,7 +36,7 @@ export class RegistrationNumberFieldsPage extends BasePage {
         let absolutePathPowerToAttoreney = await path.resolve("../", fileToUploadPowerToAttoreney);
 
         await this.commercialRegisterExcertpt.sendKeys(absolutePathExcerpt);
-        await browser.wait(ExpectedConditions.visibilityOf($$("div[class$='info-name']>span")));
+        await browser.wait(ExpectedConditions.visibilityOf($("div[class$='info-name']>span")));
         await this.powerOfAttorney.sendKeys(absolutePathPowerToAttoreney);
         await this.condition.shouldBeVisible(element(By.css("div[class$='info-name']>span")),5);
         await this.nextButton.customClick();

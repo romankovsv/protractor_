@@ -35,7 +35,7 @@ class RegistrationNumberFieldsPage extends BasePage_1.BasePage {
             let absolutePathExcerpt = yield path.resolve("../", fileToUploadExcerpt);
             let absolutePathPowerToAttoreney = yield path.resolve("../", fileToUploadPowerToAttoreney);
             yield this.commercialRegisterExcertpt.sendKeys(absolutePathExcerpt);
-            yield protractor_1.browser.wait(protractor_1.ExpectedConditions.visibilityOf(protractor_1.$$("div[class$='info-name']>span")));
+            yield protractor_1.browser.wait(protractor_1.ExpectedConditions.visibilityOf(protractor_1.$("div[class$='info-name']>span")));
             yield this.powerOfAttorney.sendKeys(absolutePathPowerToAttoreney);
             yield this.condition.shouldBeVisible(protractor_1.element(protractor_1.By.css("div[class$='info-name']>span")), 5);
             yield this.nextButton.customClick();

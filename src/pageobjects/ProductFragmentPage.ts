@@ -11,7 +11,7 @@ export class ProductFragmentPage extends BaseFragment {
         this.productTitles = await $$("div[data-location='ProducerPage'] div[class*='title'] a");
 
        await console.log(this.productTitles.map((elements)=>{
-           for (var i = 0;  elements.length; i++) {
+           for (let i = 0; i< elements.length; i++) {
                console.log((<ElementFinder>elements[i]).getText());
            }
         }));

@@ -6,6 +6,7 @@ export class Company {
     vatNumber: string;
     gln: string;
     email: string;
+    emailForOrder:string
 
     constructor(companyName: string) {
         this.companyName = companyName;

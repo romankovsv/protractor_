@@ -22,7 +22,7 @@ class ContactListPageObject {
     }
     clickPlusButton() {
         return __awaiter(this, void 0, void 0, function* () {
-            Logger_1.Logger.log().debug("In method click plus button");
+            Logger_1.Logger.logs("In method click plus button");
             yield this.condition.shouldBeClickable(this.plusButton, 10);
             yield this.plusButton.customClick();
             return new NewContactPageObject_1.NewContactPageObject();

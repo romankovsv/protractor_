@@ -1,11 +1,11 @@
-import {BankData} from "./BankData";
+import {BData} from "./BData";
 
-export class BankDataBuilder {
+export class BDataBuilder {
 
-    data:BankData;
+    data:BData;
 
     constructor(data:string){
-        this.data = new BankData(data);
+        this.data = new BData(data);
     }
 
     public setIban(iban:string){
@@ -23,7 +23,7 @@ export class BankDataBuilder {
         return this;
     }
 
-    public build():BankData{
+    public build():BData{
         return this.data;
     }
 }

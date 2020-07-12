@@ -15,10 +15,10 @@ describe('adding a new contact with an invalid email',function ()  {
             .toEqual(browser.baseUrl + '/#/');
 
 
-        let addContactButton: WebElement = await new WebElement(element(by.id('add-contact')));
+        let addContactButton: WebElement = new WebElement(element(by.id('add-contact')));
         await addContactButton.customClick();
 
-        let contactNameField: WebElement = await new WebElement(element(by.css('#contact-name')));
+        let contactNameField: WebElement = new WebElement(element(by.css('#contact-name')));
         await contactNameField.type('Bad Email');
     });
 

@@ -1,6 +1,6 @@
 import {WebElement} from "../wrappers/WebElement";
 
-export class BankData {
+export class BData {
 
     bank:string;
     iban:string;

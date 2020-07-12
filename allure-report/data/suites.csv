@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Sat Jul 11 15:29:56 EEST 2020","Sat Jul 11 15:30:06 EEST 2020","10038","","Rozetka Suite","","Rozetka Suite","Test rozetka search","Test rozetka search",""
+"failed","Sun Jul 12 19:16:03 EEST 2020","Sun Jul 12 19:16:09 EEST 2020","6522","","Rozetka Suite","","Rozetka Suite","Test rozetka search","Test rozetka search",""

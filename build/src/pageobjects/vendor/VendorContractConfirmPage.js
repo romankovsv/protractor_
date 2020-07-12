@@ -33,7 +33,7 @@ class VendorContractConfirmPage extends BasePage_1.BasePage {
             yield new WebElement_1.WebElement(protractor_1.element(protractor_1.By.css(".m-checkbox svg"))).customClick();
             yield this.condition.shouldBeClickable(protractor_1.element(protractor_1.By.css(".vendor-contract--footer button[kind='primaryRaised']")), 10);
             yield this.condition.shouldBeVisible(protractor_1.element(protractor_1.By.css(".vendor-contract--footer button[kind='primaryRaised']")), 10);
-            let scrolldown = yield protractor_1.$$(".vendor-contract--footer button[kind='primaryRaised']").get(0);
+            let scrolldown = protractor_1.$$(".vendor-contract--footer button[kind='primaryRaised']").get(0);
             yield protractor_1.browser.controlFlow().execute(function () {
                 return __awaiter(this, void 0, void 0, function* () {
                     yield protractor_1.browser.executeScript('arguments[0].scrollIntoView(true)', scrolldown.getWebElement());

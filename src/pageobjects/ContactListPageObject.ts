@@ -16,7 +16,7 @@ export class ContactListPageObject {
     }
 
     async clickPlusButton() {
-        Logger.log().debug("In method click plus button")
+        Logger.logs("In method click plus button")
         await this.condition.shouldBeClickable(this.plusButton, 10)
         await this.plusButton.customClick();
         return new NewContactPageObject();

@@ -22,7 +22,7 @@ class GmailMainPage {
     }
     activateAccount() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Logger_1.Logger.log().debug("Activate account");
+            yield Logger_1.Logger.logs("Activate account");
             yield protractor_1.browser.wait(protractor_1.ExpectedConditions.elementToBeClickable(protractor_1.element(protractor_1.By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]"))));
             yield protractor_1.element(protractor_1.By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]")).click();
             // await this.firstEmail.click();

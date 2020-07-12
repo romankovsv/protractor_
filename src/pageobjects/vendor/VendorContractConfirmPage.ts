@@ -30,7 +30,7 @@ export class VendorContractConfirmPage extends BasePage {
 
         await this.condition.shouldBeVisible(element(By.css(".vendor-contract--footer button[kind='primaryRaised']")), 10);
 
-        let scrolldown = await $$(".vendor-contract--footer button[kind='primaryRaised']").get(0);
+        let scrolldown =  $$(".vendor-contract--footer button[kind='primaryRaised']").get(0);
         await browser.controlFlow().execute(async function () {
             await browser.executeScript('arguments[0].scrollIntoView(true)', scrolldown.getWebElement());
         });

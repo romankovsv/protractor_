@@ -14,33 +14,20 @@ const BasePage_1 = require("./BasePage");
 const protractor_1 = require("protractor");
 const selenium_webdriver_1 = require("selenium-webdriver");
 const WebElement_1 = require("../wrappers/WebElement");
-/*
-   private emailField: Element;
-
-
-    constructor() {
-        this.condition = new Condition();
-        this.sideBar_Suppliers_Menu = new Element(element(By.css("li[data-section-name='suppliers'] .menu-text")));
- */
 class HomePage extends BasePage_1.BasePage {
     constructor() {
         super();
-        // protected searchField = $("input[name='search']");
         this.searchField = protractor_1.browser.driver.findElement(selenium_webdriver_1.By.css("input[name='search']"))
             .then((elem) => {
             return elem;
         });
         this.closeAdvertButton = protractor_1.$("span.exponea-close");
         this.searchB = new WebElement_1.WebElement(protractor_1.element(protractor_1.By.css("input[name='search']")));
-        /* this.searchButton = $(".search-form .search-form__submit");
-         let isClickable = HomePage.EC.elementToBeClickable(this.searchButton);
-         browser.wait(isClickable, 5000);*/
     }
     search(item) {
         return __awaiter(this, void 0, void 0, function* () {
             yield protractor_1.browser.driver.findElement(selenium_webdriver_1.By.css("input[name='search']")).sendKeys(item);
             yield protractor_1.browser.driver.findElement(selenium_webdriver_1.By.css(".search-form .search-form__submit")).click();
-            //await this.searchButton.click();
         });
     }
     closeAdvert() {

@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "90d06ddac80c8ae1",
+      "uid" : "42cd5404c074a572",
       "status" : "failed",
       "statusDetails" : "Expected 'Интернет магазин Rozetka.com.ua. Электроника, бытовая техника, одежда и обувь, товары для дома. Официальная гарантия. Доставка по всей Украине.' to equal 'Super Calculator'.",
       "time" : {
-        "start" : 1594470596868,
-        "stop" : 1594470606906,
-        "duration" : 10038
+        "start" : 1594570563250,
+        "stop" : 1594570569772,
+        "duration" : 6522
       }
     } ]
   }

@@ -7,7 +7,7 @@ import {BasePage} from "./BasePage";
 import {Logger} from "../../helpers/Logger";
 import {LocalStorage} from "../../helpers/LocalStorage";
 
-export class SMSHomePage extends BasePage{
+export class HomePage extends BasePage{
 
     private sideBar_Suppliers_Menu: WebElement;
     private sidebar_suppliers_users: WebElement;
@@ -35,14 +35,14 @@ export class SMSHomePage extends BasePage{
 
     }
 
-    public async clickAddNewUser(): Promise<SMSHomePage> {
+    public async clickAddNewUser(): Promise<HomePage> {
         await this.sideBar_Suppliers_Menu.customClick();
         await this.sidebar_suppliers_users.customClick();
         await this.addUserButton.customClick()
         return this;
     }
 
-    public async addNewUser(user:User): Promise<SMSHomePage> {
+    public async addNewUser(user:User): Promise<HomePage> {
         await Logger.logs("Add new user: " + user)
         await this.userTypeSelector.selectByValue(user.userType);
         await this.firstNameField.type(user.firstName);

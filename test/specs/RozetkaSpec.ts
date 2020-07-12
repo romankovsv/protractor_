@@ -2,6 +2,7 @@ import {$, browser, protractor} from "protractor";
 import matchers = require('jasmine-protractor-matchers')
 import {HomePage} from "../../src/pageobjects/HomePage";
 import {ProductFragmentPage} from "../../src/pageobjects/ProductFragmentPage";
+import {Logger} from "../../src/helpers/Logger";
 
 
 describe("Rozetka Suite", async function()  {
@@ -16,6 +17,11 @@ describe("Rozetka Suite", async function()  {
         let productPage = await new ProductFragmentPage();
         await homePage.search("Apple");
 
+        await browser.getTitle().then(text=>{
+
+            Logger.logs("Browser title: " + text)
+        })
+        expect(browser.getTitle()).toEqual('Super Calculator');
     });
 
 

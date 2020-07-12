@@ -14,13 +14,13 @@ export class BasePage {
         this.condition = new Condition()
     }
     async navigateTo(url:string) {
-        await Logger.log().debug("\nNavigate to Url: " + url);
+        await Logger.logs("\nNavigate to Url: " + url);
         await browser.waitForAngularEnabled(true);
         await browser.get(url);
     }
 
     async navigateToWithDisabledAngularWait(url:string){
-        await Logger.log().debug("\nNavigate to Url: " + url);
+        await Logger.logs("\nNavigate to Url: " + url);
         await browser.waitForAngularEnabled(false);
         await browser.sleep(1000)
         await browser.get(url);

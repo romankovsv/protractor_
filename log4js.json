@@ -1,6 +1,9 @@
 {
   "appenders": {
-
+    "console":{
+      "type": "console",
+      "category": "console"
+    },
     "out": {
       "type": "stdout",
       "layout": {
@@ -17,7 +20,7 @@
     "app": {
       "type": "file",
       "filename": "log/app.log",
-      "maxLogSize": 10485760,
+      "maxLogSize": 10240,
       "alwaysIncludePattern": true,
       "keepFileExt": true,
       "level": "DEBUG"
@@ -37,7 +40,8 @@
       "appenders": [
         "app",
         "errors",
-        "out"
+        "out",
+        "console"
       ],
       "level": "DEBUG",
       "enableCallStack": true

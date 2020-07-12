@@ -14,7 +14,7 @@ describe('create new contact', function()  {
     });
 
     it('should click the + button', async function()  {
-        Logger.log().debug("In Test")
+        Logger.logs("In Test")
         let newContact: NewContactPageObject;
         newContact = await contactList.clickPlusButton();
         expect(await browser.getCurrentUrl())
@@ -25,7 +25,7 @@ describe('create new contact', function()  {
         let newContact: NewContactPageObject;
         newContact = await contactList.clickPlusButton();
         await newContact.setContactInfo(
-            'Mr. Newton', 'mr.newton@example.com', null);
+            'Mr. Newton', 'mr.newton@example.com', "null");
         expect(await newContact.getName()).toBe('Mr. Newton');
         expect(await newContact.getEmail())
             .toBe('mr.newton@example.com');

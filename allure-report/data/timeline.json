@@ -3,13 +3,26 @@
   "name" : "timeline",
   "children" : [ {
     "name" : "Test rozetka search",
-    "uid" : "90d06ddac80c8ae1",
+    "uid" : "42cd5404c074a572",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "failed",
     "time" : {
-      "start" : 1594470596868,
-      "stop" : 1594470606906,
-      "duration" : 10038
+      "start" : 1594570563250,
+      "stop" : 1594570569772,
+      "duration" : 6522
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test rozetka search",
+    "uid" : "483890c1d8aca431",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "unknown",
+    "time" : {
+      "start" : 1594570563250,
+      "stop" : 0,
+      "duration" : -1594570563250
     },
     "flaky" : false,
     "newFailed" : false,

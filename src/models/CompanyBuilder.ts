@@ -13,6 +13,11 @@ export class CompanyBuilder{
         return this;
     }
 
+    public setCompanyEmailForOrder(email:string){
+        this.company.emailForOrder = email;
+        return this;
+    }
+
     public setTaxNumber(taxNumber:string){
         this.company.taxNumber = taxNumber;
         return this;

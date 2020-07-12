@@ -1,5 +1,5 @@
 import {BaseFragment} from 'protractor-element-extend'
-import {browser, By, ExpectedConditions as EC} from 'protractor'
+import {browser, By, ElementFinder, ExpectedConditions as EC} from 'protractor'
 import {Condition} from "../../src/helpers/Condition";
 import {Logger} from "../helpers/Logger";
 
@@ -22,6 +22,8 @@ export class WebElement extends BaseFragment {
         });
 
 
+        await this. highlightElementByClick(this);
+
         await this.click().then(async () => {
             await Logger.logs(`Element ${this.locator()} is  clicked`)
         })
@@ -40,7 +42,7 @@ export class WebElement extends BaseFragment {
             });
 
         await this.clear();
-
+        await this.highlightElementByType(this);
         await this.sendKeys(text).then(async () => {
             await Logger.logs(`Element ${this.locator()} is  entered text:${text}`);
         });
@@ -88,5 +90,17 @@ export class WebElement extends BaseFragment {
                 await console.warn(`Checkbox ${this.locator()} was already unselected, skipping unselect`)
             }
         })
+    }
+
+    private async highlightElementByClick(element: ElementFinder) {
+        await browser.executeScript("arguments[0].style.border='3px solid red'", element);
+        await setTimeout(() => {
+        }, 700)
+    }
+
+    private async highlightElementByType(element: ElementFinder) {
+        await browser.executeScript("arguments[0].style.border='3px solid yellow'", element);
+        await setTimeout(() => {
+        }, 500)
     }
 }

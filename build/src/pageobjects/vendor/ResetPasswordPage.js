@@ -25,7 +25,7 @@ class ResetPasswordPage extends BasePage_1.BasePage {
     }
     enterPassword(password) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Logger_1.Logger.log().debug("Enter passwrd: Auto1" + password);
+            yield Logger_1.Logger.logs("Enter passwrd: Auto1" + password);
             yield protractor_1.browser.wait(protractor_1.ExpectedConditions.visibilityOf(this.resetPasswordField), 10000);
             yield this.navigateToWithDisabledAngularWait(Properties_1.Properties.VendroQAEnv);
             /* await browser.manage().getCookies().then(function(cookies) {

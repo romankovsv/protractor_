@@ -17,7 +17,7 @@ export class GmailMainPage {
     }
 
     public async activateAccount(): Promise<ResetPasswordPage> {
-        await Logger.log().debug("Activate account")
+        await Logger.logs("Activate account")
 
         await browser.wait(ExpectedConditions.elementToBeClickable(element(By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]"))))
         await element(By.xpath("(//tbody/tr[1]//span[1]/span[@name='Vendor Office'])[last()]")).click()

@@ -17,7 +17,7 @@ class ProductFragmentPage extends BaseFragment_1.BaseFragment {
         return __awaiter(this, void 0, void 0, function* () {
             this.productTitles = yield protractor_1.$$("div[data-location='ProducerPage'] div[class*='title'] a");
             yield console.log(this.productTitles.map((elements) => {
-                for (var i = 0; elements.length; i++) {
+                for (let i = 0; i < elements.length; i++) {
                     console.log(elements[i].getText());
                 }
             }));

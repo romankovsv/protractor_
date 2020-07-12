@@ -20,8 +20,8 @@ import {Company} from "../../src/models/Company";
 import {AddressData} from "../../src/models/AddressData";
 import {AddressDataBuilder} from "../../src/models/AddressDataBuilder";
 import {BankFieldsPage} from "../../src/pageobjects/vendor/BankFieldsPage";
-import {BankData} from "../../src/models/BankData";
-import {BankDataBuilder} from "../../src/models/BankDataBuilder";
+import {BData} from "../../src/models/BData";
+import {BDataBuilder} from "../../src/models/BDataBuilder";
 import {VendorPortalHomePage} from "../../src/pageobjects/vendor/VendorPortalHomePage";
 
 
@@ -68,7 +68,7 @@ describe('registration', function () {
             .setPhone(Generator.generateStringWithLenght(8))
             .build();
 
-        let bankData: BankData = new BankDataBuilder(
+        let bankData: BData = new BDataBuilder(
             Generator.generateStringWithLenght(10))
             .setIban(Generator.generateStringWithLenght(7))
             .setBic(Generator.generateStringWithLenght(7))

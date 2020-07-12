@@ -7,13 +7,13 @@
       "name" : "Expected 'Интернет магазин Rozetka.com.ua. Электроника, бытовая техника, одежда и обувь, товары для дома. Официальная гарантия. Доставка по всей Украине.' to equal 'Super Calculator'.",
       "children" : [ {
         "name" : "Test rozetka search",
-        "uid" : "90d06ddac80c8ae1",
+        "uid" : "42cd5404c074a572",
         "parentUid" : "a5abac9a39b78f2d8c9541639844fb19",
         "status" : "failed",
         "time" : {
-          "start" : 1594470596868,
-          "stop" : 1594470606906,
-          "duration" : 10038
+          "start" : 1594570563250,
+          "stop" : 1594570569772,
+          "duration" : 6522
         },
         "flaky" : false,
         "newFailed" : false,

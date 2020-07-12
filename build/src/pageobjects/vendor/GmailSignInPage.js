@@ -27,7 +27,7 @@ class GmailSignInPage extends BasePage_1.BasePage {
     }
     loginToGmail() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield Logger_1.Logger.log().debug(`Login to gmail with : ${Properties_1.Properties.Gmail_email}`);
+            yield Logger_1.Logger.logs(`Login to gmail with : ${Properties_1.Properties.Gmail_email}`);
             yield this.navigateToWithDisabledAngularWait("http://www.gmail.com");
             yield this.emailField.type(Properties_1.Properties.Gmail_email);
             yield this.nextButton.customClick();

@@ -165,6 +165,7 @@ function urlify(text) {
     urls.forEach((e) => {
         if (e.includes('continuous-testing/')) {
             console.log("Finally found: " + e);
+            // @ts-ignore
             res.push(e);
         }
     });
