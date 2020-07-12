@@ -1,0 +1,55 @@
+{
+  "uid" : "ee83450dcedc753e",
+  "name" : "Test rozetka search",
+  "fullName" : "Rozetka Suite.Test rozetka search",
+  "historyId" : "d25814b0316d698a04b60e1ecb5617c7",
+  "time" : {
+    "start" : 1594479297611,
+    "stop" : 0,
+    "duration" : -1594479297611
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testClass",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test rozetka search"
+  }, {
+    "name" : "package",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cbbb42b01ff13a06",
+      "status" : "failed",
+      "statusDetails" : "Expected 'Интернет магазин Rozetka.com.ua. Электроника, бытовая техника, одежда и обувь, товары для дома. Официальная гарантия. Доставка по всей Украине.' to equal 'Super Calculator'.",
+      "time" : {
+        "start" : 1594479297611,
+        "stop" : 1594479306883,
+        "duration" : 9272
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ee83450dcedc753e.json",
+  "parameterValues" : [ ]
+}

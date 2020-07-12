@@ -17,26 +17,48 @@ let log4js = require('log4js');
 exports.config = {
     baseUrl: 'https://testing-angular-applications.github.io',
     framework: 'jasmine2',
+    seleniumAddress: 'http://localhost:4444/wd/hub',
     capabilities: {
-        browserName: 'chrome'
+        browserName: 'chrome',
+        shardTestFiles: false,
+        maxInstances: 2,
+        idleTimeout: 120,
+        locationContextEnabled: true,
+        javascriptEnabled: true,
+        acceptSslCerts: true,
+        trustAllSSLCertificates: true,
+        acceptInsecureCerts: true,
+        ignoreUncaughtExceptions: true,
+        handlesAlerts: true,
+        chromeOptions: {
+            args: [
+                '--disable-popup-blocking',
+                '--no-sandbox',
+                '--test-type=browser',
+                '--disable-infobars',
+                '--start-maximized',
+                '--ignore-certificate-errors',
+                '--disable-web-security'
+            ]
+        }
     },
     suites: {
         "first": "./FirstTestSpec.js",
         "second": "./SecondTestspec.js"
     },
-    specs: ['./test/specs/*[sS]pecs.js'],
-    //specs: ['./test/specs/*[tT]ests.js'],
+    //specs: ['./test/specs/*[sS]pecs.js'],
+    // specs: ['./test/specs/*[tT]ests.js'],
+    specs: ['./test/specs/*RozetkaSpec.js'],
     SELENIUM_PROMISE_MANAGER: false,
-    seleniumAddress: 'http://localhost:7777/wd/hub',
     noGlobals: false,
     jasmineNodeOpts: {
         showColors: true,
         silent: true,
-        defaultTimeoutInterval: 60000,
+        defaultTimeoutInterval: 120000,
         isVerbose: true,
     },
     onPrepare: () => __awaiter(void 0, void 0, void 0, function* () {
-        yield protractor_1.browser.waitForAngularEnabled(true);
+        yield protractor_1.browser.waitForAngularEnabled(false);
         protractor_1.browser.manage().window().maximize();
         protractor_1.browser.manage().timeouts().implicitlyWait(5000);
         const ConsoleReporter = require("jasmine2-reporter").Jasmine2Reporter;
@@ -62,6 +84,19 @@ exports.config = {
                 totalDurationFormat: "hms"
             }
         }).getJasmine2Reporter());
+        let AllureReporter = require('jasmine-allure-reporter');
+        jasmine.getEnv().addReporter(new AllureReporter({
+            resultsDir: 'allure-results'
+        }));
+        jasmine.getEnv().addReporter(new AllureReporter());
+        jasmine.getEnv().afterEach(function (done) {
+            protractor_1.browser.takeScreenshot().then(function (png) {
+                allure.createAttachment('Screenshot', function () {
+                    return new Buffer(png, 'base64');
+                }, 'image/png')();
+                done();
+            });
+        });
     }),
 };
 //# sourceMappingURL=protractor.conf.js.map

@@ -22,7 +22,7 @@ describe('create new contact', function () {
     });
     it('should click the + button', function () {
         return __awaiter(this, void 0, void 0, function* () {
-            Logger_1.Logger.log().debug("In Test");
+            Logger_1.Logger.logs("In Test");
             let newContact;
             newContact = yield contactList.clickPlusButton();
             expect(yield protractor_1.browser.getCurrentUrl())
@@ -33,7 +33,7 @@ describe('create new contact', function () {
         return __awaiter(this, void 0, void 0, function* () {
             let newContact;
             newContact = yield contactList.clickPlusButton();
-            yield newContact.setContactInfo('Mr. Newton', 'mr.newton@example.com', null);
+            yield newContact.setContactInfo('Mr. Newton', 'mr.newton@example.com', "null");
             expect(yield newContact.getName()).toBe('Mr. Newton');
             expect(yield newContact.getEmail())
                 .toBe('mr.newton@example.com');

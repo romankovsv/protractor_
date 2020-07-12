@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.NewContactPageObject = void 0;
 const protractor_1 = require("protractor");
 const ContactListPageObject_1 = require("./ContactListPageObject");
 const Condition_1 = require("../helpers/Condition");

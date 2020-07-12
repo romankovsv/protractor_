@@ -1,0 +1,78 @@
+{
+  "uid" : "42cd5404c074a572",
+  "name" : "Test rozetka search",
+  "fullName" : "Rozetka Suite.Test rozetka search",
+  "historyId" : "d25814b0316d698a04b60e1ecb5617c7",
+  "time" : {
+    "start" : 1594570563250,
+    "stop" : 1594570569772,
+    "duration" : 6522
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected 'Интернет магазин Rozetka.com.ua. Электроника, бытовая техника, одежда и обувь, товары для дома. Официальная гарантия. Доставка по всей Украине.' to equal 'Super Calculator'.",
+  "statusTrace" : "Error: Failed expectation\n                    at UserContext.<anonymous> (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\test\\specs\\RozetkaSpec.ts:24:36)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\build\\test\\specs\\RozetkaSpec.js:5:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Expected 'Интернет магазин Rozetka.com.ua. Электроника, бытовая техника, одежда и обувь, товары для дома. Официальная гарантия. Доставка по всей Украине.' to equal 'Super Calculator'.",
+    "statusTrace" : "Error: Failed expectation\n                    at UserContext.<anonymous> (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\test\\specs\\RozetkaSpec.ts:24:36)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\build\\test\\specs\\RozetkaSpec.js:5:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "34a38e4177b3467a",
+      "name" : "Screenshot",
+      "source" : "34a38e4177b3467a.png",
+      "type" : "image/png",
+      "size" : 74266
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testClass",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test rozetka search"
+  }, {
+    "name" : "package",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "483890c1d8aca431",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1594570563250,
+        "stop" : 0,
+        "duration" : -1594570563250
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "42cd5404c074a572.json",
+  "parameterValues" : [ ]
+}

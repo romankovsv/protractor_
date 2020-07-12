@@ -1,15 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Properties = void 0;
 const Generator_1 = require("../helpers/Generator");
 class Properties {
 }
 exports.Properties = Properties;
-Properties.VendroCentralUrl = `https://sms:GHnRgg4G3qf43gvdsgds@www.qa.metro-vendorcentral.com`;
-Properties.VendroQAEnv = `https://sms:GHnRgg4G3qf43gvdsgds@vendor.qa.metro-vendorcentral.com`;
-Properties.Gmail_WithNumber = "autotest.metro+" + Generator_1.Generator.generateNumber() + "@gmail.com";
-Properties.Gmail_email = "autotest.metro@gmail.com";
-Properties.Gmail_password = "Metro!@#123";
+Properties.VendroCentralUrl = ``;
+Properties.VendroQAEnv = ``;
+Properties.Gmail_WithNumber = "autotest.vendor+" + Generator_1.Generator.generateNumber() + "@gmail.com";
+Properties.Gmail_email = "autotest.vendor@gmail.com";
+Properties.Gmail_password = "";
 Properties.VendorCentralEmail = "admin@sms.com";
-Properties.VendorCentralPassword = "admin";
-Properties.Creds = "sms:GHnRgg4G3qf43gvdsgds@";
+Properties.VendorCentralPassword = "";
+Properties.Creds = "";
 //# sourceMappingURL=Properties.js.map

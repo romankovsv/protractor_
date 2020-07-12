@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.BankDataBuilder = void 0;
 const BankData_1 = require("./BankData");
 class BankDataBuilder {
     constructor(data) {

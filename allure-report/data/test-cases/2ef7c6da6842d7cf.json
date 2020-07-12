@@ -1,0 +1,64 @@
+{
+  "uid" : "2ef7c6da6842d7cf",
+  "name" : "Test rozetka search",
+  "fullName" : "Rozetka Suite.Test rozetka search",
+  "historyId" : "d25814b0316d698a04b60e1ecb5617c7",
+  "time" : {
+    "start" : 1594478952260,
+    "stop" : 1594478975342,
+    "duration" : 23082
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected 'Интернет магазин Rozetka.com.ua. Электроника, бытовая техника, одежда и обувь, товары для дома. Официальная гарантия. Доставка по всей Украине.' to equal 'Super Calculator'.",
+  "statusTrace" : "Error: Failed expectation\n                    at UserContext.<anonymous> (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\test\\specs\\RozetkaSpec.ts:24:36)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\build\\test\\specs\\RozetkaSpec.js:5:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Expected 'Интернет магазин Rozetka.com.ua. Электроника, бытовая техника, одежда и обувь, товары для дома. Официальная гарантия. Доставка по всей Украине.' to equal 'Super Calculator'.",
+    "statusTrace" : "Error: Failed expectation\n                    at UserContext.<anonymous> (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\test\\specs\\RozetkaSpec.ts:24:36)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\build\\test\\specs\\RozetkaSpec.js:5:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "37ea4be684ac5235",
+      "name" : "Screenshot",
+      "source" : "37ea4be684ac5235.png",
+      "type" : "image/png",
+      "size" : 9196
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testClass",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test rozetka search"
+  }, {
+    "name" : "package",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ef7c6da6842d7cf.json",
+  "parameterValues" : [ ]
+}

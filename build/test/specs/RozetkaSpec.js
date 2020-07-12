@@ -9,8 +9,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const protractor_1 = require("protractor");
 const HomePage_1 = require("../../src/pageobjects/HomePage");
 const ProductFragmentPage_1 = require("../../src/pageobjects/ProductFragmentPage");
+const Logger_1 = require("../../src/helpers/Logger");
 describe("Rozetka Suite", function () {
     return __awaiter(this, void 0, void 0, function* () {
         it("Test rozetka search", function () {
@@ -20,6 +22,10 @@ describe("Rozetka Suite", function () {
                 yield homePage.open();
                 let productPage = yield new ProductFragmentPage_1.ProductFragmentPage();
                 yield homePage.search("Apple");
+                yield protractor_1.browser.getTitle().then(text => {
+                    Logger_1.Logger.logs("Browser title: " + text);
+                });
+                expect(protractor_1.browser.getTitle()).toEqual('Super Calculator');
             });
         });
     });

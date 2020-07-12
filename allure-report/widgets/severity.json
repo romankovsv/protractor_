@@ -1,0 +1,11 @@
+[ {
+  "uid" : "90d06ddac80c8ae1",
+  "name" : "Test rozetka search",
+  "time" : {
+    "start" : 1594470596868,
+    "stop" : 1594470606906,
+    "duration" : 10038
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CompanyBuilder = void 0;
 const Company_1 = require("./Company");
 class CompanyBuilder {
     constructor(companyName) {
@@ -7,6 +8,10 @@ class CompanyBuilder {
     }
     setCompanyLegal(legal) {
         this.company.companyLegal = legal;
+        return this;
+    }
+    setCompanyEmailForOrder(email) {
+        this.company.emailForOrder = email;
         return this;
     }
     setTaxNumber(taxNumber) {

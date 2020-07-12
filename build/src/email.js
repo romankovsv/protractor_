@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.listMessages = exports.authorize = void 0;
 const fs = require('fs');
 const readline = require('readline');
 const { google } = require('googleapis');

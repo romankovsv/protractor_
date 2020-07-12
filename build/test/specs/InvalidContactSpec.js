@@ -21,9 +21,9 @@ describe('adding a new contact with an invalid email', function () {
             yield protractor_1.browser.wait(EC.urlContains(protractor_1.browser.baseUrl));
             expect(protractor_1.browser.getCurrentUrl())
                 .toEqual(protractor_1.browser.baseUrl + '/#/');
-            let addContactButton = yield new WebElement_1.WebElement(protractor_1.element(protractor_1.by.id('add-contact')));
+            let addContactButton = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.id('add-contact')));
             yield addContactButton.customClick();
-            let contactNameField = yield new WebElement_1.WebElement(protractor_1.element(protractor_1.by.css('#contact-name')));
+            let contactNameField = new WebElement_1.WebElement(protractor_1.element(protractor_1.by.css('#contact-name')));
             yield contactNameField.type('Bad Email');
         });
     });

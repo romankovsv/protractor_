@@ -1,0 +1,78 @@
+{
+  "uid" : "d704d9f941658b3b",
+  "name" : "Test rozetka search",
+  "fullName" : "Rozetka Suite.Test rozetka search",
+  "historyId" : "d25814b0316d698a04b60e1ecb5617c7",
+  "time" : {
+    "start" : 1594478827626,
+    "stop" : 1594478848991,
+    "duration" : 21365
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Expected 'Apple: купить товары от производителя Эпл в интернет-магазине ➦Rozetka.ua' to equal 'Super Calculator'.",
+  "statusTrace" : "Error: Failed expectation\n                    at UserContext.<anonymous> (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\test\\specs\\RozetkaSpec.ts:24:36)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\build\\test\\specs\\RozetkaSpec.js:5:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Expected 'Apple: купить товары от производителя Эпл в интернет-магазине ➦Rozetka.ua' to equal 'Super Calculator'.",
+    "statusTrace" : "Error: Failed expectation\n                    at UserContext.<anonymous> (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\test\\specs\\RozetkaSpec.ts:24:36)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (C:\\Code\\JobProject\\ProtractorSuperFramework_21.10.2019\\TypeScriptBasics\\build\\test\\specs\\RozetkaSpec.js:5:58)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4a3ce715e43215d3",
+      "name" : "Screenshot",
+      "source" : "4a3ce715e43215d3.png",
+      "type" : "image/png",
+      "size" : 129646
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testClass",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test rozetka search"
+  }, {
+    "name" : "package",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "88f1eee011883e0c",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1594478827626,
+        "stop" : 0,
+        "duration" : -1594478827626
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d704d9f941658b3b.json",
+  "parameterValues" : [ ]
+}

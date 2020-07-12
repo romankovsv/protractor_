@@ -1,0 +1,44 @@
+{
+  "uid" : "3b0027e8e730ca1c",
+  "name" : "Test rozetka search",
+  "fullName" : "Rozetka Suite.Test rozetka search",
+  "historyId" : "d25814b0316d698a04b60e1ecb5617c7",
+  "time" : {
+    "start" : 1594478253785,
+    "stop" : 0,
+    "duration" : -1594478253785
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testClass",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test rozetka search"
+  }, {
+    "name" : "package",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3b0027e8e730ca1c.json",
+  "parameterValues" : [ ]
+}

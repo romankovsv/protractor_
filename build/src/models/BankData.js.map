@@ -1,1 +1,1 @@
-{"version":3,"file":"BankData.js","sourceRoot":"","sources":["../../../src/models/BankData.ts"],"names":[],"mappings":";;AAEA,MAAa,QAAQ;IAOjB,YAAY,IAAW;QACnB,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACrB,CAAC;CAIJ;AAbD,4BAaC"}
+{"version":3,"file":"BankData.js","sourceRoot":"","sources":["../../../src/models/BankData.ts"],"names":[],"mappings":";;;AAEA,MAAa,QAAQ;IAOjB,YAAY,IAAW;QACnB,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACrB,CAAC;CAIJ;AAbD,4BAaC"}

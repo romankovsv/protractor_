@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Condition = void 0;
 const protractor_1 = require("protractor");
 const Logger_1 = require("./Logger");
 class Condition {
@@ -18,7 +19,7 @@ class Condition {
             let EC = protractor_1.protractor.ExpectedConditions;
             yield protractor_1.browser.wait(EC.visibilityOf(el), timeout * 1000, `Element ${el.locator()} is not visible`)
                 .catch((error) => {
-                Logger_1.Logger.log().error(error);
+                Logger_1.Logger.logs(error);
                 throw error;
             });
         });
@@ -29,7 +30,7 @@ class Condition {
             let EC = protractor_1.protractor.ExpectedConditions;
             yield protractor_1.browser.wait(EC.not(EC.visibilityOf(el)), timeout * 1000, `Element ${el.locator()} is visible, but shouldnt be`)
                 .catch((error) => {
-                Logger_1.Logger.log().error(error);
+                Logger_1.Logger.logs(error);
                 throw error;
             });
         });
@@ -40,7 +41,7 @@ class Condition {
             let EC = protractor_1.protractor.ExpectedConditions;
             yield protractor_1.browser.wait(EC.elementToBeClickable(el), timeout * 1000, `Element ${el.locator()} is not clickable`)
                 .catch((error) => {
-                Logger_1.Logger.log().error(`Element ${el.locator()} is not clickable\n` + error);
+                Logger_1.Logger.logs(`Element ${el.locator()} is not clickable\n` + error);
                 error.message = `Element ${el.locator()} is not clickable`;
                 throw error;
             });
@@ -52,7 +53,7 @@ class Condition {
             let EC = protractor_1.protractor.ExpectedConditions;
             yield protractor_1.browser.wait(EC.urlContains(urlPart), timeout * 1000)
                 .catch((error) => {
-                Logger_1.Logger.log().error(error);
+                Logger_1.Logger.logs(error);
                 throw error;
             });
         });

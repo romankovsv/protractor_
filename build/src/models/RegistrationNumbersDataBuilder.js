@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.RegistrationNumbersDataBuilder = void 0;
 const RegistrationNumbersData_1 = require("./RegistrationNumbersData");
 class RegistrationNumbersDataBuilder {
     constructor(competentCommercialRegistry) {

@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.WebElement = void 0;
 const protractor_element_extend_1 = require("protractor-element-extend");
 const protractor_1 = require("protractor");
 const Condition_1 = require("../../src/helpers/Condition");
@@ -26,6 +27,7 @@ class WebElement extends protractor_element_extend_1.BaseFragment {
                 error.message = `Element ${this.locator()} is not clickable`;
                 throw error;
             }));
+            yield this.highlightElementByClick(this);
             yield this.click().then(() => __awaiter(this, void 0, void 0, function* () {
                 yield Logger_1.Logger.logs(`Element ${this.locator()} is  clicked`);
             }))
@@ -44,6 +46,7 @@ class WebElement extends protractor_element_extend_1.BaseFragment {
                 throw err;
             }));
             yield this.clear();
+            yield this.highlightElementByType(this);
             yield this.sendKeys(text).then(() => __awaiter(this, void 0, void 0, function* () {
                 yield Logger_1.Logger.logs(`Element ${this.locator()} is  entered text:${text}`);
             }));
@@ -98,6 +101,20 @@ class WebElement extends protractor_element_extend_1.BaseFragment {
                     yield console.warn(`Checkbox ${this.locator()} was already unselected, skipping unselect`);
                 }
             }));
+        });
+    }
+    highlightElementByClick(element) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.browser.executeScript("arguments[0].style.border='3px solid red'", element);
+            yield setTimeout(() => {
+            }, 700);
+        });
+    }
+    highlightElementByType(element) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield protractor_1.browser.executeScript("arguments[0].style.border='3px solid yellow'", element);
+            yield setTimeout(() => {
+            }, 500);
         });
     }
 }

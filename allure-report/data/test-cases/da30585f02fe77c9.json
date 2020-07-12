@@ -1,0 +1,55 @@
+{
+  "uid" : "da30585f02fe77c9",
+  "name" : "Test rozetka search",
+  "fullName" : "Rozetka Suite.Test rozetka search",
+  "historyId" : "d25814b0316d698a04b60e1ecb5617c7",
+  "time" : {
+    "start" : 1594477690937,
+    "stop" : 0,
+    "duration" : -1594477690937
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testClass",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Test rozetka search"
+  }, {
+    "name" : "package",
+    "value" : "Rozetka Suite"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e967534689ff0465",
+      "status" : "failed",
+      "statusDetails" : "Expected 'Apple: купить товары от производителя Эпл в интернет-магазине ➦Rozetka.ua' to equal 'Super Calculator'.",
+      "time" : {
+        "start" : 1594477690937,
+        "stop" : 1594477706916,
+        "duration" : 15979
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da30585f02fe77c9.json",
+  "parameterValues" : [ ]
+}

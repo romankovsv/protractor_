@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.HomePage = void 0;
 const BasePage_1 = require("./BasePage");
 const protractor_1 = require("protractor");
 const selenium_webdriver_1 = require("selenium-webdriver");

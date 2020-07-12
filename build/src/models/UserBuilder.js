@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserBuilder = void 0;
 const User_1 = require("./User");
 class UserBuilder {
     constructor(firstName) {

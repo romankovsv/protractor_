@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProductFragmentPage = void 0;
 const BaseFragment_1 = require("./BaseFragment");
 const protractor_1 = require("protractor");
 class ProductFragmentPage extends BaseFragment_1.BaseFragment {
